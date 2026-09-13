@@ -207,7 +207,7 @@ const onHome =
 
     function ensureIndex() {
       if (loaded) return Promise.resolve();
-      return fetch("/data/entities-index.json")
+      return fetch("/future-of-ai/data/entities-index.json")
         .then(function (r) {
           return r.ok ? r.json() : [];
         })

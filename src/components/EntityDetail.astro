@@ -135,15 +135,15 @@ const isStub = !bodyHtml;
   <div class="mt-8 flex flex-wrap gap-2">
     {variant === 'panel' ? (
       <>
-        <a href={`/e/${entity.id}`} data-no-panel="true" class="text-sm px-3 py-2 rounded-lg bg-surface-2 hover:bg-surface-3 text-white transition-colors">
+        <a href={`/future-of-ai/e/${entity.id}`} data-no-panel="true" class="text-sm px-3 py-2 rounded-lg bg-surface-2 hover:bg-surface-3 text-white transition-colors">
           Open full page →
         </a>
-        <a href={`/graph?focus=${entity.id}&p=${entity.id}`} class="text-sm px-3 py-2 rounded-lg border border-surface-3 hover:border-zinc-500 text-zinc-300 transition-colors">
+        <a href={`/future-of-ai/graph?focus=${entity.id}&p=${entity.id}`} class="text-sm px-3 py-2 rounded-lg border border-surface-3 hover:border-zinc-500 text-zinc-300 transition-colors">
           Show in graph
         </a>
       </>
     ) : (
-      <a href={`/graph?focus=${entity.id}&p=${entity.id}`} class="text-sm px-3 py-2 rounded-lg border border-surface-3 hover:border-zinc-500 text-zinc-300 transition-colors">
+      <a href={`/future-of-ai/graph?focus=${entity.id}&p=${entity.id}`} class="text-sm px-3 py-2 rounded-lg border border-surface-3 hover:border-zinc-500 text-zinc-300 transition-colors">
         Show in graph →
       </a>
     )}

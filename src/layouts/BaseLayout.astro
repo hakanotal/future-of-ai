@@ -53,7 +53,7 @@ const {
     <Header />
     <div
       id="reader-grid"
-      class={Astro.url.pathname.startsWith("/graph")
+      class={Astro.url.pathname.startsWith("/future-of-ai/graph")
         ? "is-graph"
         : "is-article"}
     >
@@ -85,7 +85,7 @@ const {
           window.__tescrealOpener = document.activeElement;
         }
         try {
-          const res = await fetch(`/e/${id}/panel`);
+          const res = await fetch(`/future-of-ai/e/${id}/panel`);
           if (!res.ok) throw new Error("panel fetch failed");
           content.innerHTML = await res.text();
           grid.classList.add("panel-open");
@@ -100,7 +100,7 @@ const {
           history.pushState({}, "", url.toString());
         } catch (err) {
           console.error("Failed to load panel:", err);
-          window.location.href = `/e/${id}`;
+            window.location.href = `/future-of-ai/e/${id}`;
         }
       }
 
@@ -117,7 +117,7 @@ const {
           overlay.setAttribute("aria-hidden", "true");
         }
         document
-          .querySelectorAll('a[href^="/e/"][aria-expanded="true"]')
+              .querySelectorAll('a[href*="/e/"][aria-expanded="true"]')
           .forEach((a) => a.setAttribute("aria-expanded", "false"));
         const url = new URL(window.location.href);
         if (url.searchParams.has("p")) {
@@ -151,7 +151,7 @@ const {
               return;
             }
 
-            const link = e.target.closest('a[href^="/e/"]');
+            const link = e.target.closest('a[href*="/e/"]');
             if (!link || link.dataset.noPanel) return;
             if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
             e.preventDefault();
@@ -161,7 +161,7 @@ const {
               : null;
             if (!id) return;
             document
-              .querySelectorAll('a[href^="/e/"][aria-expanded="true"]')
+          .querySelectorAll('a[href*="/e/"][aria-expanded="true"]')
               .forEach((a) => a.setAttribute("aria-expanded", "false"));
             link.setAttribute("aria-expanded", "true");
             openPanel(id);

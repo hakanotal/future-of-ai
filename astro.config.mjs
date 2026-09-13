@@ -8,7 +8,7 @@ export default defineConfig({
   base: '/future-of-ai',
   output: 'static',
   redirects: {
-    '/a/tescreal': '/',
+    '/a/tescreal': '/future-of-ai/',
   },
   vite: {
     plugins: [tailwindcss()],

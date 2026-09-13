@@ -52,7 +52,7 @@ const { focus = 'tescreal', class: className } = Astro.props;
     }
 
     try {
-      const res = await fetch('/data/graph.json');
+      const res = await fetch('/future-of-ai/data/graph.json');
       if (!res.ok) throw new Error('graph.json not found');
       const data = await res.json();
       const ink = themeInk();
@@ -126,7 +126,7 @@ const { focus = 'tescreal', class: className } = Astro.props;
         cy.elements().not(node.closedNeighborhood()).style('opacity', 0.18);
         node.select();
         if (window.__tescrealOpenPanel) window.__tescrealOpenPanel(id);
-        else window.location.href = '/e/' + id;
+        else window.location.href = '/future-of-ai/e/' + id;
       });
 
       cy.on('tap', function(evt) {
