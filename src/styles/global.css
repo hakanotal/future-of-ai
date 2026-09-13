@@ -49,23 +49,12 @@ body {
   }
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+/* Hide all scrollbars — ToC progress bar provides scroll feedback */
+* {
+  scrollbar-width: none; /* Firefox */
 }
-
-::-webkit-scrollbar-track {
-  background: var(--color-surface-1);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--color-surface-3);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #52525b;
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
 }
 
 /* Panel animations */
@@ -193,15 +182,7 @@ body {
   --tw-prose-td-borders: #e9e8e6;
 }
 
-:root[data-theme='light'] ::-webkit-scrollbar-track {
-  background: #f4f4f5;
-}
-:root[data-theme='light'] ::-webkit-scrollbar-thumb {
-  background: #d6d3d1;
-}
-:root[data-theme='light'] ::-webkit-scrollbar-thumb:hover {
-  background: #a1a1aa;
-}
+/* Light theme - scrollbars hidden globally */
 
 /* ============ Table of Contents ============
    Styles are global (not scoped) because list items are built by JS
@@ -210,14 +191,9 @@ body {
   height: 100%;
   overflow-y: auto;
   padding: 1.5rem 0 3rem;
-  scrollbar-width: thin;
-  scrollbar-color: var(--color-surface-3) transparent;
   width: 220px;
   flex-shrink: 0;
 }
-#toc-inner::-webkit-scrollbar { width: 4px; }
-#toc-inner::-webkit-scrollbar-track { background: transparent; }
-#toc-inner::-webkit-scrollbar-thumb { background: var(--color-surface-3); border-radius: 2px; }
 
 #toc-progress-bar {
   position: absolute;
