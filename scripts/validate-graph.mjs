@@ -107,7 +107,7 @@ function* walkMd(dir) {
   }
 }
 
-// Matches [label](/e/<id>), [label](/e/<id>/panel), and <a href="/e/<id>...">
+// Matches [label](/e/<id>), [label](/e/<id>/panel), and <a href="/future-of-ai/e/<id>...">
 const MD_LINK = /\]\(\/e\/([a-z0-9-]+)(?:\/panel)?\/?(?:[?#][^)]*)?\)/g;
 const HTML_LINK = /href="\/e\/([a-z0-9-]+)(?:\/panel)?\/?(?:[?#][^"]*)?"/g;
 

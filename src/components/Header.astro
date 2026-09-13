@@ -1,37 +1,49 @@
 ---
-const onGraph = Astro.url.pathname.startsWith('/graph');
-const onHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html';
+const onGraph = Astro.url.pathname.startsWith("/graph");
+const onHome =
+  Astro.url.pathname === "/" || Astro.url.pathname === "/index.html";
 ---
 
-<div id="header-actions" class="fixed top-3 right-3 sm:top-4 sm:right-4 z-[70] flex items-center gap-1.5">
-  {!onHome && (
-    <a
-      href="/"
-      class="px-3 py-2 rounded-lg text-[13px] font-medium backdrop-blur-md border bg-surface-0/70 border-surface-2 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors"
-    >
-      Read
-    </a>
-  )}
+<div
+  id="header-actions"
+  class="fixed top-3 right-3 sm:top-4 sm:right-4 z-[70] flex items-center gap-1.5"
+>
+  {
+    !onHome && (
+      <a
+        href="/future-of-ai/"
+        class="px-3 py-2 rounded-lg text-[13px] font-medium backdrop-blur-md border bg-surface-0/70 border-surface-2 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors"
+      >
+        Read
+      </a>
+    )
+  }
   <a
-    href="/graph"
+    href="/future-of-ai/graph"
     aria-label="Graph view"
-    aria-current={onGraph ? 'page' : undefined}
+    aria-current={onGraph ? "page" : undefined}
     class:list={[
-      'p-2 rounded-lg backdrop-blur-md border transition-colors',
+      "p-2 rounded-lg backdrop-blur-md border transition-colors",
       onGraph
-        ? 'bg-surface-2/90 border-surface-3 text-white'
-        : 'bg-surface-0/70 border-surface-2 text-zinc-300 hover:text-white hover:border-zinc-500',
+        ? "bg-surface-2/90 border-surface-3 text-white"
+        : "bg-surface-0/70 border-surface-2 text-zinc-300 hover:text-white hover:border-zinc-500",
     ]}
   >
     <!-- Network / graph icon -->
-    <svg class="w-[18px] h-[18px]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
-      <circle cx="5" cy="12" r="2" fill="currentColor" stroke="none" />
-      <circle cx="19" cy="5" r="2" fill="currentColor" stroke="none" />
-      <circle cx="19" cy="19" r="2" fill="currentColor" stroke="none" />
-      <circle cx="12" cy="12" r="2" fill="currentColor" stroke="none" />
-      <line x1="7" y1="12" x2="10" y2="12" stroke-linecap="round" />
-      <line x1="14" y1="12" x2="17.1" y2="6.4" stroke-linecap="round" />
-      <line x1="14" y1="12" x2="17.1" y2="17.6" stroke-linecap="round" />
+    <svg
+      class="w-[18px] h-[18px]"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      stroke-width="1.8"
+    >
+      <circle cx="5" cy="12" r="2" fill="currentColor" stroke="none"></circle>
+      <circle cx="19" cy="5" r="2" fill="currentColor" stroke="none"></circle>
+      <circle cx="19" cy="19" r="2" fill="currentColor" stroke="none"></circle>
+      <circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"></circle>
+      <line x1="7" y1="12" x2="10" y2="12" stroke-linecap="round"></line>
+      <line x1="14" y1="12" x2="17.1" y2="6.4" stroke-linecap="round"></line>
+      <line x1="14" y1="12" x2="17.1" y2="17.6" stroke-linecap="round"></line>
     </svg>
   </a>
   <button
@@ -40,8 +52,17 @@ const onHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html
     aria-label="Search (Ctrl+K)"
     class="p-2 rounded-lg backdrop-blur-md border bg-surface-0/70 border-surface-2 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors"
   >
-    <svg class="w-[18px] h-[18px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+    <svg
+      class="w-[18px] h-[18px]"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
     </svg>
   </button>
   <button
@@ -50,30 +71,68 @@ const onHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html
     aria-label="Toggle light/dark theme"
     class="p-2 rounded-lg backdrop-blur-md border bg-surface-0/70 border-surface-2 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors"
   >
-    <svg id="icon-moon" class="w-[18px] h-[18px] hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+    <svg
+      id="icon-moon"
+      class="w-[18px] h-[18px] hidden"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
     </svg>
-    <svg id="icon-sun" class="w-[18px] h-[18px] hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.36 6.36l-.7-.7M6.34 6.34l-.7-.7m12.02 0l-.7.7M6.34 17.66l-.7.7M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+    <svg
+      id="icon-sun"
+      class="w-[18px] h-[18px] hidden"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.36 6.36l-.7-.7M6.34 6.34l-.7-.7m12.02 0l-.7.7M6.34 17.66l-.7.7M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+      ></path>
     </svg>
   </button>
 </div>
 
-<div id="header-close-panel" class="fixed top-3 right-3 sm:top-4 sm:right-4 z-[80] flex opacity-0 invisible transition-all duration-200">
+<div
+  id="header-close-panel"
+  class="fixed top-3 right-3 sm:top-4 sm:right-4 z-[80] flex opacity-0 invisible transition-all duration-200"
+>
   <button
     type="button"
     id="panel-close-floating"
     aria-label="Close panel"
     class="p-2 rounded-lg backdrop-blur-md border bg-surface-0/70 border-surface-2 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors"
   >
-    <svg class="w-[18px] h-[18px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+    <svg
+      class="w-[18px] h-[18px]"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M6 18L18 6M6 6l12 12"></path>
     </svg>
   </button>
 </div>
 
-<div id="search-modal" class="hidden fixed inset-0 z-[80] bg-black/50 backdrop-blur-sm">
-  <div class="max-w-2xl mx-auto mt-20 bg-surface-1 rounded-xl border border-surface-2 shadow-2xl overflow-hidden">
+<div
+  id="search-modal"
+  class="hidden fixed inset-0 z-[80] bg-black/50 backdrop-blur-sm"
+>
+  <div
+    class="max-w-2xl mx-auto mt-20 bg-surface-1 rounded-xl border border-surface-2 shadow-2xl overflow-hidden"
+  >
     <div class="p-4 border-b border-surface-2">
       <input
         type="text"
@@ -87,7 +146,11 @@ const onHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html
         aria-autocomplete="list"
       />
     </div>
-    <div id="search-results" class="p-2 max-h-96 overflow-y-auto" role="listbox">
+    <div
+      id="search-results"
+      class="p-2 max-h-96 overflow-y-auto"
+      role="listbox"
+    >
       <p class="text-zinc-500 text-sm px-3 py-2">Type to search…</p>
     </div>
     <div class="px-4 py-2 border-t border-surface-2 text-[11px] text-zinc-600">
@@ -98,117 +161,162 @@ const onHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html
 
 <script>
   function paintThemeIcons(theme) {
-    const moon = document.getElementById('icon-moon');
-    const sun = document.getElementById('icon-sun');
-    if (moon) moon.classList.toggle('hidden', theme !== 'dark');
-    if (sun) sun.classList.toggle('hidden', theme !== 'light');
+    const moon = document.getElementById("icon-moon");
+    const sun = document.getElementById("icon-sun");
+    if (moon) moon.classList.toggle("hidden", theme !== "dark");
+    if (sun) sun.classList.toggle("hidden", theme !== "light");
   }
 
   function getStoredTheme() {
     try {
-      const s = localStorage.getItem('tescreal-theme');
-      if (s === 'light' || s === 'dark') return s;
+      const s = localStorage.getItem("tescreal-theme");
+      if (s === "light" || s === "dark") return s;
     } catch (e) {}
-    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    return window.matchMedia("(prefers-color-scheme: light)").matches
+      ? "light"
+      : "dark";
   }
 
   function applyTheme(theme) {
     document.documentElement.dataset.theme = theme;
-    try { localStorage.setItem('tescreal-theme', theme); } catch (e) {}
+    try {
+      localStorage.setItem("tescreal-theme", theme);
+    } catch (e) {}
     paintThemeIcons(theme);
-    window.dispatchEvent(new Event('tescreal-theme'));
+    window.dispatchEvent(new Event("tescreal-theme"));
   }
 
   function initHeader() {
     applyTheme(getStoredTheme());
 
-    document.getElementById('theme-toggle')?.addEventListener('click', function() {
-      const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
-      applyTheme(next);
-    });
+    document
+      .getElementById("theme-toggle")
+      ?.addEventListener("click", function () {
+        const next =
+          document.documentElement.dataset.theme === "light" ? "dark" : "light";
+        applyTheme(next);
+      });
 
     // Search
-    const modal = document.getElementById('search-modal');
-    const input = document.getElementById('search-input');
-    const results = document.getElementById('search-results');
+    const modal = document.getElementById("search-modal");
+    const input = document.getElementById("search-input");
+    const results = document.getElementById("search-results");
     let index = [];
     let loaded = false;
     let activeIdx = -1;
 
     function ensureIndex() {
       if (loaded) return Promise.resolve();
-      return fetch('/data/entities-index.json')
-        .then(function(r) { return r.ok ? r.json() : []; })
-        .then(function(j) { index = j; loaded = true; })
-        .catch(function() {});
+      return fetch("/data/entities-index.json")
+        .then(function (r) {
+          return r.ok ? r.json() : [];
+        })
+        .then(function (j) {
+          index = j;
+          loaded = true;
+        })
+        .catch(function () {});
     }
 
     function resultLinks() {
-      return results ? Array.from(results.querySelectorAll('a[href]')) : [];
+      return results ? Array.from(results.querySelectorAll("a[href]")) : [];
     }
 
     function highlight(links) {
-      links.forEach(function(a, i) {
+      links.forEach(function (a, i) {
         var on = i === activeIdx;
-        a.classList.toggle('bg-surface-2', on);
-        a.setAttribute('aria-selected', on ? 'true' : 'false');
-        if (on) a.scrollIntoView({ block: 'nearest' });
+        a.classList.toggle("bg-surface-2", on);
+        a.setAttribute("aria-selected", on ? "true" : "false");
+        if (on) a.scrollIntoView({ block: "nearest" });
       });
     }
 
     function render(q) {
       activeIdx = -1;
       if (!results) return;
-      var query = (q || '').trim().toLowerCase();
+      var query = (q || "").trim().toLowerCase();
       if (!query) {
-        results.innerHTML = '<p class="text-zinc-500 text-sm px-3 py-2">Type to search...</p>';
+        results.innerHTML =
+          '<p class="text-zinc-500 text-sm px-3 py-2">Type to search...</p>';
         return;
       }
       var hits = index
-        .filter(function(e) {
-          return e.label.toLowerCase().includes(query) ||
+        .filter(function (e) {
+          return (
+            e.label.toLowerCase().includes(query) ||
             e.id.includes(query) ||
-            (e.short && e.short.toLowerCase().includes(query));
+            (e.short && e.short.toLowerCase().includes(query))
+          );
         })
         .slice(0, 8);
       if (!hits.length) {
-        results.innerHTML = '<p class="text-zinc-500 text-sm px-3 py-2">No matches.</p>';
+        results.innerHTML =
+          '<p class="text-zinc-500 text-sm px-3 py-2">No matches.</p>';
         return;
       }
       results.innerHTML = hits
-        .map(function(e) {
-          return '<a href="/e/' + e.id + '" role="option" aria-selected="false" class="flex flex-col gap-0.5 px-3 py-2.5 rounded-lg hover:bg-surface-2 transition-colors">' +
-            '<span class="text-sm text-white font-medium">' + e.label + ' <span class="text-zinc-500 font-normal">· ' + e.type + '</span></span>' +
-            '<span class="text-xs text-zinc-500 line-clamp-1">' + (e.short || '') + '</span></a>';
+        .map(function (e) {
+          return (
+            '<a href="/future-of-ai/e/' +
+            e.id +
+            '" role="option" aria-selected="false" class="flex flex-col gap-0.5 px-3 py-2.5 rounded-lg hover:bg-surface-2 transition-colors">' +
+            '<span class="text-sm text-white font-medium">' +
+            e.label +
+            ' <span class="text-zinc-500 font-normal">· ' +
+            e.type +
+            "</span></span>" +
+            '<span class="text-xs text-zinc-500 line-clamp-1">' +
+            (e.short || "") +
+            "</span></a>"
+          );
         })
-        .join('');
+        .join("");
     }
 
     function openSearch() {
-      ensureIndex().then(function() {
-        modal?.classList.remove('hidden');
-        if (input) { input.value = ''; render(''); input.focus(); }
+      ensureIndex().then(function () {
+        modal?.classList.remove("hidden");
+        if (input) {
+          input.value = "";
+          render("");
+          input.focus();
+        }
       });
     }
 
-    document.getElementById('search-trigger')?.addEventListener('click', openSearch);
-    modal?.addEventListener('click', function(e) { if (e.target === modal) modal.classList.add('hidden'); });
-    input?.addEventListener('input', function(e) { render(e.target.value); });
-    input?.addEventListener('keydown', function(e) {
-      var links = resultLinks();
-      if (e.key === 'ArrowDown') { e.preventDefault(); activeIdx = Math.min(activeIdx + 1, links.length - 1); highlight(links); }
-      else if (e.key === 'ArrowUp') { e.preventDefault(); activeIdx = Math.max(activeIdx - 1, 0); highlight(links); }
-      else if (e.key === 'Enter' && activeIdx >= 0 && links[activeIdx]) { e.preventDefault(); links[activeIdx].click(); }
+    document
+      .getElementById("search-trigger")
+      ?.addEventListener("click", openSearch);
+    modal?.addEventListener("click", function (e) {
+      if (e.target === modal) modal.classList.add("hidden");
     });
-    document.addEventListener('keydown', function(e) {
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+    input?.addEventListener("input", function (e) {
+      render(e.target.value);
+    });
+    input?.addEventListener("keydown", function (e) {
+      var links = resultLinks();
+      if (e.key === "ArrowDown") {
         e.preventDefault();
-        if (modal?.classList.contains('hidden')) openSearch();
-        else modal?.classList.add('hidden');
+        activeIdx = Math.min(activeIdx + 1, links.length - 1);
+        highlight(links);
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        activeIdx = Math.max(activeIdx - 1, 0);
+        highlight(links);
+      } else if (e.key === "Enter" && activeIdx >= 0 && links[activeIdx]) {
+        e.preventDefault();
+        links[activeIdx].click();
+      }
+    });
+    document.addEventListener("keydown", function (e) {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        if (modal?.classList.contains("hidden")) openSearch();
+        else modal?.classList.add("hidden");
       }
     });
   }
 
-  document.addEventListener('astro:page-load', initHeader);
+  document.addEventListener("astro:page-load", initHeader);
   initHeader();
 </script>

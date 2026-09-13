@@ -1,9 +1,12 @@
 ---
-import BaseLayout from '../../../layouts/BaseLayout.astro';
-import EntityDetail from '../../../components/EntityDetail.astro';
-import { loadEntities } from '../../../utils/entity-loader';
-import { getRelationsFromEntity, getRelationsToEntity } from '../../../utils/relation-loader';
-import { getEntityBody } from '../../../utils/body';
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import EntityDetail from "../../../components/EntityDetail.astro";
+import { loadEntities } from "../../../utils/entity-loader";
+import {
+  getRelationsFromEntity,
+  getRelationsToEntity,
+} from "../../../utils/relation-loader";
+import { getEntityBody } from "../../../utils/body";
 
 export async function getStaticPaths() {
   const entities = loadEntities();
@@ -24,7 +27,9 @@ for (const e of loadEntities()) labels[e.id] = e.label;
 <BaseLayout title={entity.label} description={entity.short}>
   <div class="max-w-3xl mx-auto px-4 sm:px-6 py-10" transition:animate="fade">
     <nav class="text-xs text-zinc-500 mb-6 flex items-center gap-1.5">
-      <a href="/" class="hover:text-zinc-300 transition-colors">← Essay</a>
+      <a href="/future-of-ai/" class="hover:text-zinc-300 transition-colors"
+        >← Essay</a
+      >
       <span>/</span>
       <span class="text-zinc-300">{entity.label}</span>
     </nav>
