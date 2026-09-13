@@ -1,0 +1,9 @@
+"e/acc": the counter-movement formulated in 2022 by the physicist [Guillaume Verdon](/e/guillaume-verdon), writing as "Beff Jezos", in explicit opposition to [effective altruism](/e/effective-altruism).
+
+**The idea.** Verdon's critique is that EA optimizes a bad loss function. Its hedonic objective (well-being minus suffering) has "spurious minima": you could end up minimizing shrimp-farm pain or wireheading humanity into bliss while civilization decays. e/acc proposes a thermodynamic measure of progress instead, the capture of energy and the growth of complexity. On the Lex Fridman podcast he put it as physics: "You can believe in gravity or not, but it's not necessarily an option to obey it." [Marc Andreessen](/e/marc-andreessen)'s [Techno-Optimist Manifesto](/e/techno-optimist-manifesto) (October 2023) names Beff Jezos among its patron saints and lists "existential risk" and "tech ethics" among its enemies.
+
+**The question it leaves you with.** Is "the universe favors whatever captures the most energy" a description of physics or a value judgment dressed as one? If it is a value, who chose it?
+
+**Where it goes in the story.** e/acc and [doomerism](/e/doomerism) are the bundle's schism, and they clarify what is really being argued. Both treat AGI as the most important event in history; they differ on the sign. By 2025, acceleration had become US federal policy in all but name ([AI Action Plan](/e/ai-action-plan-2025)).
+
+**Strongest objection / best reply.** Verdon's account of what went wrong with EA is sharp and worth hearing: it became "the perfect cover to acquire tons of power and capital". He concedes the same critique could apply to his own movement. Critics say that is precisely the problem: a movement that presents a contested value as physical necessity leaves nobody any room to decide otherwise.

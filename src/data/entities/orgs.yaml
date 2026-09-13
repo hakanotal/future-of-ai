@@ -17,7 +17,7 @@
   aliases: [CEA]
   strands: [EA, L]
   short: >-
-    Oxford-incorporated umbrella body of the EA movement (2012); received $14M from the FTX Future Fund.
+    Oxford-incorporated umbrella body of the EA movement (2012); TIME reported $13.9M from the FTX Future Fund in 2022.
   dates:
     start: "2012"
   located_in: oxford
@@ -73,7 +73,7 @@
   type: organization
   strands: [L]
   short: >-
-    AI lab seeded by Peter Thiel ($2.25M) out of the Singularity Summit network; Hassabis called the plan a Manhattan Project for AI.
+    AI lab founded in London in 2010 by Hassabis, Legg and Suleyman; Thiel was its first major investor after the 2010 Singularity Summit; bought by Google in 2014.
   dates:
     start: "2010"
   tags: [ai, lab]
@@ -94,7 +94,7 @@
   aliases: [FLI]
   strands: [L]
   short: >-
-    Tech-risk nonprofit Torres once wrote for before turning against longtermism and being pushed out, by their account.
+    Existential-risk nonprofit co-founded in 2014 by Jaan Tallinn, Max Tegmark and others; Musk gave it $10M for AI safety research in 2015. Torres once wrote for it.
   dates:
     start: "2014"
   tags: [existential-risk]
@@ -139,7 +139,7 @@
   type: organization
   strands: []
   short: >-
-    Animation studio behind A Selfish Argument for Making the World a Better Place, made with Our World in Data and Gates Foundation support.
+    Munich animation studio behind 'A Selfish Argument for Making the World a Better Place' (2018); discloses foundation grants, including from the Gates Foundation, on some videos.
   tags: [media, growth]
   status: published
 
@@ -148,12 +148,12 @@
   type: organization
   strands: []
   short: >-
-    Philanthropy that supported the Kurzgesagt egoistic-altruism explainer — worth noting when asking who funds which stories.
+    The largest private foundation in global health; it discloses funding for a number of Kurzgesagt explainers, which is worth knowing when asking who funds which stories.
   dates:
     start: "2000"
   tags: [philanthropy, media-funding]
   status: published
-  sources: ["Video credits — verify"]
+  sources: ["[reported] Kurzgesagt funding disclosures (Wikipedia: Kurzgesagt)"]
 
 - id: neuralink
   label: Neuralink
@@ -194,10 +194,10 @@
   type: organization
   strands: [R]
   short: >-
-    Violent cult-like offshoot from rationalist circles, led by Ziz LaSota and linked to six deaths in 2022–2025.
+    Small group around Ziz LaSota that grew out of Bay Area rationalist circles and is linked to six deaths in California, Pennsylvania and Vermont (2022–2025); prosecutions ongoing in 2026.
   tags: [rationalism, violence]
   status: published
-  sources: ["Guardian (Mar 2025), PBS — verify case status (backlog A17)"]
+  sources: ["[reported] PBS NewsHour timeline (2025); WHYY (2026)"]
 
 - id: evidence-action
   label: Evidence Action
@@ -230,4 +230,211 @@
   dates:
     start: "1998"
   tags: [ai, ethics]
+  status: published
+
+# ---------- v2 expansion ----------
+
+- id: extropy-institute
+  label: Extropy Institute
+  type: organization
+  strands: [E]
+  short: >-
+    Max More and Tom Morrow's hub (1992–2006) for extropianism: life extension, uploading, space, and an Extropians mailing list where Bostrom, Hanson and a teenage Yudkowsky posted.
+  dates:
+    start: "1992"
+    end: "2006"
+  tags: [extropianism]
+  status: published
+
+- id: alcor
+  label: Alcor Life Extension Foundation
+  type: organization
+  aliases: [Alcor]
+  strands: [T, E]
+  short: >-
+    Arizona cryonics nonprofit that freezes bodies and heads in liquid nitrogen for hoped-for revival; Max More was its CEO from 2011.
+  dates:
+    start: "1972"
+  tags: [cryonics]
+  status: published
+
+- id: singularity-university
+  label: Singularity University
+  type: organization
+  strands: [S]
+  short: >-
+    Silicon Valley education company co-founded in 2008 by Ray Kurzweil and Peter Diamandis; later acquired the Singularity Summit brand.
+  dates:
+    start: "2008"
+  tags: [singularity]
+  status: published
+
+- id: global-priorities-institute
+  label: Global Priorities Institute
+  type: organization
+  aliases: [GPI]
+  strands: [L]
+  short: >-
+    Oxford research institute (2018) where Greaves and MacAskill developed academic longtermism, including The Case for Strong Longtermism.
+  dates:
+    start: "2018"
+  located_in: oxford
+  tags: [longtermism, research]
+  status: published
+
+- id: cser
+  label: Centre for the Study of Existential Risk
+  type: organization
+  aliases: [CSER]
+  strands: [L]
+  short: >-
+    Cambridge research centre (2012) co-founded by Jaan Tallinn, Huw Price and Martin Rees to study extinction-level risks.
+  dates:
+    start: "2012"
+  tags: [existential-risk, research]
+  status: published
+
+- id: longview-philanthropy
+  label: Longview Philanthropy
+  type: organization
+  strands: [L]
+  short: >-
+    Longtermist philanthropy advisor with MacAskill on its advisory board; TIME reported it received $17.9M from the FTX Future Fund.
+  tags: [longtermism, philanthropy]
+  status: published
+
+- id: safe-superintelligence
+  label: Safe Superintelligence Inc.
+  type: organization
+  aliases: [SSI]
+  strands: []
+  short: >-
+    Lab founded by Ilya Sutskever in 2024 after leaving OpenAI, with the single stated goal of building safe superintelligence.
+  dates:
+    start: "2024"
+  tags: [ai, lab]
+  status: published
+
+- id: ai-now-institute
+  label: AI Now Institute
+  type: organization
+  strands: []
+  short: >-
+    Research institute (2017) on the present-day social impacts of AI, often cited as an example of the modestly funded AI-ethics side of the field.
+  dates:
+    start: "2017"
+  tags: [ai-ethics]
+  status: published
+
+- id: amazon
+  label: Amazon
+  type: organization
+  strands: []
+  short: >-
+    Anthropic's largest corporate backer, with billions committed from 2023; alongside Google, its money raises questions about how independent a safety lab can be.
+  dates:
+    start: "1994"
+  tags: [ai, anthropic]
+  status: published
+
+- id: against-malaria-foundation
+  label: Against Malaria Foundation
+  type: organization
+  strands: []
+  short: >-
+    UK charity that distributes insecticide-treated bed nets; for years GiveWell's flagship top charity and the emblem of measurable EA giving.
+  dates:
+    start: "2004"
+  tags: [global-health, charity]
+  status: published
+
+- id: andreessen-horowitz
+  label: Andreessen Horowitz
+  type: organization
+  aliases: [a16z]
+  strands: []
+  short: >-
+    Marc Andreessen's venture firm, publisher of The Techno-Optimist Manifesto and a leading lobbying voice against AI regulation.
+  dates:
+    start: "2009"
+  tags: [venture-capital, accelerationism]
+  status: published
+
+- id: way-of-the-future
+  label: Way of the Future
+  type: organization
+  strands: [T]
+  short: >-
+    Church registered by Anthony Levandowski around 2015 to promote "the realization of a Godhead based on Artificial Intelligence"; dissolved around 2021, reportedly revived in 2023.
+  dates:
+    start: "2015"
+  tags: [religion, ai]
+  status: published
+  sources: ["[reported] Wired (2017); IRS filings"]
+
+- id: spacex
+  label: SpaceX
+  type: organization
+  strands: [C]
+  short: >-
+    Musk's rocket company, founded in 2002 with the stated goal of making humanity multiplanetary, starting with Mars.
+  dates:
+    start: "2002"
+  tags: [space, cosmism]
+  status: published
+
+- id: us-ai-safety-institute
+  label: US AI Safety Institute
+  type: organization
+  aliases: [CAISI, Center for AI Standards and Innovation]
+  strands: []
+  short: >-
+    NIST body created in 2023, where Paul Christiano led AI safety from April 2024; renamed the Center for AI Standards and Innovation in 2025.
+  dates:
+    start: "2023"
+  tags: [policy, ai-safety]
+  status: published
+
+- id: uk-ai-security-institute
+  label: UK AI Security Institute
+  type: organization
+  strands: []
+  short: >-
+    UK government body launched as the AI Safety Institute at Bletchley in 2023 and renamed AI Security Institute in February 2025.
+  dates:
+    start: "2023"
+  tags: [policy, ai-safety]
+  status: published
+
+- id: sama
+  label: Sama
+  type: organization
+  strands: []
+  short: >-
+    Outsourcing firm whose Kenyan workers labeled toxic content for OpenAI for under $2 an hour, TIME reported in 2023: the hidden labor under "safe" AI.
+  tags: [labor, ai]
+  status: published
+  sources: ["[reported] TIME (Billy Perrigo), 18 Jan 2023"]
+
+- id: cset
+  label: Center for Security and Emerging Technology
+  type: organization
+  aliases: [CSET]
+  strands: []
+  short: >-
+    Georgetown think tank launched in January 2019 with $55M from Open Philanthropy and led first by Jason Matheny: EA money building Washington's AI-security expertise.
+  dates:
+    start: "2019"
+  tags: [policy, security]
+  status: published
+  sources: ["[primary] Open Philanthropy grant page; Georgetown announcement, Jan 2019"]
+
+- id: us-department-of-defense
+  label: US Department of Defense
+  type: organization
+  aliases: [Pentagon, Department of War]
+  strands: []
+  short: >-
+    The Pentagon, which in 2026 demanded unrestricted "all lawful purposes" access to frontier AI and blacklisted Anthropic when it refused.
+  tags: [security, government]
   status: published

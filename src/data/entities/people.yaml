@@ -88,12 +88,12 @@
   type: person
   strands: [EA]
   short: >-
-    CEO of Alameda Research under Bankman-Fried; cooperating witness whose testimony showed customer funds were commingled at his direction.
+    CEO of Alameda Research under Bankman-Fried; star cooperating witness who testified he directed the use of customer funds; sentenced to two years in 2024.
   dates:
     start: "1994"
   tags: [crypto, fraud, trial]
   status: published
-  sources: ["US v. Bankman-Fried trial record — verify transcript (backlog B16)"]
+  sources: ["[primary] US v. Bankman-Fried (SDNY) trial record, Oct 2023"]
 
 - id: changpeng-zhao
   label: Changpeng Zhao
@@ -139,7 +139,7 @@
   type: person
   strands: [EA]
   short: >-
-    CEO of the Centre for Effective Altruism who acknowledged in March 2025 that the movement had lost momentum and sat in a defensive posture; departed Anthropic's LTBT in January 2026.
+    CEO of the Centre for Effective Altruism who wrote in March 2025 that EA had been "in a defensive crouch" and its momentum had stalled; left Anthropic's LTBT in January 2026.
   tags: [effective-altruism, governance]
   status: published
 
@@ -227,7 +227,7 @@
   type: person
   strands: [E, T]
   short: >-
-    Philosopher who founded extropianism in the 1980s, the first organized transhumanist movement built around fighting entropy and death.
+    Philosopher who coined extropianism in 1988, co-founded the Extropy Institute (1992) and later ran Alcor, the cryonics organization (2011–2020).
   dates:
     start: "1964"
   tags: [transhumanism, extropianism]
@@ -238,7 +238,7 @@
   type: person
   strands: [S, T]
   short: >-
-    Inventor and futurist who popularized the technological singularity and the intelligence-explosion framing of AI progress.
+    Inventor and futurist whose The Singularity Is Near (2005) made the technological singularity a mainstream idea; co-founded Singularity University and joined Google in 2012.
   dates:
     start: "1948"
   tags: [singularity, futurism]
@@ -271,7 +271,7 @@
   type: person
   strands: [R, L]
   short: >-
-    Investor who funded the Singularity Institute, the Singularity Summit, and seeded DeepMind with $2.25 million.
+    PayPal and Palantir co-founder who funded the Singularity Institute and Singularity Summit and was reportedly DeepMind's first major investor (about $2.25M).
   dates:
     start: "1967"
   tags: [finance, ai]
@@ -344,7 +344,7 @@
   type: person
   strands: [L]
   short: >-
-    DeepMind co-founder who described his ten-year plan as a Manhattan Project for AI.
+    DeepMind co-founder and CEO; won the 2024 Nobel Prize in Chemistry for AlphaFold; has been reported comparing the AGI effort to the Manhattan Project.
   dates:
     start: "1976"
   tags: [ai, deepmind]
@@ -377,16 +377,6 @@
   tags: [critic]
   status: published
   sources: ["TIME (Charlotte Alter, Feb 2023) — verify (backlog A18)"]
-
-- id: rochelle-shen
-  label: Rochelle Shen
-  type: person
-  strands: []
-  short: >-
-    Event organizer quoted in reporting on misconduct in EA and rationalist spaces.
-  tags: [critic]
-  status: published
-  sources: ["TIME / Bloomberg reporting — verify (backlog A18)"]
 
 - id: ziz-lasota
   label: Ziz LaSota
@@ -668,21 +658,21 @@
   type: person
   strands: []
   short: >-
-    Financier reported to have planned seeding the human race with his DNA and using cryonics; cited as attracted to the extropian milieu.
+    Financier who, the New York Times reported in 2019, hoped to seed the human race with his DNA and was drawn to transhumanist and cryonics circles.
   dates:
     start: "1953"
     end: "2019"
   tags: [extropianism]
   status: published
-  sources: ["NYT reporting (2019) — verify before publication; lurid detail, drop if unsourced (backlog D6)"]
+  sources: ["[reported] New York Times, 31 July 2019"]
 
 - id: elizabeth-hupfer
   label: Elizabeth Hupfer
   type: person
-  strands: [L]
+  strands: []
   short: >-
     Philosopher who formalised the far-future priority objection: longtermist budgets crowd out today's emergencies.
-  tags: [philosopher, longtermism]
+  tags: [philosopher, critic]
   status: published
 
 - id: bv-hyde
@@ -694,3 +684,250 @@
   tags: [critic]
   status: published
   sources: ["Hyde — verify primary"]
+
+# ---------- v2 expansion ----------
+
+- id: nikolai-fedorov
+  label: Nikolai Fedorov
+  type: person
+  strands: [C]
+  short: >-
+    Moscow librarian and philosopher (1829–1903) of Russian Cosmism, who taught that humanity's "common task" was to conquer death, resurrect every ancestor and settle the cosmos.
+  dates:
+    start: "1829"
+    end: "1903"
+  tags: [cosmism, philosopher]
+  status: published
+
+- id: tara-mac-aulay
+  label: Tara Mac Aulay
+  type: person
+  strands: [EA]
+  short: >-
+    Alameda Research co-founder and former CEA executive who left in the 2018 split and, TIME reported, warned EA leaders that Bankman-Fried was dishonest and negligent.
+  tags: [effective-altruism, ftx, warnings]
+  status: published
+  sources: ["[reported] TIME (Charlotte Alter), 15 Mar 2023"]
+
+- id: naia-bouscal
+  label: Naia Bouscal
+  type: person
+  strands: []
+  short: >-
+    Former Alameda engineer who told TIME that MacAskill "basically threatened" those raising concerns about Bankman-Fried in 2018.
+  tags: [ftx, warnings]
+  status: published
+  sources: ["[reported] TIME (Charlotte Alter), 15 Mar 2023"]
+
+- id: charlotte-alter
+  label: Charlotte Alter
+  type: person
+  strands: []
+  short: >-
+    TIME correspondent whose 2023 investigations reported sexual misconduct in EA circles (February) and the ignored Alameda warnings (March).
+  tags: [journalism]
+  status: published
+
+- id: john-j-ray-iii
+  label: John J. Ray III
+  type: person
+  strands: []
+  short: >-
+    Restructuring lawyer who took over FTX in bankruptcy and testified he had never seen "such a complete failure of corporate controls", even compared with Enron.
+  tags: [ftx, bankruptcy]
+  status: published
+
+- id: michael-lewis
+  label: Michael Lewis
+  type: person
+  strands: []
+  short: >-
+    Author of Moneyball and The Big Short, whose 2023 book Going Infinite told Bankman-Fried's story with more sympathy than most readers thought it deserved.
+  dates:
+    start: "1960"
+  tags: [journalism, ftx]
+  status: published
+
+- id: greg-brockman
+  label: Greg Brockman
+  type: person
+  strands: []
+  short: >-
+    OpenAI co-founder and president, removed as board chair on 17 November 2023; he quit in protest and returned with Altman.
+  tags: [ai, openai]
+  status: published
+
+- id: emmett-shear
+  label: Emmett Shear
+  type: person
+  strands: []
+  short: >-
+    Twitch co-founder who served about three days as OpenAI's interim CEO during the November 2023 crisis.
+  tags: [ai, governance]
+  status: published
+
+- id: jan-leike
+  label: Jan Leike
+  type: person
+  strands: []
+  short: >-
+    Alignment researcher who co-led OpenAI's Superalignment team, resigned in May 2024 saying "safety culture and processes have taken a backseat to shiny products", and joined Anthropic.
+  tags: [ai-safety, alignment]
+  status: published
+
+- id: shane-legg
+  label: Shane Legg
+  type: person
+  strands: []
+  short: >-
+    DeepMind co-founder and chief AGI scientist who helped popularize the term "AGI" and spoke at the 2010 Singularity Summit.
+  tags: [ai, deepmind]
+  status: published
+
+- id: mustafa-suleyman
+  label: Mustafa Suleyman
+  type: person
+  strands: []
+  short: >-
+    DeepMind co-founder who later co-founded Inflection AI and became CEO of Microsoft AI in 2024.
+  dates:
+    start: "1984"
+  tags: [ai, deepmind]
+  status: published
+
+- id: daniel-kokotajlo
+  label: Daniel Kokotajlo
+  type: person
+  strands: []
+  short: >-
+    Former OpenAI governance researcher who left in 2024 over safety concerns and led the AI 2027 scenario.
+  tags: [ai, forecasting]
+  status: published
+
+- id: richard-sutton
+  label: Richard Sutton
+  type: person
+  strands: []
+  short: >-
+    Reinforcement-learning pioneer (2024 Turing Award with Andrew Barto, announced March 2025) who argues that succession to AI is a natural, even welcome, stage of evolution.
+  tags: [ai, succession]
+  status: published
+
+- id: emily-bender
+  label: Emily M. Bender
+  type: person
+  strands: []
+  short: >-
+    University of Washington linguist and lead author of On the Dangers of Stochastic Parrots; a leading critic of AI hype.
+  tags: [ai-ethics, linguistics]
+  status: published
+
+- id: margaret-mitchell
+  label: Margaret Mitchell
+  type: person
+  strands: []
+  short: >-
+    Co-lead of Google's Ethical AI team with Gebru and Stochastic Parrots co-author (listed as "Shmargaret Shmitchell"); fired by Google in February 2021.
+  tags: [ai-ethics]
+  status: published
+
+- id: karen-hao
+  label: Karen Hao
+  type: person
+  strands: []
+  short: >-
+    Journalist whose Empire of AI (2025) reframes the AGI race as empire-building, from OpenAI's boardroom to Kenyan data workers and Chilean water fights.
+  tags: [journalism, critic]
+  status: published
+
+- id: david-noble
+  label: David F. Noble
+  type: person
+  strands: []
+  short: >-
+    Historian of technology (1945–2010) whose The Religion of Technology traced Western engineering's roots in the dream of redemption.
+  dates:
+    start: "1945"
+    end: "2010"
+  tags: [historian, religion]
+  status: published
+
+- id: robert-geraci
+  label: Robert M. Geraci
+  type: person
+  strands: []
+  short: >-
+    Scholar of religion whose Apocalyptic AI (2010) shows AI futurism reproducing apocalyptic theology.
+  tags: [religion, scholar]
+  status: published
+
+- id: beth-singler
+  label: Beth Singler
+  type: person
+  strands: []
+  short: >-
+    Anthropologist of AI and religion who studies how AI stories take on religious forms: blessing, apocalypse, deification.
+  tags: [religion, anthropologist]
+  status: published
+
+- id: margaret-atwood
+  label: Margaret Atwood
+  type: person
+  strands: []
+  short: >-
+    Novelist who coined "ustopia", the utopia inside every dystopia and vice versa, in In Other Worlds (2011).
+  dates:
+    start: "1939"
+  tags: [author, ustopia]
+  status: published
+
+- id: james-baldwin
+  label: James Baldwin
+  type: person
+  strands: []
+  short: >-
+    American writer (1924–1987) whose The Fire Next Time warns that "an invented past can never be used".
+  dates:
+    start: "1924"
+    end: "1987"
+  tags: [author]
+  status: published
+
+- id: kelly-hayes
+  label: Kelly Hayes
+  type: person
+  strands: []
+  short: >-
+    Organizer and host of the Movement Memos podcast, whose episodes with Torres describe extropianism as pro-science super-optimism at war with entropy.
+  tags: [organizer, critic]
+  status: published
+
+- id: jonathan-anomaly
+  label: Jonathan Anomaly
+  type: person
+  strands: []
+  short: >-
+    Philosopher whose "Defending Eugenics" (2018) argues for voluntary embryo selection as distinct from coercive state eugenics.
+  tags: [philosopher, eugenics]
+  status: published
+
+- id: ozy-brennan
+  label: Ozy Brennan
+  type: person
+  strands: []
+  short: >-
+    Writer who argued in Asterisk magazine that TESCREAL flattens different philosophies into a monolith and decontextualizes their ideas.
+  tags: [critic-of-tescreal]
+  status: published
+  sources: ["[reported] Asterisk magazine (via Wikipedia: TESCREAL)"]
+
+- id: max-tegmark
+  label: Max Tegmark
+  type: person
+  strands: []
+  short: >-
+    MIT physicist and co-founder of the Future of Life Institute, which organized the 2023 open letter calling for a six-month pause on giant AI experiments.
+  dates:
+    start: "1967"
+  tags: [ai-safety, existential-risk]
+  status: published

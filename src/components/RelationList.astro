@@ -1,4 +1,8 @@
 ---
+import fs from 'node:fs';
+import path from 'node:path';
+import yaml from 'yaml';
+
 interface Relation {
   from: string;
   to: string;
@@ -19,6 +23,16 @@ interface Props {
 const { relations, entityLabels, direction, title } = Astro.props;
 
 if (relations.length === 0) return null;
+
+// Incoming edges read from the other entity's side, so use the inverse label
+// ("coined" → "coined by") from relation-types.yaml.
+const relTypes = yaml.parse(
+  fs.readFileSync(path.join(process.cwd(), 'src', 'data', 'relation-types.yaml'), 'utf-8'),
+) as Record<string, { id: string; inverse: string }[]>;
+const inverseOf: Record<string, string> = {};
+for (const types of Object.values(relTypes)) for (const t of types) inverseOf[t.id] = t.inverse;
+const labelFor = (type: string) =>
+  (direction === 'incoming' ? inverseOf[type] ?? type : type).replace(/_/g, ' ');
 ---
 
 <section class="mt-6">
@@ -33,12 +47,15 @@ if (relations.length === 0) return null;
             href={`/future-of-ai/e/${otherId}`}
             class="group flex items-baseline gap-2 text-sm rounded px-2 py-1.5 -mx-2 hover:bg-surface-2 transition-colors"
           >
-            <span class="text-zinc-500 text-xs font-mono shrink-0">{rel.type.replace(/_/g, ' ')}</span>
+            <span class="text-zinc-500 text-xs font-mono shrink-0">{labelFor(rel.type)}</span>
             <span class="text-zinc-200 group-hover:text-blue-400 transition-colors">{otherLabel}</span>
             {rel.amount && <span class="text-emerald-400/90 text-xs font-mono shrink-0">{rel.amount}</span>}
             {rel.start && <span class="text-zinc-600 text-xs ml-auto shrink-0">{rel.start}</span>}
           </a>
           {rel.note && <p class="text-zinc-500 text-xs px-2 mt-0.5">{rel.note}</p>}
+          {rel.sources && rel.sources.length > 0 && (
+            <p class="text-zinc-600 text-[11px] px-2 mt-0.5 italic">Source: {rel.sources.join('; ')}</p>
+          )}
         </li>
       );
     })}

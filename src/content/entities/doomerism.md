@@ -1,0 +1,9 @@
+The view that building superintelligence under anything like current conditions will, by default, kill everyone, so development must stop.
+
+**The idea.** Its clearest statement is [Eliezer Yudkowsky](/e/eliezer-yudkowsky)'s March 2023 TIME op-ed, written in response to the [pause letter](/e/fli-pause-letter): "the most likely result of building a superhumanly smart AI, under anything remotely like the current circumstances, is that literally everyone on Earth will die." He called for an international moratorium on large training runs, enforced if necessary by destroying a rogue data centre. The book-length case is [If Anyone Builds It, Everyone Dies](/e/if-anyone-builds-it-everyone-dies) (2025), with [Nate Soares](/e/nate-soares). It rests on the [intelligence explosion](/e/intelligence-explosion) and [instrumental convergence](/e/instrumental-convergence): no second try, and danger without malice.
+
+**The question it leaves you with.** If you became convinced that a technology would very probably end humanity, what would you be willing to support to stop it? And if you are *not* convinced, what evidence would change your mind before it was too late to matter?
+
+**Where it goes in the story.** Doomerism is one pole of the bundle's great schism; [effective accelerationism](/e/effective-accelerationism) is the other. [Buterin](/e/vitalik-buterin)'s [d/acc](/e/d-acc) tries to find a middle. The irony critics note: the doomers' warnings helped recruit the founders of the labs they now want shut down.
+
+**Strongest objection / best reply.** Critics call it unfalsifiable prophecy that distracts from present harms and hands power to whoever claims to prevent the apocalypse. Doomers reply that "we've never been wiped out before" is exactly what every extinct species could have said, and that their call is for less building, not more power.

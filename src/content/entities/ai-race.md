@@ -1,0 +1,9 @@
+The competition among labs and states to build artificial general intelligence first. On every side it is justified by the same sentence: *if we don't build it, someone less careful will.*
+
+**The idea.** The race has several layers. Labs compete for talent, chips and customers. Investors compete for returns; [Microsoft](/e/microsoft), [Amazon](/e/amazon) and [Google](/e/google) have committed tens of billions. States compete for dominance: the White House's July 2025 plan is literally titled [Winning the Race](/e/ai-action-plan-2025).
+
+**The question it leaves you with.** [Timnit Gebru](/e/timnit-gebru) points to a paradox: the fear that AI could destroy humanity became the reason to build it faster. [Sam Altman](/e/sam-altman) wrote in 2023 that [Eliezer Yudkowsky](/e/eliezer-yudkowsky), the field's loudest doomer, had "done more to accelerate AGI than anyone else". If warning about a danger is what gets it built, what would a *useful* warning look like?
+
+**Where it goes in the story.** Every lab in this story was founded on race logic: [DeepMind](/e/deepmind) to "solve intelligence", [OpenAI](/e/openai) to make sure AGI "benefits all of humanity" rather than one company, [Anthropic](/e/anthropic) to put a safety-focused lab at the frontier. The FLI's 2023 [pause letter](/e/fli-pause-letter) asked for six months; no lab paused. By 2025 the race had become official policy, the [federal preemption order](/e/state-preemption-order) framed state AI laws as a threat to "global AI dominance", and in Paris the US and UK declined to sign a declaration on inclusive, sustainable AI.
+
+**Strongest objection / best reply.** Racers argue that unilateral restraint only hands the lead to less scrupulous actors, and that a democratic country's lead is itself a safety measure. Critics reply that a race nobody is allowed to stop is not a strategy but a trap, and that "someone less careful" is the argument every racer uses about every other racer.

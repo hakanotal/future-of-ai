@@ -1,0 +1,5 @@
+[Toby Ord](/e/toby-ord)'s 2020 book, *The Precipice: Existential Risk and the Future of Humanity*, and the source of the most quoted number in the field: about a 1-in-6 chance of [existential catastrophe](/e/existential-risk) this century.
+
+The number is broken down, and the breakdown is the argument. Natural risks such as asteroids, supervolcanoes and naturally arising pandemics are small. The big ones are ours: unaligned AI about 1 in 10, engineered pandemics about 1 in 30, nuclear war and climate change about 1 in 1,000 each. Our power, Ord argues, has outrun our wisdom. Humanity is on a narrow ledge, and the task is to reach [existential security](/e/existential-security), then take time for a [Long Reflection](/e/long-reflection) before making irreversible choices.
+
+**A question to take away:** "1 in 6" is Russian-roulette odds. What would it mean for a number like that to be *wrong*, and who could ever check? Ord offers his estimates so they can be argued with, which is more than most forecasts do. It is still worth noticing how quickly a guess becomes a budget.

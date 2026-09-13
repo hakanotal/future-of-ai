@@ -51,9 +51,9 @@
 - id: sam-bankman-fried
   label: Sam Bankman-Fried
   type: person
-  strands: [EA, L]
+  strands: [EA]
   short: >-
-    Founder of Alameda Research and FTX, once a poster child of effective altruism's "earning to give" strategy, later convicted of fraud.
+    Founder of Alameda Research and FTX, once a poster child of effective altruism's "earning to give" strategy, convicted on seven counts in November 2023 and sentenced to 25 years.
   dates:
     start: "1992"
   tags: [finance, crypto, fraud, effective-altruism]
@@ -85,20 +85,18 @@
 - id: timnit-gebru
   label: Timnit Gebru
   type: person
-  strands: [R]
+  strands: []
   short: >-
-    Computer scientist who co-authored "On the Dangers of Stochastic Parrots" and founded the Distributed AI Research Institute (DAIR), coining the term TESCREAL.
-  dates:
-    start: "1983"
+    Computer scientist who co-authored "On the Dangers of Stochastic Parrots", was forced out of Google in December 2020, founded DAIR in 2021, and co-coined TESCREAL with Émile P. Torres.
   tags: [ai-ethics, researcher, critic]
   status: published
 
 - id: emile-torres
   label: Émile P. Torres
   type: person
-  strands: [R]
+  strands: []
   short: >-
-    Philosopher and former transhumanist who co-authored the TESCREAL paper with Gebru, offering a critical analysis of Silicon Valley's ideological foundations.
+    Philosopher and historian of human extinction (they/them) who spent a decade inside transhumanism, longtermism and EA before turning critic and co-authoring the TESCREAL paper with Gebru.
   tags: [philosopher, critic, transhumanism]
   status: published
 
@@ -144,7 +142,7 @@
   aliases: [Coefficient Giving]
   strands: [EA]
   short: >-
-    Major EA-aligned grantmaker that has directed over $4 billion in grants, renamed Coefficient Giving in 2025.
+    Grantmaker funded chiefly by Good Ventures (Moskovitz and Tuna) that has directed over $4 billion across global health, animal welfare and catastrophic risk; renamed Coefficient Giving on 18 November 2025.
   dates:
     start: "2014"
   tags: [grantmaking, effective-altruism]
@@ -180,7 +178,7 @@
   type: organization
   strands: [R, L]
   short: >-
-    AI safety research organization founded by Eliezer Yudkowsky, originally as the Singularity Institute.
+    Berkeley AI safety nonprofit founded by Eliezer Yudkowsky in 2000 as the Singularity Institute; renamed in 2013 and, by the 2020s, arguing for a halt to frontier AI.
   dates:
     start: "2000"
   tags: [ai-safety, research]
@@ -191,7 +189,7 @@
   type: organization
   strands: [R, L]
   short: >-
-    Original name of MIRI, founded to study the singularity and AI risks.
+    Original name (2000–2013) of MIRI, bankrolled by extropian entrepreneurs to build a friendly superintelligence, then repurposed to warn against building one.
   dates:
     start: "2000"
     end: "2013"
@@ -214,7 +212,7 @@
   type: organization
   strands: [EA, L]
   short: >-
-    AI safety company founded in 2021 by former OpenAI researchers, with significant FTX funding.
+    AI company founded in 2021 by seven former OpenAI staff as a public benefit corporation; took $500M from FTX in 2022 and is governed partly through a Long-Term Benefit Trust.
   dates:
     start: "2021"
   tags: [ai, safety, company]
@@ -302,9 +300,9 @@
   type: concept
   strands: [E]
   short: >-
-    The first organized transhumanist movement, founded in the 1980s, advocating for fighting entropy through technology.
+    The first organized transhumanist movement, launched by Max More in 1988, which treated death as a problem to be solved and entropy as the enemy.
   dates:
-    start: "1980s"
+    start: "1988"
   tags: [philosophy, transhumanism, history]
   status: published
 
@@ -313,7 +311,7 @@
   type: concept
   strands: [S]
   short: >-
-    The belief in an approaching technological singularity, popularized by Ray Kurzweil.
+    The belief that a technological singularity, driven by self-improving AI, is approaching and should be welcomed; popularized by Ray Kurzweil.
   dates:
     start: "2000s"
   tags: [philosophy, singularity, technology]
@@ -324,7 +322,7 @@
   type: concept
   strands: [C]
   short: >-
-    A philosophy holding that humanity's destiny is to spread through the universe and radically transform it.
+    The belief that humanity's destiny is to spread through the cosmos and remake it, from Nikolai Fedorov's 19th-century dream of resurrecting the dead to Ben Goertzel's 2010 manifesto.
   tags: [philosophy, space, futurism]
   status: published
 
@@ -375,7 +373,7 @@
   type: work
   strands: [L]
   short: >-
-    Toby Ord's 2020 book calculating humanity's existential risks and arguing for longtermist priorities.
+    Toby Ord's 2020 book estimating a roughly 1-in-6 chance of existential catastrophe this century, with unaligned AI (about 1 in 10) the largest single risk.
   dates:
     start: "2020"
   tags: [book, existential-risk, longtermism]
@@ -417,9 +415,9 @@
 - id: tescreal-bundle-paper
   label: The TESCREAL Bundle
   type: work
-  strands: [R]
+  strands: []
   short: >-
-    The 2024 paper by Gebru and Torres mapping the interconnected ideologies of Silicon Valley.
+    Gebru and Torres's paper (First Monday, April 2024) arguing that seven Silicon Valley ideologies share a genealogy rooted in twentieth-century eugenics and a utopian hope in AGI.
   dates:
     start: "2024"
   tags: [paper, critique, ideology]

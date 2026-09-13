@@ -1,0 +1,7 @@
+[William MacAskill](/e/william-macaskill)'s 2022 bestseller, published at the height of FTX's fortunes, which carried [longtermism](/e/longtermism) from Oxford seminars to airport bookshops. [Elon Musk](/e/elon-musk) called it "a close match for my philosophy".
+
+Its argument has three steps: future people matter; there could be vastly many of them; and we can shape their lives. From that follow its key ideas: [value lock-in](/e/value-lock-in), the contingency of moral progress, and the stakes of population ethics (the [repugnant conclusion](/e/repugnant-conclusion)).
+
+Critics focus on what the frame leaves out. MacAskill defines EA as ["tentatively welfarist"](/e/welfarism): about well-being, "not, say, protecting biodiversity or conserving natural beauty for their own sakes". The book entertains the possibility that wild nature is net negative ([wild-animal suffering](/e/wild-animal-suffering)). In its worst-case climate scenario of 7 to 9.5 °C of warming, MacAskill finds it "hard to see how even this could lead directly to civilizational collapse", and he argues for leaving accessible fossil fuels for a possible re-industrialization. It proposes [charter cities](/e/charter-cities) as moral experiments, and critics note that capitalism and imperialism are barely examined.
+
+**A question to take away:** a book about what we owe the future is also, necessarily, a choice about which futures to count. Which ones would you add?

@@ -1,1166 +1,661 @@
-# TESCREAL Wiki - Relations
-# Each relation is stored once; inverse labels come from relation-types.yaml
-
-# Singer's influence on EA
-- from: peter-singer
-  to: drowning-child
-  type: coined
-  start: "1972"
-  sources: ["Philosophy & Public Affairs 1:3 (1972)"]
-
-- from: peter-singer
-  to: effective-altruism
-  type: precursor_to
-  note: >-
-    Singer's drowning child argument laid the philosophical foundation for EA
-  sources: ["Philosophy & Public Affairs 1:3 (1972)"]
-
-# Ord's contributions
-- from: toby-ord
-  to: give-what-we-can
-  type: founded
-  start: "2009"
-
-- from: toby-ord
-  to: the-precipice
-  type: authored
-  start: "2020"
-
-- from: toby-ord
-  to: future-of-humanity-institute
-  type: affiliated_with
-
-# MacAskill's contributions
-- from: william-macaskill
-  to: give-what-we-can
-  type: founded
-  start: "2009"
-
-- from: william-macaskill
-  to: eighty-thousand-hours
-  type: founded
-  start: "2011"
-
-- from: william-macaskill
-  to: what-we-owe-the-future
-  type: authored
-  start: "2022"
-
-- from: william-macaskill
-  to: longtermism
-  type: coined
-  start: "2017"
-  note: >-
-    Coined the term with Ord around 2017
-
-# SBF and EA
-- from: sam-bankman-fried
-  to: effective-altruism
-  type: influenced
-  note: >-
-    Adopted EA philosophy at MIT after hearing MacAskill speak
-
-- from: sam-bankman-fried
-  to: william-macaskill
-  type: influenced
-  note: >-
-    MacAskill's "earning to give" argument redirected SBF toward finance
-
-- from: sam-bankman-fried
-  to: ftx
-  type: founded
-  start: "2019"
-
-- from: sam-bankman-fried
-  to: machine-intelligence-research-institute
-  type: funds
-  note: >-
-    Through FTX Future Fund grants
-  sources: ["FTX Future Fund grants database (archived; verify against bankruptcy filings — see research backlog A1)"]
-
-# Bostrom's work
-- from: nick-bostrom
-  to: future-of-humanity-institute
-  type: founded
-  start: "2005"
-
-- from: nick-bostrom
-  to: superintelligence
-  type: authored
-  start: "2014"
-
-- from: nick-bostrom
-  to: longtermism
-  type: precursor_to
-
-# Yudkowsky's work
-- from: eliezer-yudkowsky
-  to: machine-intelligence-research-institute
-  type: founded
-  start: "2000"
-  note: >-
-    Originally as Singularity Institute
-
-- from: eliezer-yudkowsky
-  to: lesswrong
-  type: founded
-  start: "2009"
-
-- from: eliezer-yudkowsky
-  to: rationalism
-  type: precursor_to
-
-# Gebru and Torres
-- from: timnit-gebru
-  to: dair
-  type: founded
-  start: "2021"
-
-- from: timnit-gebru
-  to: tescreal-bundle-paper
-  type: authored
-  start: "2024"
-
-- from: emile-torres
-  to: tescreal-bundle-paper
-  type: authored
-  start: "2024"
-
-- from: timnit-gebru
-  to: emile-torres
-  type: collaborated_with
-
-# TESCREAL connections
-- from: tescreal
-  to: transhumanism
-  type: subconcept_of
-
-- from: tescreal
-  to: extropianism
-  type: subconcept_of
-
-- from: tescreal
-  to: singularitarianism
-  type: subconcept_of
-
-- from: tescreal
-  to: cosmism
-  type: subconcept_of
-
-- from: tescreal
-  to: rationalism
-  type: subconcept_of
-
-- from: tescreal
-  to: effective-altruism
-  type: subconcept_of
-
-- from: tescreal
-  to: longtermism
-  type: subconcept_of
-
-# Ideology genealogy
-- from: extropianism
-  to: transhumanism
-  type: precursor_to
-
-- from: singularitarianism
-  to: transhumanism
-  type: subconcept_of
-
-- from: longtermism
-  to: effective-altruism
-  type: subconcept_of
-
-- from: cosmism
-  to: transhumanism
-  type: influenced
-
-# TESCREAL critiques effective accelerationism
-- from: effective-accelerationism
-  to: effective-altruism
-  type: critiques
-  sources: ["'Criticism of effective altruism' — Guillaume Verdon and Lex Fridman (interview transcript)"]
-
-# GiveWell and Open Philanthropy
-- from: givewell
-  to: open-philanthropy
-  type: precursor_to
-  note: >-
-    Open Philanthropy grew out of GiveWell
-
-# OpenAI connections
-- from: eliezer-yudkowsky
-  to: openai
-  type: influenced
-  note: "Yudkowsky 'got many of us interested in AGI' - Altman"
-
-- from: nick-bostrom
-  to: openai
-  type: influenced
-
-# Anthropic connections
-- from: anthropic
-  to: openai
-  type: precursor_to
-  note: >-
-    Founded by former OpenAI researchers
-
-- from: ftx
-  to: anthropic
-  type: funds
-  start: "2022"
-  note: >-
-    $500M investment before collapse
-  sources: ["FTX bankruptcy filings; contemporary reporting (2022) — verify exact figure (see research backlog A4/A5)"]
-
-# Julian Huxley and transhumanism
-- from: julian-huxley
-  to: transhumanism
-  type: coined
-  start: "1957"
-
-# Parfit and longtermism
-- from: derek-parfit
-  to: reasons-and-persons
-  type: authored
-  start: "1984"
-
-- from: derek-parfit
-  to: longtermism
-  type: precursor_to
-
-# 80,000 Hours connections
-- from: eighty-thousand-hours
-  to: sam-bankman-fried
-  type: influenced
-  note: >-
-    Marketed SBF as exemplar of earning to give
+# TESCREAL Wiki - Relations (v2)
+# Each relation is stored once; inverse labels come from relation-types.yaml.
+# Direction: "A <type> B" reads as a sentence. See docs/ontology.md.
+# Sources carry a tier: [primary] / [reported] / [claimed]. See docs/verification-log.md.
 
 # ============================================================
-# Research-driven edges — claims trace to docs/tescreal-article.md
-# and TESCREAL Narrative Content Research.docx (see Works cited).
+# 1. THE BUNDLE — each strand is part of TESCREAL (genealogy, not shared belief)
 # ============================================================
 
-# Utilitarian lineage
-- from: jeremy-bentham
-  to: utilitarianism
-  type: coined
-  start: "1789"
-  note: >-
-    Greatest happiness for the greatest number
-  sources: ["Bentham, An Introduction to the Principles of Morals and Legislation (1789)"]
-
-- from: jeremy-bentham
-  to: john-stuart-mill
-  type: influenced
-  sources: ["Standard history of utilitarianism"]
-
-- from: peter-singer
-  to: utilitarianism
-  type: influenced
-  note: >-
-    Applies act-utilitarian reasoning to affluence and poverty
-  sources: ["Singer, Famine, Affluence, and Morality (1972)"]
-
-- from: peter-singer
-  to: famine-affluence-and-morality
-  type: authored
-  start: "1972"
-  sources: ["Philosophy & Public Affairs 1:3 (1972)"]
-
-# EA founding round-out
-- from: bernadette-young
-  to: give-what-we-can
-  type: founded
-  start: "2009"
-
-- from: benjamin-todd
-  to: eighty-thousand-hours
-  type: founded
-  start: "2011"
-
-- from: william-macaskill
-  to: centre-for-effective-altruism
-  type: founded
-  start: "2012"
-
-- from: holden-karnofsky
-  to: givewell
-  type: founded
-  start: "2007"
-
-- from: elie-hassenfeld
-  to: givewell
-  type: founded
-  start: "2007"
-
-- from: holden-karnofsky
-  to: open-philanthropy
-  type: founded
-  start: "2014"
-
-- from: dustin-moskovitz
-  to: good-ventures
-  type: founded
-  start: "2011"
-
-- from: cari-tuna
-  to: good-ventures
-  type: founded
-  start: "2011"
-
-- from: good-ventures
-  to: open-philanthropy
-  type: funds
-  note: >-
-    Launch funding base for Open Philanthropy
-  sources: ["Open Philanthropy — verify"]
-
-- from: dustin-moskovitz
-  to: open-philanthropy
-  type: funds
-  amount: ">$4B deployed"
-  note: >-
-    EA's largest living donor with Cari Tuna
-  sources: ["Open Philanthropy grants database — verify"]
-
-# Earning to give machinery
-- from: sam-bankman-fried
-  to: jane-street
-  type: employed_by
-  start: "2013"
-  end: "2017"
-  note: >-
-    Model earning-to-give citizen
-
-- from: sam-bankman-fried
-  to: alameda-research
-  type: founded
-  start: "2017"
-
-- from: caroline-ellison
-  to: alameda-research
-  type: employed_by
-  note: >-
-    CEO; cooperating witness
-  sources: ["US v. Bankman-Fried trial record — verify (backlog B16)"]
-
-- from: william-macaskill
-  to: moral-offsetting
-  type: coined
-  note: >-
-    Controversial-careers-are-offsettable argument; critics named it
-  sources: ["Cited in tescreal-article — verify primary"]
-
-- from: william-macaskill
-  to: replaceability
-  type: coined
-  note: >-
-    The public-defender anecdote logic
-  sources: ["Widely retold — find original telling or downgrade (backlog A20)"]
-
-# Alameda whistleblower warnings (TIME: Alter/Berger)
-- from: sam-bankman-fried
-  to: william-macaskill
-  type: related_to
-  note: >-
-    Early Alameda executives warned MacAskill 2018–19; minimized as startup friction
-  sources: ["TIME investigation (Alter/Berger, 2022–23) — verify wording (backlog A4)"]
-
-- from: sam-bankman-fried
-  to: holden-karnofsky
-  type: related_to
-  note: >-
-    Early Alameda executives warned Karnofsky 2018–19
-  sources: ["TIME investigation (Alter/Berger, 2022–23) — verify wording (backlog A4)"]
-
-- from: sam-bankman-fried
-  to: nick-beckstead
-  type: related_to
-  note: >-
-    Early Alameda executives warned Beckstead 2018–19
-  sources: ["TIME investigation (Alter/Berger, 2022–23) — verify wording (backlog A4)"]
-
-# Longtermist arithmetic
-- from: derek-parfit
-  to: non-identity-problem
-  type: coined
-  start: "1984"
-  sources: ["Parfit, Reasons and Persons (1984)"]
-
-- from: toby-ord
-  to: longtermism
-  type: coined
-  start: "2017"
-  note: >-
-    Formulated with MacAskill around 2017
-
-- from: hilary-greaves
-  to: strong-longtermism-2021
-  type: authored
-  start: "2021"
-  sources: ["GPI working paper (2021) — verify (backlog A10)"]
-
-- from: william-macaskill
-  to: strong-longtermism-2021
-  type: authored
-  start: "2021"
-
-- from: nick-bostrom
-  to: astronomical-waste-2003
-  type: authored
-  start: "2003"
-  sources: ["Bostrom (2003) — verify (backlog A10)"]
-
-- from: nick-bostrom
-  to: astronomical-waste
-  type: coined
-  start: "2003"
-
-- from: toby-ord
-  to: the-precipice
-  type: authored
-  start: "2020"
-
-- from: elizabeth-hupfer
-  to: far-future-priority-objection
-  type: coined
-  note: >-
-    Formalised the crowding-out critique
-
-- from: bv-hyde
-  to: longtermism
-  type: critiques
-  note: >-
-    Implausibly butterfly-effect view of history; overrates individual agency
-  sources: ["Hyde — verify primary"]
-
-- from: william-macaskill
-  to: charter-cities
-  type: coined
-  note: >-
-    Autonomous law-laboratories proposal in What We Owe the Future
-  sources: ["MacAskill, What We Owe the Future (2022) — verify page"]
-
-- from: hinge-of-history
-  to: longtermism
-  type: subconcept_of
-
-- from: intelligence-explosion
-  to: singularitarianism
-  type: subconcept_of
-
-# Beckstead line
-- from: larry-temkin
-  to: nick-beckstead
-  type: influenced
-  note: >-
-    Dissertation supervisor (Rutgers, 2013)
-
-- from: nick-beckstead
-  to: beckstead-dissertation-2013
-  type: authored
-  start: "2013"
-  sources: ["Beckstead (2013) — read context before quoting (backlog A11)"]
-
-- from: nick-beckstead
-  to: open-philanthropy
-  type: employed_by
-  note: >-
-    Program officer before the Future Fund
-
-# Rationalist infrastructure
-- from: eliezer-yudkowsky
-  to: sequences
-  type: authored
-  start: "2006"
-
-- from: eliezer-yudkowsky
-  to: hpmor
-  type: authored
-  start: "2010"
-
-- from: eliezer-yudkowsky
-  to: torture-vs-dust-specks
-  type: authored
-  start: "2007"
-  sources: ["LessWrong (2007) — verify (backlog A14)"]
-
-- from: eliezer-yudkowsky
-  to: ai-alignment
-  type: coined
-  note: >-
-    Birthed the field after his reversal on benevolent superintelligence
-
-- from: eliezer-yudkowsky
-  to: overcoming-bias
-  type: affiliated_with
-  start: "2006"
-  note: >-
-    Group blogger before LessWrong
-
-- from: robin-hanson
-  to: overcoming-bias
-  type: affiliated_with
-  start: "2006"
-  note: >-
-    Group blogger before LessWrong
-
-- from: scott-alexander
-  to: slate-star-codex
-  type: founded
-  start: "2013"
-
-- from: slate-star-codex
-  to: rationalism
-  type: related_to
-  note: >-
-    Second rationalist on-ramp alongside LessWrong
-
-- from: nate-soares
-  to: if-anyone-builds-it-everyone-dies
-  type: authored
-  start: "2025"
-
-- from: eliezer-yudkowsky
-  to: if-anyone-builds-it-everyone-dies
-  type: authored
-  start: "2025"
-
-- from: oliver-habryka
-  to: lesswrong
-  type: affiliated_with
-  note: >-
-    Administrator
-
-- from: curtis-yarvin
-  to: rationalism
-  type: related_to
-  note: >-
-    Neoreaction found early audiences in rationalist spaces
-  sources: ["Lewis-Kraus — verify (backlog B23)"]
-
-- from: ziz-lasota
-  to: zizians
-  type: founded
-  note: >-
-    Led the violent offshoot
-  sources: ["Guardian (Mar 2025), PBS — verify case status (backlog A17)"]
-
-- from: zizians
-  to: rationalism
-  type: related_to
-  note: >-
-    Emerged from LessWrong/MIRI orbit after falling out with MIRI and CFAR
-  sources: ["Guardian (Mar 2025) — verify"]
-
-# Thiel network → DeepMind
-- from: peter-thiel
-  to: machine-intelligence-research-institute
-  type: funds
-  note: >-
-    Early SIAI funding courted by Yudkowsky
-  sources: ["Contemporary reporting — verify (backlog A15)"]
-
-- from: peter-thiel
-  to: singularity-summit
-  type: funds
-  note: >-
-    Funded the Stanford summit
-  sources: ["Contemporary reporting — verify (backlog A15)"]
-
-- from: peter-thiel
-  to: deepmind
-  type: funds
-  amount: "$2.25M seed"
-  note: >-
-    Seeded DeepMind out of the summit network
-  sources: ["Contemporary reporting — verify (backlog A15)"]
-
-- from: eliezer-yudkowsky
-  to: singularity-summit
-  type: related_to
-  note: >-
-    Networking nexus for his circle
-
-- from: demis-hassabis
-  to: deepmind
-  type: founded
-  start: "2010"
-
-# OpenAI founding + Microsoft money
-- from: sam-altman
-  to: openai
-  type: founded
-  start: "2015"
-
-- from: elon-musk
-  to: openai
-  type: founded
-  start: "2015"
-  note: >-
-    Founding pledge alongside Altman
-  sources: ["Contemporary reporting — verify (backlog C1)"]
-
-- from: microsoft
-  to: openai
-  type: funds
-  amount: "~$13B cumulative"
-  note: >-
-    Partnership whose pressure powered Altman's 2023 reinstatement
-  sources: ["Contemporary reporting — verify"]
-
-# Anthropic founding team
-- from: dario-amodei
-  to: openai
-  type: employed_by
-  end: "2021"
-  note: >-
-    VP of Research for nearly five years
-
-- from: dario-amodei
-  to: anthropic
-  type: founded
-  start: "2021"
-
-- from: daniela-amodei
-  to: anthropic
-  type: founded
-  start: "2021"
-
-- from: jared-kaplan
-  to: anthropic
-  type: founded
-  start: "2021"
-
-- from: jack-clark
-  to: anthropic
-  type: founded
-  start: "2021"
-
-- from: chris-olah
-  to: anthropic
-  type: founded
-  start: "2021"
-
-- from: ben-mann
-  to: anthropic
-  type: founded
-  start: "2021"
-
-- from: sam-mccandlish
-  to: anthropic
-  type: founded
-  start: "2021"
-
-- from: tom-brown
-  to: anthropic
-  type: founded
-  start: "2021"
-
-- from: holden-karnofsky
-  to: anthropic
-  type: employed_by
-  start: "2025"
-  note: >-
-    Joined January 2025 after Carnegie visiting scholarship
-
-- from: holden-karnofsky
-  to: daniela-amodei
-  type: related_to
-  note: >-
-    Married (publicly reported); connects Open Philanthropy and Anthropic governance
-  sources: ["Contemporary reporting"]
-
-# Long-Term Benefit Trust
-- from: long-term-benefit-trust
-  to: anthropic
-  type: part_of
-  start: "2023"
-  note: >-
-    Holds Class T stock; elects a growing share of the board
-
-- from: neil-buddy-shah
-  to: long-term-benefit-trust
-  type: board_member_of
-  start: "2023"
-  note: >-
-    Chair; CHAI CEO
-  sources: ["Anthropic LTBT announcement (Sep 2023) — verify (backlog A7)"]
-
-- from: jason-matheny
-  to: long-term-benefit-trust
-  type: board_member_of
-  start: "2023"
-  end: "2023"
-  note: >-
-    RAND CEO; departed December 2023
-
-- from: paul-christiano
-  to: long-term-benefit-trust
-  type: board_member_of
-  start: "2023"
-  end: "2024"
-  note: >-
-    ARC founder; departed for the US AI Safety Institute, April 2024
-
-- from: kanika-bahl
-  to: long-term-benefit-trust
-  type: board_member_of
-  start: "2023"
-  end: "2026"
-  note: >-
-    Evidence Action CEO; departed January 2026
-
-- from: zach-robinson
-  to: long-term-benefit-trust
-  type: board_member_of
-  start: "2023"
-  end: "2026"
-  note: >-
-    Effective Ventures US CEO; departed January 2026
-
-- from: richard-fontaine
-  to: long-term-benefit-trust
-  type: board_member_of
-  start: "2026"
-  note: >-
-    CNAS CEO; joined January 2026
-
-- from: paul-christiano
-  to: alignment-research-center
-  type: founded
-
-# FTX Future Fund machine
-- from: ftx
-  to: ftx-future-fund
-  type: founded
-  start: "2022"
-  note: >-
-    Launched by the FTX Foundation early 2022; establishment vs public launch differ
-  sources: ["Archived ftxfuturefund.org; EA Forum launch post — verify (backlog A1)"]
-
-- from: nick-beckstead
-  to: ftx-future-fund
-  type: employed_by
-  start: "2022"
-  note: >-
-    CEO
-
-- from: leopold-aschenbrenner
-  to: ftx-future-fund
-  type: employed_by
-  start: "2022"
-  note: >-
-    Launch team
-
-- from: avital-balwit
-  to: ftx-future-fund
-  type: employed_by
-  start: "2022"
-  note: >-
-    Launch team
-
-- from: ketan-ramakrishnan
-  to: ftx-future-fund
-  type: employed_by
-  start: "2022"
-  note: >-
-    Launch team
-
-- from: william-macaskill
-  to: ftx-future-fund
-  type: affiliated_with
-  start: "2022"
-  note: >-
-    Advisory team
-
-- from: ftx-future-fund
-  to: effective-altruism
-  type: funds
-  amount: "~$36.5M of ~$160M committed"
-  note: >-
-    Direct grants to EA orgs by September 2022
-  sources: ["Archived grants database — total it yourself or attribute (backlog A2)"]
-
-- from: ftx-future-fund
-  to: ai-safety
-  type: funds
-  amount: "~$32M"
-  note: >-
-    Alignment research and x-risk mitigation
-  sources: ["Archived grants database — verify (backlog A1)"]
-
-- from: ftx-future-fund
-  to: centre-for-effective-altruism
-  type: funds
-  amount: "$14M"
-  sources: ["Archived grants database — verify (backlog A1)"]
-
-- from: ftx-future-fund
-  to: alignment-research-center
-  type: funds
-  amount: "$1.25M"
-  sources: ["Archived grants database — verify (backlog A1)"]
-
-# Extropian milieu
-- from: max-more
-  to: extropianism
-  type: founded
-  start: "1980"
-  note: >-
-    First organized transhumanist movement
-
-- from: ray-kurzweil
-  to: singularitarianism
-  type: coined
-  note: >-
-    Popularised the coming singularity
-
-- from: ray-kurzweil
-  to: extropianism
-  type: affiliated_with
-  note: >-
-    Early milieu figure
-
-- from: robin-hanson
-  to: extropianism
-  type: affiliated_with
-  note: >-
-    Early milieu figure
-
-- from: marvin-minsky
-  to: extropianism
-  type: affiliated_with
-  note: >-
-    Early milieu figure
-
-- from: nick-bostrom
-  to: extropianism
-  type: affiliated_with
-  note: >-
-    Early milieu figure
-
-- from: jeffrey-epstein
-  to: extropianism
-  type: related_to
-  note: >-
-    Reportedly planned DNA seeding and cryonics; cited as attracted to the milieu
-  sources: ["NYT reporting (2019) — verify before publication (backlog D6)"]
-
-- from: ben-goertzel
-  to: cosmism
-  type: coined
-  start: "2010"
-  note: >-
-    Via the Cosmist Manifesto
-
-- from: ben-goertzel
-  to: cosmist-manifesto
-  type: authored
-  start: "2010"
-  sources: ["Goertzel (2010) — verify quote (backlog B12)"]
-
-- from: elon-musk
-  to: cosmism
-  type: affiliated_with
-  note: >-
-    Mars vision as cosmism's most visible expression
-
-- from: julian-huxley
-  to: eugenics
-  type: related_to
-  note: >-
-    President, British Eugenics Society 1959–62; artificial selection advocacy
-  sources: ["Huxley, New Bottles for New Wine (1957) — verify (backlog B8)"]
-
-- from: anthony-levandowski
+- {from: transhumanism, to: tescreal, type: part_of, note: "T", sources: ["[primary] Gebru & Torres, 'The TESCREAL Bundle', First Monday 29(4), Apr 2024"]}
+- {from: extropianism, to: tescreal, type: part_of, note: "E", sources: ["[primary] Gebru & Torres, 'The TESCREAL Bundle', First Monday 29(4), Apr 2024"]}
+- {from: singularitarianism, to: tescreal, type: part_of, note: "S", sources: ["[primary] Gebru & Torres, 'The TESCREAL Bundle', First Monday 29(4), Apr 2024"]}
+- {from: cosmism, to: tescreal, type: part_of, note: "C (modern cosmism)", sources: ["[primary] Gebru & Torres, 'The TESCREAL Bundle', First Monday 29(4), Apr 2024"]}
+- {from: rationalism, to: tescreal, type: part_of, note: "R", sources: ["[primary] Gebru & Torres, 'The TESCREAL Bundle', First Monday 29(4), Apr 2024"]}
+- {from: effective-altruism, to: tescreal, type: part_of, note: "EA", sources: ["[primary] Gebru & Torres, 'The TESCREAL Bundle', First Monday 29(4), Apr 2024"]}
+- {from: longtermism, to: tescreal, type: part_of, note: "L", sources: ["[primary] Gebru & Torres, 'The TESCREAL Bundle', First Monday 29(4), Apr 2024"]}
+
+- {from: timnit-gebru, to: tescreal, type: coined, start: "2023", note: "With Torres; first in a 2023 draft, published 2024"}
+- {from: emile-torres, to: tescreal, type: coined, start: "2023", note: "With Gebru"}
+- {from: timnit-gebru, to: tescreal-bundle-paper, type: authored, start: "2024"}
+- {from: emile-torres, to: tescreal-bundle-paper, type: authored, start: "2024"}
+- {from: timnit-gebru, to: emile-torres, type: collaborated_with}
+
+# How the strands descend from one another
+- from: eugenics
   to: transhumanism
-  type: related_to
+  type: influenced
   note: >-
-    Way of the Future church and the clean-slate view
-  sources: ["IRS filing / reporting — verify (backlog D10)"]
-
-# TESCREAL bundle membership (genealogy + personnel, not shared belief)
-- from: elon-musk
+    The genealogical core of the TESCREAL claim: Huxley's transhumanism grew out of Anglo-American eugenics. Transhumanists dispute the inheritance.
+  sources: ["[primary] Gebru & Torres (2024)"]
+- {from: extropianism, to: transhumanism, type: subconcept_of, note: "The first organized transhumanist movement"}
+- {from: singularitarianism, to: transhumanism, type: subconcept_of, note: "Transhumanism with a date attached"}
+- {from: cosmism, to: transhumanism, type: influenced, note: "Fedorov's conquest of death anticipated the transhumanist program"}
+- {from: extropianism, to: rationalism, type: precursor_to, note: "Yudkowsky came of age on the Extropians mailing list"}
+- {from: longtermism, to: effective-altruism, type: subconcept_of, note: "The branch that turned EA from today's poor to future trillions"}
+- {from: rationalism, to: effective-altruism, type: related_to, note: "Overlapping communities, housing and funders in the Bay Area and Oxford"}
+- from: techno-millenarianism
   to: tescreal
   type: related_to
   note: >-
-    Named by Gebru & Torres among figures in more than one TESCREAL ideology
-  sources: ["Gebru & Torres, The TESCREAL Bundle (First Monday, 2024)"]
+    The "hidden faith" reading: the bundle supplies an eschatology (extinction or utopia), a salvation (alignment, upload) and a priesthood (the labs).
+  sources: ["[primary] Noble (1997); Geraci (2010)"]
 
-- from: sam-altman
-  to: tescreal
-  type: related_to
+# Named figures (personnel, not proof of shared belief)
+- {from: elon-musk, to: tescreal, type: related_to, note: "Named by Gebru & Torres among figures in more than one TESCREAL ideology", sources: ["[primary] Gebru & Torres (2024)"]}
+- {from: sam-altman, to: tescreal, type: related_to, note: "Named by Gebru & Torres among figures in more than one TESCREAL ideology", sources: ["[primary] Gebru & Torres (2024)"]}
+- {from: peter-thiel, to: tescreal, type: related_to, note: "Named by Gebru & Torres among figures in more than one TESCREAL ideology", sources: ["[primary] Gebru & Torres (2024)"]}
+- {from: jaan-tallinn, to: tescreal, type: related_to, note: "Named by Gebru & Torres among figures in more than one TESCREAL ideology", sources: ["[primary] Gebru & Torres (2024)"]}
+- {from: vitalik-buterin, to: tescreal, type: related_to, note: "Named by Gebru & Torres among figures in more than one TESCREAL ideology", sources: ["[primary] Gebru & Torres (2024)"]}
+- {from: dustin-moskovitz, to: tescreal, type: related_to, note: "Named by Gebru & Torres among figures in more than one TESCREAL ideology", sources: ["[primary] Gebru & Torres (2024)"]}
+- {from: sam-bankman-fried, to: tescreal, type: related_to, note: "Named by Gebru & Torres among figures in more than one TESCREAL ideology", sources: ["[primary] Gebru & Torres (2024)"]}
+- {from: marc-andreessen, to: tescreal, type: related_to, start: "2023", note: "Put 'TESCREAList' in his X bio for several weeks in 2023", sources: ["[reported] Truthdig; Wikipedia: TESCREAL"]}
+
+# Critics of the bundle concept
+- {from: seth-lazar, to: tescreal, type: critiques, note: "Highly polemical; ignores many other strands in the history of AI", sources: ["[reported] Wikipedia: TESCREAL"]}
+- {from: ethan-zuckerman, to: tescreal, type: critiques, note: "Keeps attention on billionaires instead of racial inequity, algorithmic bias, environmental harm", sources: ["[reported] Wikipedia: TESCREAL"]}
+- {from: oliver-habryka, to: tescreal, type: critiques, note: "\"I've never in my life met a cosmist; apparently I'm great friends with them.\"", sources: ["[reported] Wikipedia: TESCREAL (LessWrong comment)"]}
+- {from: ozy-brennan, to: tescreal, type: critiques, note: "Flattens different philosophies into a monolith; decontextualizes their ideas", sources: ["[reported] Asterisk magazine"]}
+
+# ============================================================
+# 2. FOUNDATIONS — the argument EA rests on
+# ============================================================
+
+- {from: jeremy-bentham, to: utilitarianism, type: coined, start: "1789", note: "The greatest happiness for the greatest number", sources: ["[primary] Bentham, Introduction to the Principles of Morals and Legislation (1789)"]}
+- {from: jeremy-bentham, to: john-stuart-mill, type: influenced, note: "Mill was raised on Bentham's system and revised it"}
+- {from: john-stuart-mill, to: utilitarianism, type: advocates, start: "1863", sources: ["[primary] Mill, Utilitarianism (1863)"]}
+- {from: utilitarianism, to: effective-altruism, type: influenced, note: "EA is not officially utilitarian, but its maximizing logic is utilitarian in origin"}
+- {from: peter-singer, to: utilitarianism, type: advocates, sources: ["[primary] Singer, Practical Ethics (1979)"]}
+
+- {from: peter-singer, to: famine-affluence-and-morality, type: authored, start: "1972", sources: ["[primary] Philosophy & Public Affairs 1(3), 1972"]}
+- {from: peter-singer, to: drowning-child, type: coined, start: "1972", note: "Written in Oxford in 1971; the original costs 'getting my clothes muddy'", sources: ["[primary] Philosophy & Public Affairs 1(3), 1972"]}
+- {from: drowning-child, to: famine-affluence-and-morality, type: part_of}
+- {from: peter-singer, to: the-life-you-can-save, type: authored, start: "2009"}
+- {from: the-life-you-can-save, to: effective-altruism, type: advocates}
+- {from: peter-singer, to: effective-altruism, type: influenced, note: "The movement's philosophical grandfather"}
+- {from: peter-singer, to: toby-ord, type: influenced, note: "Ord read Singer as a student and did the arithmetic"}
+
+- {from: drowning-child, to: impartiality, type: illustrates, note: "Distance does not dissolve responsibility"}
+- {from: impartiality, to: effective-altruism, type: premise_of}
+- {from: impartiality, to: longtermism, type: premise_of, note: "Extended from space to time: the unborn count too"}
+- {from: drowning-child, to: effective-altruism, type: premise_of, note: "If you'd save the child in the pond, why not the one abroad?"}
+- {from: expected-utility, to: effective-altruism, type: premise_of, note: "Multiply welfare by probability and maximize"}
+- {from: expected-utility, to: longtermism, type: premise_of, note: "Tiny probabilities times astronomical numbers"}
+- {from: welfarism, to: effective-altruism, type: premise_of, note: "'Tentatively welfarist'", sources: ["[primary] MacAskill, 'The Definition of Effective Altruism' (2019)"]}
+- {from: welfarism, to: wild-animal-suffering, type: premise_of, note: "If only well-being counts, nature can come out net negative"}
+- {from: william-macaskill, to: welfarism, type: advocates, start: "2019", sources: ["[primary] MacAskill (2019)"]}
+- {from: william-macaskill, to: definition-of-ea-2019, type: authored, start: "2019"}
+- {from: definition-of-ea-2019, to: welfarism, type: advocates, note: "\"…not, say, protecting biodiversity or conserving natural beauty for their own sakes\""}
+- {from: itn-framework, to: effective-altruism, type: subconcept_of, note: "Scale, solvability, neglect"}
+- {from: eighty-thousand-hours, to: itn-framework, type: advocates, sources: ["[primary] 80000hours.org methodology"]}
+- {from: torture-vs-dust-specks, to: expected-utility, type: illustrates, note: "Aggregation taken to its limit: 3^^^3 specks outweigh fifty years of torture"}
+- {from: fanaticism, to: expected-utility, type: critiques, note: "Tiny probabilities of astronomical payoffs can swamp everything", sources: ["[primary] Bostrom, 'Pascal's Mugging', Analysis 69(3), 2009"]}
+- {from: good-it-promises-harm-it-does, to: expected-utility, type: critiques, note: "Expected utility passed off as the property of reason itself", sources: ["[primary] Adams, Crary & Gruen (eds.), 2023"]}
+
+# ============================================================
+# 3. EFFECTIVE ALTRUISM — the institutions
+# ============================================================
+
+- {from: toby-ord, to: give-what-we-can, type: founded, start: "2009"}
+- {from: william-macaskill, to: give-what-we-can, type: founded, start: "2009"}
+- {from: bernadette-young, to: give-what-we-can, type: founded, start: "2009"}
+- {from: give-what-we-can, to: effective-altruism, type: part_of, note: "The 10% pledge: the movement's grassroots practice"}
+- {from: william-macaskill, to: eighty-thousand-hours, type: founded, start: "2011"}
+- {from: benjamin-todd, to: eighty-thousand-hours, type: founded, start: "2011"}
+- {from: eighty-thousand-hours, to: effective-altruism, type: part_of}
+- {from: william-macaskill, to: centre-for-effective-altruism, type: founded, start: "2012"}
+- {from: centre-for-effective-altruism, to: effective-ventures, type: part_of}
+- {from: william-macaskill, to: effective-altruism, type: founded, start: "2011", note: "Among those who named and organized the movement"}
+- {from: toby-ord, to: effective-altruism, type: founded, start: "2011"}
+- {from: william-macaskill, to: doing-good-better, type: authored, start: "2015"}
+- {from: doing-good-better, to: effective-altruism, type: advocates}
+- {from: derek-parfit, to: toby-ord, type: influenced, note: "Oxford mentor to the founding generation"}
+
+- {from: holden-karnofsky, to: givewell, type: founded, start: "2007", note: "After leaving Bridgewater Associates", sources: ["[primary] givewell.org/about/story"]}
+- {from: elie-hassenfeld, to: givewell, type: founded, start: "2007", sources: ["[primary] givewell.org/about/story"]}
+- {from: givewell, to: effective-altruism, type: part_of}
+- {from: givewell, to: against-malaria-foundation, type: funds, note: "Recommended top charity; bed nets", sources: ["[primary] givewell.org top charities"]}
+- {from: givewell, to: evidence-action, type: funds, note: "Deworm the World and other recommended programs", sources: ["[primary] givewell.org top charities"]}
+- {from: against-malaria-foundation, to: drowning-child, type: illustrates, note: "Singer's pond as a working mechanism: a few thousand dollars per life saved"}
+- {from: givewell, to: anthony-kalulu, type: debated, note: "GiveWell replied that its charities work alongside large partners like the Global Fund", sources: ["[reported] per docs/first-research.docx; not re-checked"]}
+- {from: givewell, to: open-philanthropy, type: precursor_to, note: "Open Philanthropy began as GiveWell Labs"}
+- {from: holden-karnofsky, to: open-philanthropy, type: founded, start: "2014"}
+- {from: dustin-moskovitz, to: good-ventures, type: founded, start: "2011"}
+- {from: cari-tuna, to: good-ventures, type: founded, start: "2011"}
+- {from: dustin-moskovitz, to: cari-tuna, type: related_to, note: "Married; together EA's largest living donors"}
+- {from: good-ventures, to: open-philanthropy, type: funds, amount: ">$4B directed since founding", note: "Main funder; renamed Coefficient Giving 18 Nov 2025", sources: ["[primary] Coefficient Giving press release, Nov 2025"]}
+- {from: open-philanthropy, to: openai, type: funds, start: "2017", amount: "$30M", note: "Grant that came with a board seat for Karnofsky", sources: ["[primary] Open Philanthropy grants database, 'OpenAI — General Support' (2017)"]}
+- {from: open-philanthropy, to: machine-intelligence-research-institute, type: funds, sources: ["[primary] Open Philanthropy grants database"]}
+- {from: open-philanthropy, to: centre-for-effective-altruism, type: funds, sources: ["[primary] Open Philanthropy grants database"]}
+- {from: open-philanthropy, to: global-priorities-institute, type: funds, sources: ["[primary] Open Philanthropy grants database"]}
+- {from: open-philanthropy, to: ai-safety, type: advocates, note: "Global catastrophic risk became one of its two main portfolios"}
+- {from: holden-karnofsky, to: openai, type: board_member_of, start: "2017", end: "2021", sources: ["[primary] Open Philanthropy OpenAI grant writeup"]}
+- {from: holden-karnofsky, to: anthropic, type: employed_by, start: "2025", note: "Joined January 2025 after a Carnegie Endowment fellowship"}
+- {from: holden-karnofsky, to: daniela-amodei, type: related_to, note: "Married (publicly reported); links Open Philanthropy and Anthropic governance", sources: ["[reported] contemporary reporting"]}
+- {from: effective-altruism, to: ai-safety, type: influenced, note: "EA money and people built much of the field"}
+
+# Earning to give
+- {from: william-macaskill, to: earning-to-give, type: advocates, note: "His early message: your career is your biggest moral decision"}
+- {from: eighty-thousand-hours, to: earning-to-give, type: advocates, note: "Early career advice, later de-emphasized"}
+- {from: doing-good-better, to: earning-to-give, type: advocates}
+- {from: replaceability, to: earning-to-give, type: premise_of, note: "Your charity job goes to someone about as good; your finance salary goes to someone who won't donate"}
+- {from: moral-offsetting, to: earning-to-give, type: subconcept_of, note: "Harmful careers justified if donations outweigh the harm"}
+- {from: william-macaskill, to: moral-offsetting, type: advocates, note: "Critics' label ('moral carbon offsetting') for his argument about controversial careers", sources: ["[reported] cited in docs/first-research.docx; primary not re-checked"]}
+- {from: william-macaskill, to: replaceability, type: advocates, note: "The public-defender anecdote is widely retold but unsourced (illustrative only)"}
+- {from: william-macaskill, to: sam-bankman-fried, type: influenced, start: "2012", note: "Met at MIT (2011 or 2012); redirected him from animal welfare to earning to give", sources: ["[claimed] Bankman-Fried on the 80,000 Hours podcast; MacAskill's accounts"]}
+- {from: sam-bankman-fried, to: earning-to-give, type: advocates, note: "Became its poster child"}
+- {from: eighty-thousand-hours, to: sam-bankman-fried, type: related_to, note: "Held him up as an exemplar of earning to give"}
+- {from: sam-bankman-fried, to: jane-street, type: employed_by, start: "2014", end: "2017", note: "Intern 2013; trader until 2017"}
+- {from: caroline-ellison, to: jane-street, type: employed_by, note: "Before joining Alameda"}
+- {from: sam-bankman-fried, to: centre-for-effective-altruism, type: employed_by, start: "2017", note: "Brief stint as director of development before founding Alameda", sources: ["[reported] contemporary profiles"]}
+
+# ============================================================
+# 4. FTX — earning to give meets the balance sheet
+# ============================================================
+
+- {from: sam-bankman-fried, to: alameda-research, type: founded, start: "2017-11"}
+- {from: tara-mac-aulay, to: alameda-research, type: founded, start: "2017", note: "Co-founder; left in the 2018 split", sources: ["[reported] TIME (Charlotte Alter), 15 Mar 2023"]}
+- {from: tara-mac-aulay, to: centre-for-effective-altruism, type: employed_by, note: "Former senior executive", sources: ["[reported] TIME (Charlotte Alter), 15 Mar 2023"]}
+- {from: caroline-ellison, to: alameda-research, type: employed_by, note: "CEO"}
+- {from: sam-bankman-fried, to: ftx, type: founded, start: "2019"}
+- {from: alameda-research, to: ftx, type: related_to, note: "Sister firm; propped up by FTT and, it emerged, by FTX customer deposits"}
+
+- {from: alameda-research, to: alameda-2018-split, type: participated_in}
+- {from: tara-mac-aulay, to: alameda-2018-split, type: participated_in}
+- {from: naia-bouscal, to: alameda-2018-split, type: participated_in, note: "Says MacAskill 'basically threatened' those raising concerns", sources: ["[reported] TIME (Charlotte Alter), 15 Mar 2023"]}
+- {from: tara-mac-aulay, to: william-macaskill, type: warned, start: "2018", note: "That Bankman-Fried lied, mixed funds and refused controls", sources: ["[reported] TIME (Charlotte Alter), 15 Mar 2023"]}
+- {from: alameda-2018-split, to: nick-beckstead, type: warned, start: "2018", sources: ["[reported] TIME (Charlotte Alter), 15 Mar 2023"]}
+- {from: alameda-2018-split, to: holden-karnofsky, type: warned, start: "2018", sources: ["[reported] TIME (Charlotte Alter), 15 Mar 2023"]}
+- {from: charlotte-alter, to: alameda-2018-split, type: related_to, note: "Reported the ignored warnings (TIME, 15 Mar 2023)"}
+
+- {from: ftx, to: ftx-future-fund, type: founded, start: "2022-02-28", sources: ["[primary] 'Announcing the Future Fund', EA Forum, 28 Feb 2022"]}
+- {from: nick-beckstead, to: ftx-future-fund, type: employed_by, start: "2022", end: "2022-11", note: "CEO"}
+- {from: leopold-aschenbrenner, to: ftx-future-fund, type: employed_by, start: "2022", end: "2022-11"}
+- {from: avital-balwit, to: ftx-future-fund, type: employed_by, start: "2022", end: "2022-11"}
+- {from: ketan-ramakrishnan, to: ftx-future-fund, type: employed_by, start: "2022", end: "2022-11"}
+- {from: william-macaskill, to: ftx-future-fund, type: affiliated_with, start: "2022", end: "2022-11", note: "Advisor; the whole team resigned 10 Nov 2022"}
+- {from: ftx-future-fund, to: longtermism, type: advocates, note: "Almost entirely longtermist: AI, biosecurity, 'humanity's long-term prospects'"}
+- {from: ftx-future-fund, to: centre-for-effective-altruism, type: funds, start: "2022", amount: "$13.9M", sources: ["[reported] TIME (Charlotte Alter), 15 Mar 2023"]}
+- {from: ftx-future-fund, to: longview-philanthropy, type: funds, start: "2022", amount: "$17.9M", sources: ["[reported] TIME (Charlotte Alter), 15 Mar 2023"]}
+- {from: ftx-future-fund, to: alignment-research-center, type: funds, start: "2022", amount: "$1.25M", sources: ["[reported] archived Future Fund grants page; not re-checked"]}
+- {from: william-macaskill, to: longview-philanthropy, type: affiliated_with, note: "Advisory board", sources: ["[reported] TIME (Charlotte Alter), 15 Mar 2023"]}
+- {from: ftx, to: anthropic, type: funds, start: "2022-04", amount: "$500M", note: "Lead investment in Anthropic's $580M round; later traced in bankruptcy to misused customer funds", sources: ["[reported] contemporary reporting; FTX Chapter 11 filings"]}
+
+- {from: changpeng-zhao, to: binance, type: founded, start: "2017"}
+- {from: binance, to: ftx-collapse, type: participated_in, note: "6 Nov: announced sale of ~$529M in FTT; 9 Nov: walked away from the rescue"}
+- {from: changpeng-zhao, to: ftx-collapse, type: participated_in}
+- {from: sam-bankman-fried, to: ftx-collapse, type: participated_in, note: "Central figure"}
+- {from: ftx, to: ftx-collapse, type: participated_in, note: "Filed Chapter 11 on 11 Nov 2022; ~$8B customer shortfall"}
+- {from: alameda-research, to: ftx-collapse, type: participated_in, note: "2 Nov: CoinDesk leaks its FTT-heavy balance sheet"}
+- {from: caroline-ellison, to: ftx-collapse, type: participated_in}
+- {from: john-j-ray-iii, to: ftx, type: employed_by, start: "2022-11", note: "CEO in bankruptcy: 'a complete failure of corporate controls'"}
+- from: ftx-collapse
+  to: ends-justify-means
+  type: illustrates
   note: >-
-    Named by Gebru & Torres among figures in more than one TESCREAL ideology
-  sources: ["Gebru & Torres, The TESCREAL Bundle (First Monday, 2024)"]
+    Torres's reading: on strict utilitarian longtermism nothing is wrong in itself, so fraud for a vast future good can look obligatory. MacAskill blames hubris, not the framework.
+  sources: ["[primary] Gebru & Torres (2024); MacAskill on Making Sense (Sam Harris)"]
+- {from: ends-justify-means, to: longtermism, type: critiques, note: "If trillions are at stake, what present wrong is ruled out?", sources: ["[primary] Torres, various; Gebru & Torres (2024)"]}
+- {from: ftx-collapse, to: us-v-bankman-fried, type: precursor_to}
+- {from: sam-bankman-fried, to: us-v-bankman-fried, type: participated_in, note: "Convicted 2 Nov 2023 on all seven counts; 25 years (28 Mar 2024)"}
+- {from: caroline-ellison, to: us-v-bankman-fried, type: participated_in, note: "Star cooperating witness; sentenced to two years"}
+- {from: kelsey-piper, to: sbf-vox-interview, type: authored, start: "2022-11-16"}
+- {from: sam-bankman-fried, to: sbf-vox-interview, type: participated_in, note: "\"Ethics stuff, mostly a front\""}
+- {from: michael-lewis, to: going-infinite, type: authored, start: "2023"}
+- {from: going-infinite, to: sam-bankman-fried, type: related_to, note: "Subject; contested as too sympathetic"}
+- {from: ftx-collapse, to: ftx-anthropic-stake-sale, type: precursor_to}
+- {from: ftx, to: ftx-anthropic-stake-sale, type: participated_in, note: "~$884M (Mar 2024) + ~$450M (Jun 2024)", sources: ["[reported] CNBC / Bloomberg, 2024"]}
+- {from: anthropic, to: ftx-anthropic-stake-sale, type: participated_in}
 
-- from: peter-thiel
-  to: tescreal
-  type: related_to
-  note: >-
-    Named by Gebru & Torres among figures in more than one TESCREAL ideology
-  sources: ["Gebru & Torres, The TESCREAL Bundle (First Monday, 2024)"]
+# ============================================================
+# 5. LONGTERMISM — the arithmetic
+# ============================================================
 
-- from: jaan-tallinn
-  to: tescreal
-  type: related_to
-  note: >-
-    Named by Gebru & Torres among figures in more than one TESCREAL ideology
-  sources: ["Gebru & Torres, The TESCREAL Bundle (First Monday, 2024)"]
+- {from: derek-parfit, to: reasons-and-persons, type: authored, start: "1984"}
+- {from: derek-parfit, to: non-identity-problem, type: coined, start: "1984", sources: ["[primary] Parfit, Reasons and Persons (1984), Part IV"]}
+- {from: derek-parfit, to: repugnant-conclusion, type: coined, start: "1984", sources: ["[primary] Parfit, Reasons and Persons (1984), Part IV"]}
+- {from: non-identity-problem, to: reasons-and-persons, type: part_of}
+- {from: repugnant-conclusion, to: reasons-and-persons, type: part_of}
+- {from: derek-parfit, to: longtermism, type: influenced, note: "Obligations to future people; the nuclear-waste example"}
+- {from: non-identity-problem, to: longtermism, type: premise_of, note: "Our choices decide who will exist, so harms to the future are real harms"}
+- {from: repugnant-conclusion, to: longtermism, type: related_to, note: "The population-ethics trap any 'more lives is better' view must answer"}
 
-- from: vitalik-buterin
-  to: tescreal
-  type: related_to
-  note: >-
-    Named by Gebru & Torres among figures in more than one TESCREAL ideology
-  sources: ["Gebru & Torres, The TESCREAL Bundle (First Monday, 2024)"]
+- {from: toby-ord, to: longtermism, type: coined, start: "2017", note: "With MacAskill"}
+- {from: william-macaskill, to: longtermism, type: coined, start: "2017", note: "With Ord"}
+- {from: existential-risk, to: longtermism, type: part_of, note: "Its top practical priority"}
+- {from: hinge-of-history, to: longtermism, type: subconcept_of}
+- {from: value-lock-in, to: hinge-of-history, type: premise_of, note: "If values can be frozen soon, now is the hinge"}
+- {from: william-macaskill, to: value-lock-in, type: coined, start: "2022", sources: ["[primary] What We Owe the Future (2022)"]}
+- {from: long-reflection, to: value-lock-in, type: critiques, note: "Proposed as the antidote: deliberate before locking anything in", sources: ["[primary] Ord, The Precipice (2020)"]}
 
-- from: dustin-moskovitz
-  to: tescreal
-  type: related_to
-  note: >-
-    Named by Gebru & Torres among figures in more than one TESCREAL ideology
-  sources: ["Gebru & Torres, The TESCREAL Bundle (First Monday, 2024)"]
+- {from: toby-ord, to: the-precipice, type: authored, start: "2020"}
+- {from: the-precipice, to: existential-risk, type: advocates, note: "~1 in 6 this century; unaligned AI ~1 in 10", sources: ["[primary] The Precipice (2020), Table 6.1"]}
+- {from: toby-ord, to: existential-security, type: coined, start: "2020", sources: ["[primary] The Precipice (2020)"]}
+- {from: toby-ord, to: long-reflection, type: coined, start: "2020", note: "With MacAskill", sources: ["[primary] The Precipice (2020)"]}
+- {from: the-precipice, to: existential-security, type: advocates}
+- {from: toby-ord, to: future-of-humanity-institute, type: employed_by, note: "Senior research fellow"}
 
-- from: sam-bankman-fried
-  to: tescreal
-  type: related_to
-  note: >-
-    Named by Gebru & Torres among figures in more than one TESCREAL ideology
-  sources: ["Gebru & Torres, The TESCREAL Bundle (First Monday, 2024)"]
+- {from: nick-bostrom, to: future-of-humanity-institute, type: founded, start: "2005"}
+- {from: nick-bostrom, to: existential-risk, type: coined, start: "2002", sources: ["[primary] Bostrom, 'Existential Risks', Journal of Evolution and Technology 9 (2002)"]}
+- {from: nick-bostrom, to: astronomical-waste-2003, type: authored, start: "2003"}
+- {from: nick-bostrom, to: astronomical-waste, type: coined, start: "2003"}
+- {from: astronomical-waste, to: astronomical-waste-2003, type: part_of}
+- {from: astronomical-waste, to: existential-risk, type: premise_of, note: "~10^38 lives lost per century of delay, so safety beats speed", sources: ["[primary] Utilitas 15(3), 2003"]}
+- {from: nick-bostrom, to: superintelligence, type: authored, start: "2014"}
+- {from: nick-bostrom, to: instrumental-convergence, type: coined, start: "2012", note: "Building on Omohundro's 'basic AI drives'", sources: ["[primary] Bostrom, 'The Superintelligent Will' (2012); Superintelligence (2014)"]}
+- {from: instrumental-convergence, to: superintelligence, type: part_of}
+- {from: nick-bostrom, to: posthuman-essay-2008, type: authored, start: "2008"}
+- {from: nick-bostrom, to: deep-utopia, type: authored, start: "2024"}
+- {from: nick-bostrom, to: longtermism, type: influenced, note: "Supplied the astronomical numbers"}
+- {from: superintelligence, to: elon-musk, type: influenced, start: "2014", note: "Musk began calling AI an existential threat after reading it"}
+- {from: nick-bostrom, to: openai, type: influenced, note: "Superintelligence framed the founders' fears"}
+- {from: nick-bostrom, to: eliezer-yudkowsky, type: collaborated_with, note: "'The Ethics of Artificial Intelligence' (2014)"}
 
-- from: marc-andreessen
-  to: tescreal
-  type: related_to
-  note: >-
-    Self-described TESCREALIST for a period
-  sources: ["Bio snapshots — verify (backlog A13)"]
+- {from: hilary-greaves, to: strong-longtermism-2021, type: authored, start: "2021", sources: ["[primary] GPI Working Paper, June 2021"]}
+- {from: william-macaskill, to: strong-longtermism-2021, type: authored, start: "2021"}
+- {from: strong-longtermism-2021, to: longtermism, type: advocates, note: "At 10^24 expected future beings, a millionth of a percentage point of risk = 10^16 lives", sources: ["[primary] GPI Working Paper, June 2021, §3"]}
+- {from: strong-longtermism-2021, to: fanaticism, type: related_to, note: "The paper concedes the worry that its case is 'driven purely by tiny credences' and tests smaller estimates"}
+- {from: hilary-greaves, to: global-priorities-institute, type: employed_by, note: "Founding director"}
+- {from: william-macaskill, to: global-priorities-institute, type: affiliated_with}
+- {from: william-macaskill, to: what-we-owe-the-future, type: authored, start: "2022"}
+- {from: what-we-owe-the-future, to: longtermism, type: advocates, note: "Future people count; there could be vast numbers of them; we can affect them"}
+- {from: value-lock-in, to: what-we-owe-the-future, type: part_of}
+- {from: what-we-owe-the-future, to: wild-animal-suffering, type: related_to, note: "Discusses whether wild nature is net negative in welfare terms"}
+- {from: william-macaskill, to: charter-cities, type: advocates, note: "As laboratories for moral and political experiment (the idea is Paul Romer's)"}
+- {from: elon-musk, to: longtermism, type: advocates, start: "2022", note: "Called What We Owe the Future 'a close match for my philosophy'", sources: ["[reported] Musk on X, Aug 2022"]}
 
-# Critiques with sources (stance on the edge)
-- from: emile-torres
-  to: transhumanism
-  type: critiques
-  note: >-
-    Transhumanism is eugenics on steroids
-  sources: ["Gebru & Torres, The TESCREAL Bundle (First Monday, 2024)"]
-
-- from: emile-torres
+- {from: larry-temkin, to: nick-beckstead, type: influenced, note: "Dissertation supervisor (Rutgers, 2013)"}
+- {from: nick-beckstead, to: beckstead-dissertation-2013, type: authored, start: "2013"}
+- from: beckstead-dissertation-2013
   to: longtermism
-  type: critiques
+  type: advocates
   note: >-
-    Former longtermist turned critic of the framework
-  sources: ["Gebru & Torres (2024); Torres, Human Extinction (2023) — verify (backlog B15)"]
+    Hedged but stark: "it now seems more plausible to me that saving a life in a rich country is substantially more important than saving a life in a poor country, other things being equal."
+  sources: ["[primary] Beckstead (2013), ch. 1"]
+- {from: nick-beckstead, to: future-of-humanity-institute, type: employed_by, note: "Research fellow"}
+- {from: nick-beckstead, to: open-philanthropy, type: employed_by, note: "Program officer before the Future Fund"}
 
-- from: anthony-kalulu
-  to: effective-altruism
-  type: critiques
-  note: >-
-    Top-down philanthropy excludes lived experience; only ~1% reaches grassroots
-  sources: ["dear-humanity.org; EA Forum — verify (backlog A19)"]
+- {from: elizabeth-hupfer, to: far-future-priority-objection, type: coined}
+- {from: elizabeth-hupfer, to: longtermism, type: critiques, note: "Longtermist budgets crowd out today's emergencies", sources: ["[reported] cited in docs/first-research.docx; primary not re-checked"]}
+- {from: far-future-priority-objection, to: longtermism, type: critiques, sources: ["[reported] Hupfer, as cited in docs/first-research.docx"]}
+- {from: bv-hyde, to: longtermism, type: critiques, note: "Assumes a butterfly-effect view of history; overrates individual agency", sources: ["[reported] as cited in docs/first-research.docx; primary not re-checked"]}
+- {from: emile-torres, to: longtermism, type: advocates, end: "2019", note: "Wrote as a longtermist for about a decade", sources: ["[claimed] Torres's own account"]}
+- {from: emile-torres, to: longtermism, type: critiques, start: "2019", note: "Now its best-known critic", sources: ["[primary] Torres, Human Extinction (2023); Gebru & Torres (2024)"]}
+- {from: emile-torres, to: human-extinction-torres, type: authored, start: "2023"}
+- {from: human-extinction-torres, to: longtermism, type: critiques, sources: ["[primary] Torres, Human Extinction: A History (Routledge, 2023)"]}
+- {from: emile-torres, to: future-of-life-institute, type: affiliated_with, note: "Wrote for FLI; later pushed out, by their account", sources: ["[claimed] Torres's own account"]}
 
-- from: amia-srinivasan
-  to: effective-altruism
-  type: critiques
-  note: >-
-    Foreword: EA accepts the world more or less as it is
-  sources: ["Foreword to The Good It Promises, the Harm It Does (2023) — verify (backlog B9)"]
+# ============================================================
+# 6. T — TRANSHUMANISM
+# ============================================================
 
-- from: mathew-snow
-  to: effective-altruism
-  type: critiques
-  note: >-
-    Silent on the capitalist systems producing what EA distributes
-  sources: ["Jacobin — verify"]
+- {from: julian-huxley, to: transhumanism, type: coined, start: "1957", note: "\"The human species can, if it wishes, transcend itself\"", sources: ["[primary] Huxley, New Bottles for New Wine (1957)"]}
+- {from: julian-huxley, to: new-bottles-for-new-wine, type: authored, start: "1957"}
+- {from: new-bottles-for-new-wine, to: transhumanism, type: advocates}
+- {from: julian-huxley, to: eugenics, type: advocates, start: "1959", end: "1962", note: "President of the British Eugenics Society; championed 'artificial selection'", sources: ["[primary] Huxley (1957); Eugenics Society records"]}
+- {from: eugenics, to: liberal-eugenics, type: precursor_to, note: "Transhumanists insist the break is real; critics see continuity"}
+- {from: liberal-eugenics, to: transhumanism, type: subconcept_of}
+- {from: jonathan-anomaly, to: defending-eugenics, type: authored, start: "2018"}
+- {from: defending-eugenics, to: liberal-eugenics, type: advocates, sources: ["[primary] Monash Bioethics Review 36 (2018)"]}
+- {from: posthuman, to: transhumanism, type: subconcept_of, note: "Its destination"}
+- {from: posthuman-essay-2008, to: posthuman, type: advocates}
+- {from: deep-utopia, to: posthuman, type: related_to, note: "What is left to do in a 'solved world'?"}
+- {from: emile-torres, to: transhumanism, type: critiques, note: "\"Eugenics on steroids\"", sources: ["[primary] Gebru & Torres (2024)"]}
+- {from: elon-musk, to: neuralink, type: founded, start: "2016"}
+- {from: neuralink, to: transhumanism, type: illustrates, note: "Who could afford a cognition-enhancing implant?"}
+- {from: anthony-levandowski, to: way-of-the-future, type: founded, start: "2015", sources: ["[reported] Wired (2017)"]}
+- {from: way-of-the-future, to: techno-millenarianism, type: illustrates, note: "'The realization of a Godhead based on Artificial Intelligence'"}
+- {from: anthony-levandowski, to: transhumanism, type: advocates, note: "\"In technology, all that matters is tomorrow\"", sources: ["[reported] New Yorker (Charles Duhigg), 2018"]}
+- {from: jeffrey-epstein, to: transhumanism, type: related_to, note: "Drawn to transhumanist and cryonics circles", sources: ["[reported] New York Times, 31 Jul 2019"]}
 
-- from: seth-lazar
-  to: tescreal
-  type: critiques
-  note: >-
-    The term ignores other strands in AI history
-  sources: ["Lazar — verify (backlog B22)"]
+# ============================================================
+# 7. E — EXTROPIANISM
+# ============================================================
 
-- from: ethan-zuckerman
-  to: tescreal
-  type: critiques
-  note: >-
-    Fixation on billionaires reproduces what the framing criticizes
-  sources: ["Zuckerman — verify (backlog B22)"]
+- {from: max-more, to: extropianism, type: coined, start: "1988", note: "Via Extropy magazine"}
+- {from: max-more, to: extropy-institute, type: founded, start: "1992", note: "With Tom Morrow"}
+- {from: extropy-institute, to: extropianism, type: advocates}
+- {from: max-more, to: alcor, type: employed_by, start: "2011", end: "2020", note: "President and CEO"}
+- {from: alcor, to: extropianism, type: related_to, note: "Cryonics: the extropian refusal of death, made practical"}
+- {from: ray-kurzweil, to: extropianism, type: affiliated_with, note: "Early milieu figure", sources: ["[reported] Movement Memos (Kelly Hayes with Torres)"]}
+- {from: robin-hanson, to: extropianism, type: affiliated_with, note: "Early milieu figure", sources: ["[reported] Movement Memos"]}
+- {from: marvin-minsky, to: extropianism, type: affiliated_with, note: "Early milieu figure", sources: ["[reported] Movement Memos"]}
+- {from: nick-bostrom, to: extropianism, type: affiliated_with, note: "Posted to the Extropians mailing list in the 1990s"}
+- {from: eliezer-yudkowsky, to: extropianism, type: affiliated_with, end: "2001", note: "Teenage extropian who expected a benevolent superintelligence"}
+- {from: kelly-hayes, to: extropianism, type: related_to, note: "Describes it as pro-science super-optimism at war with entropy"}
+- {from: nick-bostrom, to: bostrom-email-apology, type: participated_in}
+- {from: bostrom-email-apology, to: extropy-institute, type: related_to, note: "The 1996 message was posted to the Extropians listserv"}
+- {from: bostrom-email-apology, to: eugenics, type: related_to, note: "For critics, it confirmed the worry about the genealogy"}
 
-- from: oliver-habryka
-  to: tescreal
-  type: critiques
-  note: >-
-    Never encountered some described groups as described
-  sources: ["LessWrong comments — verify (backlog B22)"]
+# ============================================================
+# 8. S — SINGULARITARIANISM
+# ============================================================
 
-- from: guillaume-verdon
-  to: effective-accelerationism
-  type: coined
-  start: "2022"
-  note: >-
-    Formulated as Beff Jezos in explicit opposition to EA
+- {from: ray-kurzweil, to: singularitarianism, type: advocates, note: "Its best-known popularizer (the term predates him)"}
+- {from: ray-kurzweil, to: singularity-is-near, type: authored, start: "2005"}
+- {from: singularity-is-near, to: singularitarianism, type: advocates, note: "Human-level AI by 2029; singularity around 2045"}
+- {from: ray-kurzweil, to: singularity-university, type: founded, start: "2008"}
+- {from: ray-kurzweil, to: google, type: employed_by, start: "2012"}
+- {from: intelligence-explosion, to: singularitarianism, type: subconcept_of}
+- {from: intelligence-explosion, to: doomerism, type: premise_of, note: "If takeoff takes days, there is no second try"}
+- {from: daniel-kokotajlo, to: ai-2027, type: authored, start: "2025"}
+- {from: scott-alexander, to: ai-2027, type: authored, start: "2025"}
+- {from: ai-2027, to: intelligence-explosion, type: illustrates}
+- {from: leopold-aschenbrenner, to: situational-awareness, type: authored, start: "2024"}
+- {from: situational-awareness, to: ai-race, type: advocates, note: "AGI as a US–China national-security race"}
+- {from: leopold-aschenbrenner, to: openai, type: employed_by, end: "2024", note: "Superalignment team; fired April 2024", sources: ["[reported] contemporary reporting"]}
+- {from: richard-sutton, to: ai-succession, type: advocates, note: "Succession to AI as a natural stage of evolution"}
+- {from: elon-musk, to: ai-succession, type: related_to, note: "Humans as a 'biological bootloader' for digital superintelligence", sources: ["[reported] Musk on X, c. 2019"]}
+- {from: ai-succession, to: singularitarianism, type: related_to}
 
-- from: marc-andreessen
-  to: effective-accelerationism
-  type: affiliated_with
-  note: >-
-    Techno-optimist fellow traveler of the schism
+- {from: singularity-institute, to: singularity-summit, type: founded, start: "2006"}
+- {from: peter-thiel, to: singularity-summit, type: funds, sources: ["[reported] Wikipedia: Singularity Summit"]}
+- {from: ray-kurzweil, to: singularity-summit, type: participated_in, note: "Co-founder and headliner"}
+- {from: demis-hassabis, to: singularity-summit, type: participated_in, start: "2010", note: "Got a minute with Thiel afterwards and opened with chess", sources: ["[reported] CNBC, 7 Dec 2020"]}
+- {from: shane-legg, to: singularity-summit, type: participated_in, start: "2010"}
+- {from: singularity-summit, to: deepmind, type: precursor_to, note: "Where DeepMind's founders met their first major investor"}
+- {from: singularity-summit, to: singularity-university, type: part_of, start: "2012", note: "Brand acquired in 2012"}
 
-- from: marc-andreessen
-  to: techno-optimist-manifesto
-  type: authored
-  start: "2023"
-  sources: ["a16z manifesto text — verify quotes (backlog A13)"]
+# ============================================================
+# 9. C — COSMISM
+# ============================================================
 
-# Media and alternatives
-- from: timnit-gebru
-  to: stochastic-parrots
-  type: authored
-  start: "2021"
-  note: >-
-    With Bender, McMillan-Major and Mitchell; the paper behind her Google exit
+- {from: nikolai-fedorov, to: cosmism, type: precursor_to, note: "Russian Cosmism: the 'common task' of resurrecting all ancestors"}
+- {from: ben-goertzel, to: cosmism, type: advocates, start: "2010", note: "Revived the word for 'modern cosmism'"}
+- {from: ben-goertzel, to: cosmist-manifesto, type: authored, start: "2010"}
+- {from: cosmist-manifesto, to: cosmism, type: advocates}
+- {from: cosmist-manifesto, to: techno-millenarianism, type: illustrates, note: "\"…achieving by scientific means most of the promises of religions\""}
+- {from: elon-musk, to: cosmism, type: advocates, note: "Making life multiplanetary"}
+- {from: elon-musk, to: spacex, type: founded, start: "2002"}
+- {from: spacex, to: cosmism, type: illustrates, note: "Cosmism's most visible contemporary project"}
 
-- from: timnit-gebru
-  to: google
-  type: employed_by
-  end: "2020"
-  note: >-
-    Co-led ethical AI; forced out December 2020
+# ============================================================
+# 10. R — RATIONALISM
+# ============================================================
 
-- from: emile-torres
-  to: future-of-life-institute
-  type: affiliated_with
-  note: >-
-    Wrote for FLI; later pushed out, by their account
+- {from: eliezer-yudkowsky, to: singularity-institute, type: founded, start: "2000", note: "Bankrolled by extropian entrepreneurs Brian and Sabine Atkins"}
+- {from: singularity-institute, to: machine-intelligence-research-institute, type: precursor_to, start: "2013", note: "Renamed MIRI in 2013"}
+- {from: peter-thiel, to: singularity-institute, type: funds, note: "Early major donor", sources: ["[reported] contemporary reporting"]}
+- {from: eliezer-yudkowsky, to: machine-intelligence-research-institute, type: affiliated_with, note: "Co-founder and research fellow"}
+- {from: nate-soares, to: machine-intelligence-research-institute, type: employed_by, note: "President"}
+- {from: robin-hanson, to: overcoming-bias, type: founded, start: "2006"}
+- {from: eliezer-yudkowsky, to: overcoming-bias, type: affiliated_with, start: "2006", end: "2009", note: "Co-blogger; the Sequences began here"}
+- {from: overcoming-bias, to: lesswrong, type: precursor_to, start: "2009"}
+- {from: eliezer-yudkowsky, to: lesswrong, type: founded, start: "2009"}
+- {from: eliezer-yudkowsky, to: rationalism, type: founded, note: "The community's founding figure"}
+- {from: lesswrong, to: rationalism, type: part_of, note: "The community's forum"}
+- {from: scott-alexander, to: slate-star-codex, type: founded, start: "2013"}
+- {from: slate-star-codex, to: rationalism, type: part_of, note: "Second on-ramp alongside LessWrong"}
+- {from: cfar, to: rationalism, type: part_of, note: "Rationality workshops"}
+- {from: oliver-habryka, to: lesswrong, type: affiliated_with, note: "Runs it via Lightcone"}
+- {from: eliezer-yudkowsky, to: sequences, type: authored, start: "2006"}
+- {from: eliezer-yudkowsky, to: hpmor, type: authored, start: "2010"}
+- {from: eliezer-yudkowsky, to: torture-vs-dust-specks, type: authored, start: "2007"}
+- {from: sequences, to: rationalism, type: advocates, note: "The on-ramp: biases, Bayes, decision theory"}
+- {from: hpmor, to: rationalism, type: advocates, note: "A 2013 LessWrong survey found about a quarter of users arrived via the fanfiction"}
 
-- from: kurzgesagt
-  to: selfish-argument-kurzgesagt
-  type: authored
-  note: >-
-    With Our World in Data
-
-- from: gates-foundation
-  to: kurzgesagt
-  type: funds
-  note: >-
-    Supported the egoistic-altruism explainer
-  sources: ["Video credits — verify"]
-
-- from: ruha-benjamin
-  to: ustopia
-  type: coined
-  note: >-
-    Borrowed from Atwood against the utopia/apocalypse binary
-
-- from: rob-hopkins
-  to: crisis-of-imagination
-  type: coined
-
-- from: nyalleng-moorosi
-  to: dair
-  type: affiliated_with
-  note: >-
-    Possible Futures series on community-grown technology
-
-# Collapse events as graph nodes
-- from: sam-bankman-fried
-  to: ftx-collapse
-  type: related_to
-  note: >-
-    Central figure; convicted on all counts, sentenced to 25 years
-
-- from: ftx
-  to: ftx-collapse
-  type: related_to
-  note: >-
-    Filed Chapter 11, 11 November 2022; ~$8B customer shortfall
-
-- from: caroline-ellison
-  to: ftx-collapse
-  type: related_to
-  note: >-
-    Cooperating witness
-
-- from: sam-altman
-  to: openai-board-crisis
-  type: related_to
-  note: >-
-    Removed 17 Nov, reinstated 22 Nov 2023
-
-- from: helen-toner
-  to: openai-board-crisis
-  type: related_to
-  note: >-
-    Voted to remove Altman
-
-- from: tasha-mccauley
-  to: openai-board-crisis
-  type: related_to
-  note: >-
-    Voted to remove Altman
-
-- from: ilya-sutskever
-  to: openai-board-crisis
-  type: related_to
-  note: >-
-    Voted to remove Altman, then apologized and defected
-
-- from: microsoft
-  to: openai-board-crisis
-  type: related_to
-  note: >-
-    $13B partner pressure behind reinstatement
-
-- from: helen-toner
+- {from: eliezer-yudkowsky, to: ai-alignment, type: advocates, note: "Often credited with founding the field after his 2001 reversal"}
+- {from: ai-alignment, to: ai-safety, type: subconcept_of}
+- {from: instrumental-convergence, to: ai-alignment, type: premise_of, note: "Danger without malice, so goals must be right"}
+- {from: eliezer-yudkowsky, to: doomerism, type: advocates}
+- {from: nate-soares, to: doomerism, type: advocates}
+- {from: machine-intelligence-research-institute, to: doomerism, type: advocates, note: "By the 2020s, calling for a halt to frontier AI"}
+- {from: doomerism, to: ai-safety, type: subconcept_of}
+- {from: eliezer-yudkowsky, to: yudkowsky-time-oped-2023, type: authored, start: "2023-03-29"}
+- {from: yudkowsky-time-oped-2023, to: doomerism, type: advocates, note: "\"…under anything remotely like the current circumstances, is that literally everyone on Earth will die\"", sources: ["[primary] TIME, 29 Mar 2023"]}
+- {from: eliezer-yudkowsky, to: if-anyone-builds-it-everyone-dies, type: authored, start: "2025"}
+- {from: nate-soares, to: if-anyone-builds-it-everyone-dies, type: authored, start: "2025"}
+- {from: if-anyone-builds-it-everyone-dies, to: doomerism, type: advocates}
+- from: eliezer-yudkowsky
   to: openai
-  type: board_member_of
+  type: influenced
   note: >-
-    Nonprofit board; removed Altman Nov 2023
+    Altman: "eliezer has IMO done more to accelerate AGI than anyone else… got many of us interested in AGI, helped deepmind get funded… was critical in the decision to start openai"
+  sources: ["[primary] Sam Altman on X, Feb 2023"]
+- {from: eliezer-yudkowsky, to: deepmind, type: influenced, note: "Per Altman, 'helped deepmind get funded'", sources: ["[primary] Sam Altman on X, Feb 2023"]}
+- {from: eliezer-yudkowsky, to: singularity-summit, type: participated_in, note: "Organizer and networking nexus"}
 
-- from: tasha-mccauley
-  to: openai
-  type: board_member_of
-  note: >-
-    Nonprofit board; removed Altman Nov 2023
+- {from: ziz-lasota, to: zizians, type: founded, sources: ["[reported] PBS NewsHour timeline (2025)"]}
+- {from: zizians, to: rationalism, type: related_to, note: "Grew out of Bay Area rationalist circles after a falling-out with MIRI and CFAR", sources: ["[reported] PBS NewsHour; Rolling Stone (2025)"]}
+- {from: zizians, to: cfar, type: related_to, note: "Protested at a 2019 CFAR event; long-running dispute", sources: ["[reported] PBS NewsHour timeline (2025)"]}
+- {from: curtis-yarvin, to: rationalism, type: related_to, note: "Neoreaction found early audiences in rationalist spaces", sources: ["[reported] Lewis-Kraus, New Yorker"]}
+- {from: gideon-lewis-kraus, to: rationalism, type: critiques, note: "'Gave safe harbour to some genuinely egregious ideas'", sources: ["[reported] New Yorker"]}
+- {from: sonia-joseph, to: effective-altruism, type: critiques, start: "2023", note: "\"It's misogyny encoded into math\"", sources: ["[reported] TIME (Charlotte Alter), 3 Feb 2023"]}
+- {from: charlotte-alter, to: effective-altruism, type: related_to, note: "Reported seven women's accounts of harassment and assault (TIME, Feb 2023)"}
 
-- from: adam-dangelo
-  to: openai
-  type: board_member_of
-  note: >-
-    Nonprofit board; safety-camp side of the dispute
+# ============================================================
+# 11. RIVAL FAITHS — e/acc, d/acc, positive-sum
+# ============================================================
 
-- from: ilya-sutskever
-  to: openai
-  type: board_member_of
-  note: >-
-    Co-founder and chief scientist on the nonprofit board
+- {from: guillaume-verdon, to: effective-accelerationism, type: coined, start: "2022", note: "As 'Beff Jezos', in explicit opposition to EA"}
+- {from: guillaume-verdon, to: effective-altruism, type: critiques, note: "Optimizes a hedonic loss function with 'spurious minima'; became cover to acquire power and capital", sources: ["[primary] Lex Fridman Podcast #407 (Dec 2023)"]}
+- {from: effective-accelerationism, to: effective-altruism, type: critiques, note: "Measure progress thermodynamically, by energy capture and complexity", sources: ["[primary] Lex Fridman Podcast #407 (Dec 2023)"]}
+- {from: doomerism, to: effective-accelerationism, type: debated, note: "The schism inside the bundle: stop it vs. speed it up"}
+- {from: marc-andreessen, to: effective-accelerationism, type: advocates, start: "2023", sources: ["[primary] Techno-Optimist Manifesto names 'Beff Jezos' among its patron saints"]}
+- {from: marc-andreessen, to: techno-optimist-manifesto, type: authored, start: "2023-10-16"}
+- {from: marc-andreessen, to: andreessen-horowitz, type: founded, start: "2009"}
+- {from: techno-optimist-manifesto, to: effective-accelerationism, type: advocates}
+- {from: techno-optimist-manifesto, to: existential-risk, type: critiques, note: "Lists 'existential risk' and 'tech ethics' among its enemies", sources: ["[primary] a16z.com, 16 Oct 2023"]}
+- {from: vitalik-buterin, to: d-acc, type: coined, start: "2023", sources: ["[primary] Buterin, 'My techno-optimism' (Nov 2023)"]}
+- {from: d-acc, to: effective-accelerationism, type: critiques, note: "Acceleration, yes, but of defensive and decentralized tools", sources: ["[primary] Buterin (2023)"]}
+- {from: d-acc, to: doomerism, type: critiques, note: "Halting is neither possible nor desirable", sources: ["[primary] Buterin (2023)"]}
+- {from: kurzgesagt, to: selfish-argument-kurzgesagt, type: authored, start: "2018"}
+- {from: selfish-argument-kurzgesagt, to: positive-sum-economics, type: advocates}
+- {from: gates-foundation, to: kurzgesagt, type: funds, note: "Disclosed funding for a number of Kurzgesagt videos", sources: ["[reported] Wikipedia: Kurzgesagt"]}
+- {from: positive-sum-economics, to: ai-race, type: related_to, note: "Shares the bundle's assumption that growth can continue indefinitely"}
 
-- from: bret-taylor
-  to: openai
-  type: board_member_of
-  start: "2023"
-  note: >-
-    Chaired the reconstituted board after Altman's return
+# ============================================================
+# 12. AI LABS — where the ideology meets the balance sheet
+# ============================================================
 
-# Institutional homes
-- from: zach-robinson
-  to: effective-ventures
-  type: employed_by
-  note: >-
-    CEO of Effective Ventures US
+- {from: sam-altman, to: openai, type: founded, start: "2015"}
+- {from: elon-musk, to: openai, type: founded, start: "2015", end: "2018"}
+- {from: greg-brockman, to: openai, type: founded, start: "2015"}
+- {from: ilya-sutskever, to: openai, type: founded, start: "2015"}
+- {from: elon-musk, to: openai, type: funds, start: "2015", note: "Part of a $1B founders' pledge; how much he actually gave (reported $44M+) is disputed in litigation", sources: ["[reported] contemporary reporting; Musk v. OpenAI filings"]}
+- {from: microsoft, to: openai, type: funds, start: "2019", amount: "~$13B cumulative", sources: ["[reported] contemporary reporting"]}
+- {from: sama, to: openai, type: related_to, note: "Contracted Kenyan content labeling at under $2/hour", sources: ["[reported] TIME (Billy Perrigo), 18 Jan 2023"]}
+- {from: sama, to: ai-ethics, type: illustrates, note: "The labor underneath 'safe' AI"}
+- {from: karen-hao, to: empire-of-ai, type: authored, start: "2025"}
+- {from: empire-of-ai, to: openai, type: critiques, sources: ["[primary] Hao, Empire of AI (Penguin, 2025)"]}
+- {from: empire-of-ai, to: ai-race, type: critiques, note: "The race as empire-building", sources: ["[primary] Hao (2025)"]}
 
-- from: kanika-bahl
-  to: evidence-action
-  type: employed_by
-  note: >-
-    CEO; runs GiveWell top-charity programs
+- {from: openai, to: anthropic, type: precursor_to, start: "2021", note: "Anthropic's founders left OpenAI over speed vs. safety"}
+- {from: dario-amodei, to: openai, type: employed_by, end: "2020", note: "VP of Research"}
+- {from: daniela-amodei, to: openai, type: employed_by, end: "2020"}
+- {from: dario-amodei, to: daniela-amodei, type: related_to, note: "Siblings; CEO and President of Anthropic"}
+- {from: dario-amodei, to: anthropic, type: founded, start: "2021"}
+- {from: daniela-amodei, to: anthropic, type: founded, start: "2021"}
+- {from: jared-kaplan, to: anthropic, type: founded, start: "2021"}
+- {from: jack-clark, to: anthropic, type: founded, start: "2021"}
+- {from: chris-olah, to: anthropic, type: founded, start: "2021"}
+- {from: sam-mccandlish, to: anthropic, type: founded, start: "2021"}
+- {from: tom-brown, to: anthropic, type: founded, start: "2021"}
+- {from: ben-mann, to: anthropic, type: employed_by, start: "2021", note: "Early founding-team member; some sources list him as a co-founder"}
+- {from: amazon, to: anthropic, type: funds, start: "2023", amount: "$8B committed (2023–24)", sources: ["[reported] contemporary reporting"]}
+- {from: google, to: anthropic, type: funds, start: "2023", amount: "~$3B+", sources: ["[reported] contemporary reporting"]}
+- {from: anthropic, to: ai-race, type: related_to, note: "Argues a safety-focused lab must be at the frontier to matter"}
+- {from: openai, to: ai-race, type: related_to, note: "Mission: ensure AGI 'benefits all of humanity'"}
+- {from: deepmind, to: ai-race, type: related_to, note: "'Solve intelligence'"}
+- {from: existential-risk, to: ai-race, type: premise_of, note: "Gebru's paradox: fear of AI becomes the reason to build it first", sources: ["[primary] Gebru & Torres (2024)"]}
 
-- from: emile-torres
-  to: nonprofit-industrial-complex
-  type: related_to
-  note: >-
-    Structural version: philanthropy moves wealth north-to-south, keeps power
-  sources: ["Gebru & Torres, The TESCREAL Bundle (First Monday, 2024)"]
+- {from: long-term-benefit-trust, to: anthropic, type: part_of, start: "2023", note: "Holds Class T stock; elects a growing share of the board", sources: ["[primary] Anthropic, LTBT announcement, Sep 2023"]}
+- {from: neil-buddy-shah, to: long-term-benefit-trust, type: board_member_of, start: "2023", note: "Chair; CHAI CEO", sources: ["[primary] Anthropic, Sep 2023"]}
+- {from: jason-matheny, to: long-term-benefit-trust, type: board_member_of, start: "2023", end: "2023", note: "RAND CEO; departed December 2023"}
+- {from: paul-christiano, to: long-term-benefit-trust, type: board_member_of, start: "2023", end: "2024", note: "Departed for the US AI Safety Institute, April 2024"}
+- {from: kanika-bahl, to: long-term-benefit-trust, type: board_member_of, start: "2023", end: "2026", note: "Evidence Action CEO; departed January 2026", sources: ["[reported] per docs/first-research.docx"]}
+- {from: zach-robinson, to: long-term-benefit-trust, type: board_member_of, start: "2023", end: "2026", note: "Departed January 2026", sources: ["[reported] per docs/first-research.docx"]}
+- {from: richard-fontaine, to: long-term-benefit-trust, type: board_member_of, start: "2026", note: "CNAS CEO; joined January 2026", sources: ["[reported] per docs/first-research.docx"]}
+- {from: kanika-bahl, to: evidence-action, type: employed_by, note: "CEO"}
+
+- {from: paul-christiano, to: alignment-research-center, type: founded, start: "2021"}
+- {from: paul-christiano, to: openai, type: employed_by, end: "2021", note: "Led language-model alignment; co-developed RLHF"}
+- {from: paul-christiano, to: us-ai-safety-institute, type: employed_by, start: "2024-04", note: "Head of AI safety"}
+- {from: paul-christiano, to: ai-alignment, type: advocates}
+- {from: jan-leike, to: openai, type: employed_by, end: "2024-05", note: "Co-led Superalignment; left saying safety had 'taken a backseat to shiny products'"}
+- {from: jan-leike, to: anthropic, type: employed_by, start: "2024-05"}
+- {from: daniel-kokotajlo, to: openai, type: employed_by, end: "2024", note: "Left over safety concerns"}
+- {from: ilya-sutskever, to: safe-superintelligence, type: founded, start: "2024"}
+
+- {from: demis-hassabis, to: deepmind, type: founded, start: "2010"}
+- {from: shane-legg, to: deepmind, type: founded, start: "2010"}
+- {from: mustafa-suleyman, to: deepmind, type: founded, start: "2010"}
+- {from: peter-thiel, to: deepmind, type: funds, start: "2010", amount: "~$2.25M (reported; figures vary)", note: "First major investor, personally or via Founders Fund", sources: ["[reported] CNBC, 7 Dec 2020"]}
+- {from: jaan-tallinn, to: deepmind, type: funds, note: "Early investor", sources: ["[reported] contemporary reporting"]}
+- {from: deepmind, to: google, type: part_of, start: "2014", note: "Acquired 2014; now Google DeepMind"}
+- {from: mustafa-suleyman, to: microsoft, type: employed_by, start: "2024", note: "CEO of Microsoft AI"}
+
+# OpenAI board crisis, 17–22 November 2023
+- {from: helen-toner, to: openai, type: board_member_of, end: "2023-11", note: "Voted to remove Altman"}
+- {from: tasha-mccauley, to: openai, type: board_member_of, end: "2023-11", note: "Voted to remove Altman"}
+- {from: adam-dangelo, to: openai, type: board_member_of, note: "Voted to remove Altman; stayed on the reconstituted board"}
+- {from: ilya-sutskever, to: openai, type: board_member_of, end: "2023-11", note: "Voted to remove Altman, then recanted"}
+- {from: bret-taylor, to: openai, type: board_member_of, start: "2023-11", note: "Chair of the reconstituted board"}
+- {from: helen-toner, to: open-philanthropy, type: employed_by, note: "Before CSET and the OpenAI board", sources: ["[reported] contemporary reporting"]}
+- {from: sam-altman, to: openai-board-crisis, type: participated_in, note: "Removed 17 Nov, reinstated 22 Nov 2023"}
+- {from: greg-brockman, to: openai-board-crisis, type: participated_in, note: "Removed as chair; quit in protest; returned"}
+- {from: helen-toner, to: openai-board-crisis, type: participated_in}
+- {from: tasha-mccauley, to: openai-board-crisis, type: participated_in}
+- {from: adam-dangelo, to: openai-board-crisis, type: participated_in}
+- {from: ilya-sutskever, to: openai-board-crisis, type: participated_in, note: "Signed the employee letter and apologized"}
+- {from: emmett-shear, to: openai-board-crisis, type: participated_in, note: "Interim CEO for about three days"}
+- {from: microsoft, to: openai-board-crisis, type: participated_in, note: "Offered to hire Altman and staff; pressure behind the reinstatement"}
+- {from: bret-taylor, to: openai-board-crisis, type: participated_in}
+- {from: openai-board-crisis, to: ai-race, type: illustrates, note: "745 of 770 employees sided with speed; the safety-minded board lost"}
+
+# AI safety vs. AI ethics
+- {from: existential-risk, to: ai-safety, type: premise_of, note: "In EA usage, 'safety' means preventing hypothetical catastrophe"}
+- {from: timnit-gebru, to: ai-ethics, type: advocates}
+- {from: timnit-gebru, to: ai-safety, type: critiques, note: "X-risk talk legitimizes building dangerous, unscoped systems while present harms go unseen", sources: ["[primary] Gebru & Torres (2024)"]}
+- {from: timnit-gebru, to: ai-race, type: critiques, sources: ["[primary] Gebru & Torres (2024)"]}
+- {from: timnit-gebru, to: dair, type: founded, start: "2021-12"}
+- {from: dair, to: ai-ethics, type: advocates}
+- {from: nyalleng-moorosi, to: dair, type: affiliated_with, note: "Possible Futures series"}
+- {from: ai-now-institute, to: ai-ethics, type: advocates}
+- {from: emily-bender, to: stochastic-parrots, type: authored, start: "2021"}
+- {from: timnit-gebru, to: stochastic-parrots, type: authored, start: "2021"}
+- {from: margaret-mitchell, to: stochastic-parrots, type: authored, start: "2021"}
+- {from: stochastic-parrots, to: ai-ethics, type: advocates, note: "Environmental cost, encoded bias, opportunity cost"}
+- {from: timnit-gebru, to: google, type: employed_by, end: "2020-12", note: "Co-lead, Ethical AI"}
+- {from: margaret-mitchell, to: google, type: employed_by, end: "2021-02", note: "Co-lead, Ethical AI; fired"}
+- {from: timnit-gebru, to: gebru-google-exit, type: participated_in}
+- {from: google, to: gebru-google-exit, type: participated_in}
+- {from: margaret-mitchell, to: gebru-google-exit, type: participated_in, note: "Fired weeks later"}
+- {from: stochastic-parrots, to: gebru-google-exit, type: related_to, note: "The dispute over the paper"}
+
+# Policy bodies
+- {from: uk-ai-security-institute, to: ai-safety-summits, type: participated_in, start: "2023-11", note: "Launched at Bletchley"}
+- {from: us-ai-safety-institute, to: ai-safety-summits, type: participated_in}
+- {from: ai-safety-summits, to: ai-safety, type: related_to, note: "From 'safety' (Bletchley) to 'action' (Paris)"}
+
+# Other x-risk institutions
+- {from: jaan-tallinn, to: cser, type: founded, start: "2012"}
+- {from: jaan-tallinn, to: future-of-life-institute, type: founded, start: "2014"}
+- {from: max-tegmark, to: future-of-life-institute, type: founded, start: "2014"}
+- {from: elon-musk, to: future-of-life-institute, type: funds, start: "2015", amount: "$10M", note: "For AI safety research", sources: ["[primary] FLI announcement, Jan 2015"]}
+- {from: jaan-tallinn, to: survival-and-flourishing-fund, type: funds, note: "Principal funder", sources: ["[primary] survivalandflourishing.fund"]}
+- {from: survival-and-flourishing-fund, to: machine-intelligence-research-institute, type: funds, sources: ["[primary] SFF grant recommendations"]}
+- {from: cser, to: existential-risk, type: advocates}
+- {from: future-of-life-institute, to: existential-risk, type: advocates}
+- {from: global-priorities-institute, to: longtermism, type: advocates}
+- {from: future-of-humanity-institute, to: existential-risk, type: advocates}
+- {from: future-of-humanity-institute, to: fhi-closure, type: participated_in, start: "2024-04"}
+- {from: nick-bostrom, to: fhi-closure, type: participated_in}
+
+# ============================================================
+# 13. CRITICS OF EA AND LONGTERMISM
+# ============================================================
+
+- {from: anthony-kalulu, to: effective-altruism, type: critiques, note: "Predetermined solutions 'not rooted in the lived experiences of the extreme poor'; about 1% of anti-poverty funding reaches grassroots groups", sources: ["[claimed] Kalulu, EA Forum post"]}
+- {from: amia-srinivasan, to: good-it-promises-harm-it-does, type: authored, start: "2023", note: "Foreword"}
+- {from: amia-srinivasan, to: effective-altruism, type: critiques, note: "Promises a better world while encouraging us to accept this one 'more or less as it is'", sources: ["[primary] Foreword, The Good It Promises, the Harm It Does (2023)"]}
+- {from: good-it-promises-harm-it-does, to: effective-altruism, type: critiques, sources: ["[primary] Adams, Crary & Gruen (eds.), Oxford UP, 2023"]}
+- {from: mathew-snow, to: effective-altruism, type: critiques, note: "Silent on the capitalist systems producing what EA distributes", sources: ["[reported] Jacobin"]}
+- {from: nonprofit-industrial-complex, to: effective-altruism, type: critiques, note: "Philanthropy moves wealth north to south while keeping the power", sources: ["[primary] Gebru & Torres (2024)"]}
+- {from: emile-torres, to: nonprofit-industrial-complex, type: related_to, note: "Makes the structural version of the argument"}
+- {from: emile-torres, to: utopia-apocalypse-binary, type: related_to, note: "Names the dichotomy that crowds out the present"}
+
+# ============================================================
+# 14. AFTERMATH AND ALTERNATIVES
+# ============================================================
+
+- {from: zach-robinson, to: centre-for-effective-altruism, type: employed_by, start: "2024", note: "CEO; March 2025: EA 'in a defensive crouch'", sources: ["[primary] 'Stewardship: CEA's 2025-26 strategy', EA Forum, 28 Mar 2025"]}
+- {from: zach-robinson, to: effective-ventures, type: employed_by, note: "Formerly CEO of Effective Ventures US"}
+
+- {from: margaret-atwood, to: ustopia, type: coined, start: "2011", sources: ["[primary] Atwood, In Other Worlds (2011)"]}
+- {from: ruha-benjamin, to: ustopia, type: advocates, note: "What we create together 'when we're wide awake'"}
+- {from: ruha-benjamin, to: imagination-a-manifesto, type: authored, start: "2024"}
+- {from: imagination-a-manifesto, to: ustopia, type: advocates}
+- {from: ruha-benjamin, to: utopia-apocalypse-binary, type: critiques, note: "Two sides of one coin: technology acts on us, human inputs go missing", sources: ["[primary] Benjamin, TED talk; Imagination (2024)"]}
+- {from: ustopia, to: utopia-apocalypse-binary, type: critiques, sources: ["[primary] Benjamin, Imagination (2024)"]}
+- {from: decidim, to: ustopia, type: illustrates, note: "Open-source participatory democracy in Barcelona, Helsinki, New York"}
+- {from: dair, to: ustopia, type: related_to, note: "Possible Futures: technology grown from community needs"}
+- {from: rob-hopkins, to: crisis-of-imagination, type: coined}
+- {from: rob-hopkins, to: from-what-is-to-what-if, type: authored, start: "2019"}
+- {from: crisis-of-imagination, to: ustopia, type: related_to, note: "Why is a Mars colony easier to picture than housing for all?"}
+- {from: james-baldwin, to: the-fire-next-time, type: authored, start: "1963"}
+- {from: the-fire-next-time, to: anthony-levandowski, type: related_to, note: "The essay's closing answer to 'all that matters is tomorrow': 'an invented past can never be used'"}
+
+- {from: david-noble, to: religion-of-technology, type: authored, start: "1997"}
+- {from: religion-of-technology, to: techno-millenarianism, type: advocates}
+- {from: robert-geraci, to: apocalyptic-ai, type: authored, start: "2010"}
+- {from: apocalyptic-ai, to: techno-millenarianism, type: advocates}
+- {from: apocalyptic-ai, to: singularitarianism, type: critiques, note: "Kurzweil and Moravec recast as apocalyptic theology", sources: ["[primary] Geraci, Apocalyptic AI (Oxford UP, 2010)"]}
+- {from: beth-singler, to: techno-millenarianism, type: related_to, note: "Studies AI blessing, apocalypse and deification narratives"}
+- {from: techno-millenarianism, to: ai-succession, type: related_to, note: "Transcendence by successor minds"}
+
+# ============================================================
+# 15. WHO DECIDES — governance of AI safety and security (2023–2026)
+# ============================================================
+
+- {from: industry-self-governance, to: ai-governance, type: subconcept_of}
+- {from: ai-security, to: ai-safety, type: related_to, note: "The same risks renamed as national security, with a different owner: the state"}
+- {from: ai-security, to: ai-governance, type: subconcept_of, note: "Security framing hands the decision to defense and intelligence institutions"}
+- {from: ustopia, to: ai-governance, type: related_to, note: "The democratic answer: decide together, wide awake"}
+- {from: decidim, to: ai-governance, type: illustrates, note: "What public deliberation over technology can look like"}
+
+# Labs governing themselves
+- {from: anthropic, to: responsible-scaling-policy, type: authored, start: "2023-09"}
+- {from: responsible-scaling-policy, to: industry-self-governance, type: illustrates}
+- {from: long-term-benefit-trust, to: industry-self-governance, type: illustrates, note: "A trust, not voters or regulators, guards the mission"}
+- {from: openai-board-crisis, to: industry-self-governance, type: illustrates, note: "The nonprofit board used its power once, and lost"}
+- {from: openai-board-crisis, to: openai-recapitalization, type: precursor_to}
+- {from: openai, to: openai-recapitalization, type: participated_in, note: "Nonprofit OpenAI Foundation controls OpenAI Group PBC with ~26%"}
+- {from: microsoft, to: openai-recapitalization, type: participated_in, note: "~27% stake after conversion", sources: ["[reported] contemporary reporting, Oct 2025"]}
+- {from: elon-musk, to: openai-recapitalization, type: critiques, note: "Sued to stop OpenAI abandoning its nonprofit mission", sources: ["[reported] Musk v. OpenAI filings"]}
+- {from: openai-recapitalization, to: ai-governance, type: illustrates, note: "Two state attorneys general, not the public, reviewed the mission's future"}
+
+# Funders building the policy field
+- {from: open-philanthropy, to: cset, type: funds, start: "2019", amount: "$55M", sources: ["[primary] Open Philanthropy, 'Georgetown University — CSET' grant page"]}
+- {from: jason-matheny, to: cset, type: founded, start: "2019", note: "Founding director; later RAND CEO and LTBT trustee"}
+- {from: helen-toner, to: cset, type: employed_by, start: "2019", note: "Director of strategy; interim executive director from Sep 2025", sources: ["[reported] Wikipedia: Helen Toner"]}
+- {from: cset, to: ai-security, type: advocates, note: "AI as a national and international security problem"}
+
+# Pause, or not
+- {from: future-of-life-institute, to: fli-pause-letter, type: authored, start: "2023-03-22"}
+- {from: elon-musk, to: fli-pause-letter, type: advocates, note: "Signatory"}
+- {from: fli-pause-letter, to: ai-race, type: critiques, note: "Called for a six-month pause; none happened", sources: ["[primary] futureoflife.org, 22 Mar 2023"]}
+- {from: yudkowsky-time-oped-2023, to: fli-pause-letter, type: critiques, note: "Written in response: a pause 'isn't enough'", sources: ["[primary] TIME, 29 Mar 2023"]}
+
+# States deciding
+- {from: uk-ai-security-institute, to: ai-security, type: advocates, start: "2025-02-14", note: "Dropped 'Safety' from its name at the Munich Security Conference", sources: ["[primary] UK Parliament written statement HLWS454, Feb 2025"]}
+- {from: us-ai-safety-institute, to: ai-security, type: advocates, start: "2025-06", note: "Renamed CAISI: 'demonstrable risks' like cyber, bio and chemical weapons", sources: ["[primary] Commerce Dept. statement, Jun 2025"]}
+- {from: paris-ai-action-summit, to: ai-safety-summits, type: part_of}
+- {from: india-ai-impact-summit, to: ai-safety-summits, type: part_of}
+- {from: paris-ai-action-summit, to: ai-race, type: illustrates, note: "The US and UK declined to sign; 'safety' gave way to 'action'"}
+- {from: india-ai-impact-summit, to: ai-governance, type: illustrates, note: "First summit hosted in the Global South; sovereign compute and 'welfare for all'"}
+- {from: ai-action-plan-2025, to: ai-race, type: advocates, sources: ["[primary] 'Winning the Race', Jul 2025"]}
+- {from: ai-action-plan-2025, to: state-preemption-order, type: precursor_to}
+- {from: state-preemption-order, to: sb-53, type: related_to, note: "Targets state rules like California's"}
+- {from: state-preemption-order, to: ai-governance, type: illustrates, note: "Who decides: Washington, not the states"}
+- {from: sb-1047-veto, to: sb-53, type: precursor_to, note: "The vetoed liability bill became a lighter transparency law"}
+- {from: sb-1047-veto, to: ai-governance, type: illustrates}
+- {from: sb-53, to: ai-governance, type: illustrates, note: "Public law requiring labs to publish their own safety frameworks"}
+- {from: eu-ai-act, to: ai-governance, type: illustrates, note: "Rights-based, risk-tiered, and partly delayed"}
+- {from: eu-ai-act, to: ai-ethics, type: advocates, note: "Bias, transparency and fundamental rights, not only catastrophe"}
+
+# Security vs. a lab's guardrails
+- {from: anthropic, to: anthropic-pentagon-dispute, type: participated_in, note: "Refused to drop limits on fully autonomous weapons and domestic mass surveillance", sources: ["[reported] NPR, 6 Mar 2026"]}
+- {from: us-department-of-defense, to: anthropic-pentagon-dispute, type: participated_in, note: "Demanded 'all lawful purposes' access; designated Anthropic a supply-chain risk (5 Mar 2026)", sources: ["[reported] NPR, 6 Mar 2026; CRS IN12669"]}
+- {from: anthropic-pentagon-dispute, to: ai-governance, type: illustrates, note: "Company guardrails vs. state security claims, settled (so far) by a court"}
+- {from: anthropic-pentagon-dispute, to: ai-security, type: related_to, note: "Whose 'security': the state's, or citizens' protection from surveillance?"}

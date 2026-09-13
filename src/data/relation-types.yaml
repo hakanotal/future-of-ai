@@ -1,5 +1,6 @@
 # Relation types with inverse labels
-# Each type belongs to a category and has an inverse for rendering reverse edges
+# Each type belongs to a category and has an inverse for rendering reverse edges.
+# See docs/ontology.md for when to use each type.
 
 institutional:
   - id: founded
@@ -39,9 +40,18 @@ conceptual:
   - id: subconcept_of
     inverse: has_subconcept
     label: Subconcept of
+  - id: advocates
+    inverse: advocated_by
+    label: Advocates
   - id: critiques
     inverse: critiqued_by
     label: Critiques
+  - id: premise_of
+    inverse: rests_on
+    label: Premise of
+  - id: illustrates
+    inverse: illustrated_by
+    label: Illustrates
   - id: related_to
     inverse: related_to
     label: Related to
@@ -59,3 +69,6 @@ social:
   - id: warned
     inverse: warned_by
     label: Warned
+  - id: participated_in
+    inverse: participants
+    label: Participated in

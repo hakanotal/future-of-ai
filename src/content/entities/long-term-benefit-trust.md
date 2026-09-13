@@ -1,0 +1,9 @@
+Anthropic's experiment in corporate governance, announced in September 2023: a trust of five financially disinterested people who hold a special class of stock ("Class T") and elect a growing share of the company's board.
+
+**The idea.** A public benefit corporation still answers to shareholders. The Trust is meant to add a counterweight answering to the mission, "the responsible development and maintenance of advanced AI for the long-term benefit of humanity", with power phasing in as the company matures. The founding trustees were [Neil Buddy Shah](/e/neil-buddy-shah) (chair), [Jason Matheny](/e/jason-matheny), [Paul Christiano](/e/paul-christiano), [Kanika Bahl](/e/kanika-bahl) and [Zach Robinson](/e/zach-robinson), several with ties to effective altruism.
+
+**The question it leaves you with.** Five trustees stand between one of the world's most valuable AI companies and its investors. Who chose them? Who could remove them? And whose interests does "the long-term benefit of humanity" include?
+
+**Where it goes in the story.** The Trust is the Anthropic counterpart to OpenAI's nonprofit board, and the fate of that board ([crisis](/e/openai-board-crisis), [recapitalization](/e/openai-recapitalization)) is the obvious comparison. Its membership has turned over: Matheny left in December 2023, Christiano in April 2024 for the US AI Safety Institute, and, per our research notes, Bahl and Robinson in January 2026, with [Richard Fontaine](/e/richard-fontaine) joining.
+
+**Strongest objection / best reply.** Supporters call it the most serious attempt yet to bind a frontier lab to something beyond profit. Critics note that Anthropic's biggest backers, [Amazon](/e/amazon) and [Google](/e/google), have committed billions, and that the Trust has not yet faced an OpenAI-style test. It is an example of [industry self-governance](/e/industry-self-governance): novel, well-intentioned, and ultimately designed by the company it governs.

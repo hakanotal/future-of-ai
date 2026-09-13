@@ -1,0 +1,3 @@
+The Center for Security and Emerging Technology at Georgetown, launched in January 2019 with a $55 million grant from [Open Philanthropy](/e/open-philanthropy), the largest US center on AI policy at the time. Its founding director was [Jason Matheny](/e/jason-matheny), former head of the intelligence community's research agency; [Helen Toner](/e/helen-toner) was director of strategy and later interim executive director.
+
+CSET is the clearest example of EA-linked money shaping not only AI safety but [AI security](/e/ai-security): policy analysis on AI, China, chips and national security that fed directly into US government thinking. It shows how funders' worldviews become governments' vocabularies, without anyone deciding that on purpose.

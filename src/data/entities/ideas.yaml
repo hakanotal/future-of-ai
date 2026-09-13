@@ -35,7 +35,7 @@
   type: concept
   strands: [R, L]
   short: >-
-    Yudkowsky's life project after his reversal: ensuring superintelligence shares human values, a challenge he deems nearly impossible.
+    The problem of making a highly capable AI system pursue the goals its builders intend; Yudkowsky's life project after 2001, now a field at every major lab.
   tags: [ai-safety]
   status: published
 
@@ -116,10 +116,10 @@
   type: concept
   strands: [L]
   short: >-
-    Bostrom's argument that delaying cosmic settlement forfeits astronomical value — up to 10^58 potential lives with digital minds.
+    Bostrom's argument that every century of delay in settling the cosmos forfeits roughly 10^38 potential human lives, so reducing extinction risk outweighs speeding progress.
   tags: [longtermism]
   status: published
-  sources: ["Bostrom, Astronomical Waste (2003) — verify (backlog A10)"]
+  sources: ["[primary] Bostrom, 'Astronomical Waste', Utilitas 15(3), 2003, pp. 308-314"]
 
 - id: far-future-priority-objection
   label: Far-Future Priority Objection
@@ -193,43 +193,43 @@
   type: work
   strands: [L]
   short: >-
-    Bostrom's 2003 paper pricing delayed settlement at up to 10^58 lives — the maximalist pole of longtermist arithmetic.
+    Bostrom's 2003 Utilitas paper pricing each century of delayed space settlement at about 10^38 lost lives (10^29 per second); the 10^58 digital-minds figure comes from his later work.
   dates:
     start: "2003"
   tags: [paper, longtermism]
   status: published
-  sources: ["Bostrom (2003) — verify (backlog A10)"]
+  sources: ["[primary] Utilitas 15(3), 2003; 10^58 appears in Bostrom 2013 / Superintelligence 2014, not here"]
 
 - id: strong-longtermism-2021
   label: The Case for Strong Longtermism
   type: work
   strands: [L]
   short: >-
-    Greaves and MacAskill's 2021 working paper deriving 10^24 future people and the 10^16-lives rounding-error equivalence.
+    Greaves and MacAskill's 2021 GPI paper: with at least 10^24 expected future beings, cutting extinction risk by a millionth of a percentage point is worth ten quadrillion (10^16) lives.
   dates:
     start: "2021"
   tags: [paper, longtermism]
   status: published
-  sources: ["GPI working paper (2021) — verify (backlog A10)"]
+  sources: ["[primary] GPI Working Paper, June 2021, section 3"]
 
 - id: beckstead-dissertation-2013
   label: On the Overwhelming Importance of Shaping the Far Future
   type: work
   strands: [L]
   short: >-
-    Beckstead's 2013 Rutgers dissertation, supervised by Temkin, arguing rich-country lives should be prioritized for their ripple effects.
+    Beckstead's 2013 Rutgers dissertation: shaping the far future matters overwhelmingly, which led him to find it "more plausible" that a rich-country life is worth more, other things being equal.
   dates:
     start: "2013"
   tags: [dissertation, longtermism]
   status: published
-  sources: ["Beckstead (2013) — read surrounding context before quoting (backlog A11)"]
+  sources: ["[primary] Beckstead, On the Overwhelming Importance of Shaping the Far Future (Rutgers, 2013), ch. 1"]
 
 - id: stochastic-parrots
   label: On the Dangers of Stochastic Parrots
   type: work
   strands: []
   short: >-
-    The 2021 paper on large-language-model risks whose authorship got Gebru forced out of Google that December.
+    Bender, Gebru, McMillan-Major and Mitchell's FAccT 2021 paper on the costs and risks of large language models; the dispute over it ended Gebru's job at Google in December 2020.
   dates:
     start: "2021"
   tags: [paper, ai-ethics]
@@ -262,19 +262,19 @@
   type: work
   strands: []
   short: >-
-    Andreessen's October 2023 manifesto: no material problem resists more technology, energy up 1,000x, deceleration as murder.
+    Andreessen's 16 October 2023 manifesto: technology solves material problems, energy use should rise 1,000x, and 'existential risk' and 'tech ethics' are named among its enemies.
   dates:
     start: "2023"
   tags: [manifesto, accelerationism]
   status: published
-  sources: ["a16z manifesto text; bio snapshots — verify (backlog A13)"]
+  sources: ["[primary] a16z.com, 16 Oct 2023"]
 
 - id: cosmist-manifesto
   label: Cosmist Manifesto
   type: work
   strands: [C]
   short: >-
-    Goertzel's 2010 manifesto promising resurrection-by-copy and future magic achieved by scientific means.
+    Ben Goertzel's 2010 manifesto for 'modern cosmism': space-time engineering and 'future magic' will deliver by science what religions promised, including resurrecting the dead.
   dates:
     start: "2010"
   tags: [manifesto, cosmism]
@@ -286,12 +286,12 @@
   type: work
   strands: [S]
   short: >-
-    Kokotajlo et al.'s viral scenario: 330,000 superhuman researcher copies by 2027, a trillion superintelligences by 2035.
+    The 2025 scenario by Daniel Kokotajlo, Scott Alexander and colleagues: superhuman AI researchers by 2027, and two endings, a race to catastrophe or a slowdown.
   dates:
     start: "2025"
   tags: [scenario, singularity]
   status: published
-  sources: ["Kokotajlo et al. — verify (backlog B24)"]
+  sources: ["[primary] ai-2027.com (April 2025)"]
 
 - id: sequences
   label: Sequences
@@ -322,19 +322,21 @@
   type: work
   strands: [R]
   short: >-
-    Yudkowsky's 2007 post preferring fifty years of torture for one over momentary dust specks for multitudes — expected utility in miniature.
+    Yudkowsky's 2007 LessWrong post: is one person tortured for fifty years worse than 3^^^3 people each getting a dust speck in the eye? He answers that the specks are worse.
   dates:
     start: "2007"
   tags: [essay, utilitarianism]
   status: published
-  sources: ["LessWrong (2007) — verify (backlog A14)"]
+  sources: ["[primary] LessWrong, 30 October 2007"]
 
 - id: selfish-argument-kurzgesagt
   label: A Selfish Argument for Making the World a Better Place
   type: work
   strands: []
   short: >-
-    Kurzgesagt's positive-sum explainer with Our World in Data, Gates-supported: lift billions, multiply inventors, cure what kills you.
+    Kurzgesagt's 2018 explainer on 'egoistic altruism': in a positive-sum world, lifting billions out of poverty multiplies the inventors and customers who will cure what kills you.
+  dates:
+    start: "2018"
   tags: [video, growth]
   status: published
 
@@ -369,7 +371,10 @@
   type: event
   strands: [R]
   short: >-
-    The Thiel-funded Stanford summit that networked Yudkowsky's circle into existence — and, most consequentially, seeded DeepMind.
+    Annual futurist conference (2006–2012) run by the Singularity Institute with Thiel's backing; at the 2010 edition DeepMind's founders got the meeting that led to Thiel's investment.
+  dates:
+    start: "2006"
+    end: "2012"
   tags: [summit, ai]
   status: published
 
@@ -380,10 +385,684 @@
   type: fund
   strands: [EA, L]
   short: >-
-    The FTX Foundation's early-2022 grant vehicle (Beckstead CEO, MacAskill advising) that committed about $160M before the collapse.
+    The FTX Foundation's grant vehicle, announced 28 February 2022 (Beckstead CEO, MacAskill advising), which committed about $160M to longtermist causes before its team resigned on 10 November 2022.
   dates:
-    start: "2022"
-    end: "2022"
+    start: "2022-02-28"
+    end: "2022-11-10"
   tags: [grants, ftx]
   status: published
-  sources: ["Archived ftxfuturefund.org; EA Forum launch post — verify dates and totals (backlog A1)"]
+  sources: ["[primary] 'Announcing the Future Fund', EA Forum, 28 Feb 2022", "[primary] 'The FTX Future Fund team has resigned', EA Forum, 10 Nov 2022"]
+
+# ============================================================
+# v2 expansion — argument structure, examples, and the religion frame
+# (see docs/ontology.md, docs/verification-log.md)
+# ============================================================
+
+# ---------- concepts: the philosophy underneath ----------
+
+- id: impartiality
+  label: Impartiality
+  type: concept
+  strands: [EA]
+  short: >-
+    The principle that a person's suffering counts the same whether they are your child, a stranger abroad, or someone not yet born. Singer's pond made it vivid; longtermism extends it across time.
+  tags: [ethics, foundations]
+  status: published
+
+- id: welfarism
+  label: Welfarism
+  type: concept
+  strands: [EA]
+  short: >-
+    The view that only well-being matters morally. MacAskill calls EA "tentatively welfarist": about promoting well-being, not protecting biodiversity or natural beauty for their own sakes.
+  tags: [ethics, foundations]
+  status: published
+  sources: ["[primary] MacAskill, 'The Definition of Effective Altruism' (2019)"]
+
+- id: itn-framework
+  label: Importance, Tractability, Neglectedness
+  type: concept
+  aliases: [ITN framework]
+  strands: [EA]
+  short: >-
+    EA's triage rule for choosing causes: how big is the problem, how solvable, how ignored? It is why 80,000 Hours ranks AI risk first and climate among "other pressing problems".
+  tags: [method, prioritization]
+  status: published
+  sources: ["[primary] 80000hours.org problem-profiles methodology"]
+
+- id: wild-animal-suffering
+  label: Wild Animal Suffering
+  type: concept
+  strands: [EA]
+  short: >-
+    The welfarist worry that most wild animals' lives contain more suffering than joy, which pushes some EAs toward the unsettling conclusion that shrinking wild habitat could be net positive.
+  tags: [ethics, nature]
+  status: published
+
+- id: repugnant-conclusion
+  label: Repugnant Conclusion
+  type: concept
+  strands: [L]
+  short: >-
+    Parfit's discovery that plausible steps imply a vast population of lives barely worth living is better than a smaller flourishing one. Longtermist population ethics has lived next to it ever since.
+  dates:
+    start: "1984"
+  tags: [philosophy, population-ethics]
+  status: published
+  sources: ["[primary] Parfit, Reasons and Persons (1984), Part IV"]
+
+- id: value-lock-in
+  label: Value Lock-in
+  type: concept
+  strands: [L]
+  short: >-
+    MacAskill's warning that some set of values, possibly carried by AGI or a world government, could become permanently entrenched, freezing moral progress for millennia.
+  tags: [longtermism, ai]
+  status: published
+  sources: ["[primary] MacAskill, What We Owe the Future (2022)"]
+
+- id: existential-security
+  label: Existential Security
+  type: concept
+  strands: [L]
+  short: >-
+    Ord's name for the goal beyond the Precipice: a state in which extinction risk has been driven low and kept low, buying time for a Long Reflection.
+  tags: [longtermism, risk]
+  status: published
+  sources: ["[primary] Ord, The Precipice (2020)"]
+
+- id: long-reflection
+  label: The Long Reflection
+  type: concept
+  strands: [L]
+  short: >-
+    Ord and MacAskill's proposal that, once safe, humanity should spend a long period deliberating what it values before making irreversible choices about its cosmic future.
+  tags: [longtermism]
+  status: published
+  sources: ["[primary] Ord, The Precipice (2020)"]
+
+- id: fanaticism
+  label: Fanaticism (Pascal's Mugging)
+  type: concept
+  aliases: [Pascal's mugging]
+  strands: []
+  short: >-
+    The objection that expected-value reasoning lets tiny probabilities of astronomical payoffs override everything else, so a stranger promising 10^50 lives can "mug" you out of your wallet.
+  tags: [decision-theory, critique]
+  status: published
+  sources: ["[primary] Bostrom, 'Pascal's Mugging', Analysis 69(3), 2009"]
+
+- id: ends-justify-means
+  label: Ends Justify the Means
+  type: concept
+  strands: []
+  short: >-
+    The worry that a morality which only counts outcomes will license any present wrong, fraud included, if the projected future benefit is large enough.
+  tags: [ethics, critique]
+  status: published
+
+- id: posthuman
+  label: Posthuman
+  type: concept
+  strands: [T]
+  short: >-
+    A being whose capacities in healthspan, cognition or emotion so far exceed ours that it is no longer human in the ordinary sense; transhumanism's destination.
+  tags: [transhumanism]
+  status: published
+
+- id: liberal-eugenics
+  label: Liberal Eugenics
+  type: concept
+  aliases: [germinal choice]
+  strands: [T]
+  short: >-
+    The claim that enhancement chosen freely by parents and individuals, not imposed by states, escapes the crimes of twentieth-century eugenics. Critics ask whether markets and inequality recreate the coercion.
+  tags: [transhumanism, eugenics]
+  status: published
+
+- id: instrumental-convergence
+  label: Instrumental Convergence
+  type: concept
+  strands: [R, L]
+  short: >-
+    Bostrom's thesis that almost any goal gives an AI reasons to acquire resources, resist shutdown and preserve itself, so danger does not require malice.
+  tags: [ai-safety]
+  status: published
+  sources: ["[primary] Bostrom, Superintelligence (2014), ch. 7"]
+
+- id: doomerism
+  label: AI Doomerism
+  type: concept
+  strands: [R]
+  short: >-
+    The view, most associated with Yudkowsky and MIRI, that building superintelligence under current conditions will by default kill everyone, so development must be halted.
+  tags: [ai-safety]
+  status: published
+
+- id: ai-race
+  label: The AGI Race
+  type: concept
+  strands: []
+  short: >-
+    The competition among labs and states to build artificial general intelligence first, justified on every side by the same argument: if we do not build it, someone less careful will.
+  tags: [ai, geopolitics]
+  status: published
+
+- id: ai-succession
+  label: AI Succession
+  type: concept
+  strands: [S, T]
+  short: >-
+    The view that humanity's role is to give rise to successor minds that may replace us, voiced by Richard Sutton and, in Musk's phrase, humans as a "biological bootloader" for digital superintelligence.
+  tags: [singularity, ai]
+  status: published
+
+- id: d-acc
+  label: d/acc
+  type: concept
+  aliases: [defensive accelerationism]
+  strands: []
+  short: >-
+    Vitalik Buterin's 2023 middle path between e/acc and doomerism: accelerate, but favor defensive, decentralized and democratic technologies.
+  dates:
+    start: "2023"
+  tags: [accelerationism, alternatives]
+  status: published
+  sources: ["[primary] Buterin, 'My techno-optimism', vitalik.eth.limo, Nov 2023"]
+
+- id: techno-millenarianism
+  label: Techno-Millenarianism
+  type: concept
+  aliases: [religion of technology]
+  strands: []
+  short: >-
+    The scholarly argument that technological futurism recycles religious structure: a fallen present, a coming rupture (the Singularity), salvation (upload, alignment) and a priesthood.
+  tags: [religion, analysis]
+  status: published
+  sources: ["[primary] Noble, The Religion of Technology (1997); Geraci, Apocalyptic AI (2010)"]
+
+- id: utopia-apocalypse-binary
+  label: Utopia/Apocalypse Binary
+  type: concept
+  strands: []
+  short: >-
+    The critics' observation that AI debate swings between paradise and extinction, two stories in which technology acts on us and the question of who is harmed now never gets asked.
+  tags: [critique, alternatives]
+  status: published
+
+# ---------- works ----------
+
+- id: the-life-you-can-save
+  label: The Life You Can Save
+  type: work
+  strands: [EA]
+  short: >-
+    Singer's 2009 book returning to the drowning child for a mass audience, and the organization of the same name recommending effective charities.
+  dates:
+    start: "2009"
+  tags: [book, ethics]
+  status: published
+
+- id: doing-good-better
+  label: Doing Good Better
+  type: work
+  strands: [EA]
+  short: >-
+    MacAskill's 2015 book that introduced effective altruism to general readers, including the case for earning to give.
+  dates:
+    start: "2015"
+  tags: [book, effective-altruism]
+  status: published
+
+- id: definition-of-ea-2019
+  label: The Definition of Effective Altruism
+  type: work
+  strands: [EA]
+  short: >-
+    MacAskill's 2019 essay defining EA as using evidence and reason to do the most good, and describing it as "tentatively welfarist".
+  dates:
+    start: "2019"
+  tags: [essay, effective-altruism]
+  status: published
+  sources: ["[primary] In Greaves & Pummer (eds.), Effective Altruism: Philosophical Issues (OUP, 2019)"]
+
+- id: new-bottles-for-new-wine
+  label: New Bottles for New Wine
+  type: work
+  strands: [T]
+  short: >-
+    Julian Huxley's 1957 essay collection whose chapter "Transhumanism" gave the movement its name: "the human species can, if it wishes, transcend itself".
+  dates:
+    start: "1957"
+  tags: [book, transhumanism]
+  status: published
+
+- id: posthuman-essay-2008
+  label: Why I Want to Be a Posthuman When I Grow Up
+  type: work
+  strands: [T]
+  short: >-
+    Bostrom's 2008 essay arguing that vastly extended healthspan, cognition and emotional range could be very good for us, and that becoming posthuman could be worth wanting.
+  dates:
+    start: "2008"
+  tags: [essay, transhumanism]
+  status: published
+
+- id: deep-utopia
+  label: Deep Utopia
+  type: work
+  strands: [T, L]
+  short: >-
+    Bostrom's 2024 book asking what humans would do for meaning in a "solved world" where AI has made work and struggle unnecessary.
+  dates:
+    start: "2024"
+  tags: [book, transhumanism]
+  status: published
+
+- id: singularity-is-near
+  label: The Singularity Is Near
+  type: work
+  strands: [S]
+  short: >-
+    Kurzweil's 2005 bestseller predicting human-level AI by 2029 and a singularity around 2045, when humans merge with their machines.
+  dates:
+    start: "2005"
+  tags: [book, singularity]
+  status: published
+
+- id: yudkowsky-time-oped-2023
+  label: "Pausing AI Developments Isn't Enough"
+  type: work
+  strands: [R]
+  short: >-
+    Yudkowsky's 29 March 2023 TIME op-ed: under anything like current circumstances, building superhuman AI means "literally everyone on Earth will die"; shut it all down, enforced if necessary.
+  dates:
+    start: "2023-03-29"
+  tags: [op-ed, doomerism]
+  status: published
+  sources: ["[primary] time.com/6266923, 29 Mar 2023"]
+
+- id: sbf-vox-interview
+  label: The Vox DMs
+  type: work
+  strands: []
+  short: >-
+    Bankman-Fried's Twitter messages to Kelsey Piper, published 16 November 2022, calling his ethics talk "mostly a front… a dumb game we woke westerners play".
+  dates:
+    start: "2022-11-16"
+  tags: [interview, ftx]
+  status: published
+  sources: ["[primary] Vox, 16 Nov 2022"]
+
+- id: going-infinite
+  label: Going Infinite
+  type: work
+  strands: []
+  short: >-
+    Michael Lewis's 2023 book on Bankman-Fried, published during the trial; widely criticized as too sympathetic and novelistic.
+  dates:
+    start: "2023"
+  tags: [book, ftx]
+  status: published
+
+- id: human-extinction-torres
+  label: "Human Extinction: A History"
+  type: work
+  strands: []
+  short: >-
+    Émile P. Torres's 2023 intellectual history of how Western thinkers have imagined, feared and sometimes welcomed the end of humanity.
+  dates:
+    start: "2023"
+  tags: [book, critique]
+  status: published
+
+- id: situational-awareness
+  label: Situational Awareness
+  type: work
+  strands: [S]
+  short: >-
+    Leopold Aschenbrenner's 2024 essay series forecasting AGI around 2027 and framing its development as a US–China national-security race.
+  dates:
+    start: "2024"
+  tags: [essay, agi]
+  status: published
+
+- id: empire-of-ai
+  label: Empire of AI
+  type: work
+  strands: []
+  short: >-
+    Karen Hao's 2025 account of OpenAI, documenting the lab's ideology alongside the low-paid data workers and resource costs behind it.
+  dates:
+    start: "2025"
+  tags: [book, critique, labor]
+  status: published
+
+- id: religion-of-technology
+  label: The Religion of Technology
+  type: work
+  strands: []
+  short: >-
+    David Noble's 1997 history arguing that Western technology has been driven by millenarian, redemptive Christian motifs since the Middle Ages.
+  dates:
+    start: "1997"
+  tags: [book, religion]
+  status: published
+
+- id: apocalyptic-ai
+  label: Apocalyptic AI
+  type: work
+  strands: []
+  short: >-
+    Robert Geraci's 2010 study showing how AI futurism (Moravec, Kurzweil) repeats Jewish and Christian apocalyptic structure: corrupt present, rupture, transcendent digital afterlife.
+  dates:
+    start: "2010"
+  tags: [book, religion]
+  status: published
+
+- id: imagination-a-manifesto
+  label: "Imagination: A Manifesto"
+  type: work
+  strands: []
+  short: >-
+    Ruha Benjamin's 2024 book treating imagination as a contested political resource and proposing ustopias against elite techno-utopias.
+  dates:
+    start: "2024"
+  tags: [book, alternatives]
+  status: published
+
+- id: from-what-is-to-what-if
+  label: From What Is to What If
+  type: work
+  strands: []
+  short: >-
+    Rob Hopkins's 2019 case for reclaiming collective imagination for regenerative, local futures.
+  dates:
+    start: "2019"
+  tags: [book, alternatives]
+  status: published
+
+- id: the-fire-next-time
+  label: The Fire Next Time
+  type: work
+  strands: []
+  short: >-
+    James Baldwin's 1963 book: "To accept one's past, one's history, is not the same thing as drowning in it; it is learning how to use it."
+  dates:
+    start: "1963"
+  tags: [book]
+  status: published
+
+- id: defending-eugenics
+  label: Defending Eugenics
+  type: work
+  strands: []
+  short: >-
+    Jonathan Anomaly's 2018 Monash Bioethics Review paper distinguishing coercive "old" eugenics from voluntary embryo selection; heavily criticized.
+  dates:
+    start: "2018"
+  tags: [paper, eugenics]
+  status: published
+
+# ---------- events ----------
+
+- id: alameda-2018-split
+  label: Alameda 2018 Split
+  type: event
+  strands: [EA]
+  short: >-
+    The 2018 walkout of roughly half of Alameda Research's staff, whose leaders then warned EA figures that Bankman-Fried was dishonest and negligent. TIME reported the warnings in March 2023.
+  dates:
+    start: "2018"
+  tags: [ftx, warnings]
+  status: published
+  sources: ["[reported] TIME (Charlotte Alter), 15 Mar 2023"]
+
+- id: gebru-google-exit
+  label: Gebru's Exit from Google
+  type: event
+  strands: []
+  short: >-
+    December 2020: Google forced out Timnit Gebru, co-lead of its Ethical AI team, after a dispute over the Stochastic Parrots paper; Margaret Mitchell was fired weeks later.
+  dates:
+    start: "2020-12"
+  tags: [ai-ethics]
+  status: published
+
+- id: bostrom-email-apology
+  label: Bostrom's Email Apology
+  type: event
+  strands: []
+  short: >-
+    January 2023: Nick Bostrom apologized for a 1996 message to the Extropians mailing list containing a racist claim and a slur, which he says he regretted within 24 hours.
+  dates:
+    start: "2023-01-09"
+  tags: [genealogy]
+  status: published
+  sources: ["[primary] nickbostrom.com/oldemail.pdf"]
+
+- id: fhi-closure
+  label: FHI Closure
+  type: event
+  strands: [L]
+  short: >-
+    April 2024: Oxford closed the Future of Humanity Institute after 19 years, following a long hiring and fundraising freeze imposed by the Faculty of Philosophy.
+  dates:
+    start: "2024-04"
+  tags: [longtermism, oxford]
+  status: published
+
+- id: us-v-bankman-fried
+  label: US v. Bankman-Fried
+  type: event
+  strands: []
+  short: >-
+    The SDNY fraud trial: convicted on all seven counts on 2 November 2023 and sentenced to 25 years on 28 March 2024, with Caroline Ellison as star witness.
+  dates:
+    start: "2023-10-03"
+    end: "2024-03-28"
+  tags: [ftx, trial]
+  status: published
+  sources: ["[primary] US v. Bankman-Fried, SDNY 22-cr-673"]
+
+- id: ftx-anthropic-stake-sale
+  label: FTX's Anthropic Stake Sale
+  type: event
+  strands: []
+  short: >-
+    In 2024 the FTX estate sold the Anthropic shares bought with $500M in 2022, for about $884M in March and roughly $450M more in June. AI appreciation helped repay defrauded customers.
+  dates:
+    start: "2024-03"
+    end: "2024-06"
+  tags: [ftx, anthropic]
+  status: published
+  sources: ["[reported] CNBC / Bloomberg, 25 Mar 2024; CNBC, Jun 2024"]
+
+- id: ai-safety-summits
+  label: AI Safety Summits
+  type: event
+  strands: []
+  short: >-
+    Intergovernmental series: Bletchley Park (Nov 2023), Seoul (May 2024), Paris (Feb 2025, where the US and UK refused to sign the declaration), New Delhi (Feb 2026). The vocabulary drifted from "safety" to "action" to "impact".
+  dates:
+    start: "2023-11-01"
+  tags: [policy, governance]
+  status: published
+
+# ---------- funds ----------
+
+- id: survival-and-flourishing-fund
+  label: Survival and Flourishing Fund
+  type: fund
+  aliases: [SFF]
+  strands: [L]
+  short: >-
+    Grant vehicle funded mainly by Jaan Tallinn that routes money to existential-risk and AI-safety organizations.
+  tags: [grants, existential-risk]
+  status: published
+
+# ============================================================
+# v2 — WHO DECIDES: governance of AI safety and security (2023–2026)
+# ============================================================
+
+- id: ai-governance
+  label: AI Governance
+  type: concept
+  aliases: [who decides]
+  strands: []
+  short: >-
+    The question this story ends on: which institutions (labs, funders, states, courts, publics) get to decide what counts as "safe" or "secure" AI, and on whose behalf.
+  tags: [governance, future-of-ai]
+  status: published
+
+- id: industry-self-governance
+  label: Industry Self-Governance
+  type: concept
+  strands: []
+  short: >-
+    Labs writing their own rules: nonprofit boards, benefit trusts, scaling policies, voluntary summit commitments. Strong on paper; tested by money, rivals and governments.
+  tags: [governance, labs]
+  status: published
+
+- id: ai-security
+  label: AI Security
+  type: concept
+  strands: []
+  short: >-
+    The reframing of AI risk as a national-security matter (cyberattacks, bioweapons, the race with China) that by 2025 had displaced "safety" in the names of the UK and US institutes.
+  tags: [governance, security]
+  status: published
+
+- id: responsible-scaling-policy
+  label: Responsible Scaling Policy
+  type: work
+  strands: []
+  short: >-
+    Anthropic's September 2023 framework promising to pause or add safeguards as models cross defined danger thresholds; the template for rival labs' frontier safety policies.
+  dates:
+    start: "2023-09"
+  tags: [policy, self-governance]
+  status: published
+  sources: ["[primary] anthropic.com, Sep 2023"]
+
+- id: fli-pause-letter
+  label: Pause Giant AI Experiments
+  type: work
+  strands: []
+  short: >-
+    The Future of Life Institute's March 2023 open letter calling for a six-month pause on training systems more powerful than GPT-4; signed by Musk and thousands of others; no lab paused.
+  dates:
+    start: "2023-03-22"
+  tags: [open-letter, ai-safety]
+  status: published
+  sources: ["[primary] futureoflife.org, 22 Mar 2023"]
+
+- id: eu-ai-act
+  label: EU AI Act
+  type: work
+  strands: []
+  short: >-
+    The first comprehensive AI law: risk-based rules in force from August 2024, obligations for general-purpose models from 2 August 2025, with parts delayed by the 2026 "digital omnibus".
+  dates:
+    start: "2024-08-01"
+  tags: [law, governance]
+  status: published
+  sources: ["[primary] EU AI Act implementation timeline (European Commission)"]
+
+- id: sb-53
+  label: California SB 53
+  type: work
+  aliases: [Transparency in Frontier Artificial Intelligence Act]
+  strands: []
+  short: >-
+    The first US frontier-AI safety law, signed 29 September 2025: large developers must publish safety frameworks and report critical incidents.
+  dates:
+    start: "2025-09-29"
+  tags: [law, governance]
+  status: published
+  sources: ["[primary] gov.ca.gov, 29 Sep 2025"]
+
+- id: ai-action-plan-2025
+  label: "Winning the Race: America's AI Action Plan"
+  type: work
+  strands: []
+  short: >-
+    The White House's July 2025 plan: deregulate, build data centres, export American AI. It replaced safety-first federal policy with the language of winning.
+  dates:
+    start: "2025-07-23"
+  tags: [policy, ai-race]
+  status: published
+  sources: ["[primary] whitehouse.gov, Jul 2025"]
+
+- id: sb-1047-veto
+  label: SB 1047 Veto
+  type: event
+  strands: []
+  short: >-
+    September 2024: Governor Newsom vetoed California's bill to impose liability and shutdown requirements on frontier models, after a fight that split AI-safety advocates from much of the industry.
+  dates:
+    start: "2024-09-29"
+  tags: [law, governance]
+  status: published
+
+- id: state-preemption-order
+  label: Federal Preemption Order
+  type: event
+  strands: []
+  short: >-
+    11 December 2025: a US executive order seeking a "minimally burdensome" national framework, with a DOJ task force to challenge state AI laws, in the name of "global AI dominance".
+  dates:
+    start: "2025-12-11"
+  tags: [law, governance]
+  status: published
+  sources: ["[primary] whitehouse.gov, Dec 2025"]
+
+- id: openai-recapitalization
+  label: OpenAI Recapitalization
+  type: event
+  strands: []
+  short: >-
+    28 October 2025: OpenAI became OpenAI Group PBC, controlled by the nonprofit OpenAI Foundation (about 26% stake); Microsoft holds about 27%. Delaware's attorney general did not object.
+  dates:
+    start: "2025-10-28"
+  tags: [governance, openai]
+  status: published
+  sources: ["[primary] Delaware DOJ statement, 28 Oct 2025; openai.com/our-structure"]
+
+- id: anthropic-pentagon-dispute
+  label: Anthropic–Pentagon Dispute
+  type: event
+  strands: []
+  short: >-
+    2026: Anthropic refused to drop limits on using its models for fully autonomous weapons and domestic mass surveillance. The Pentagon labeled it a supply-chain risk; in August a judge called that unlawful retaliation.
+  dates:
+    start: "2026-02-27"
+  tags: [governance, security]
+  status: published
+  sources: ["[reported] NPR, 6 Mar 2026; CNBC / NPR, 28 Aug 2026; CRS Insight IN12669"]
+
+- id: paris-ai-action-summit
+  label: Paris AI Action Summit
+  type: event
+  strands: []
+  short: >-
+    February 2025: 60 signatories backed a declaration on inclusive, sustainable AI; the US and UK did not. JD Vance warned that too much regulation would kill the industry.
+  dates:
+    start: "2025-02-10"
+    end: "2025-02-11"
+  tags: [policy, governance]
+  status: published
+  sources: ["[reported] Euronews, 14 Feb 2025; Wikipedia: AI Action Summit"]
+
+- id: india-ai-impact-summit
+  label: India AI Impact Summit
+  type: event
+  strands: []
+  short: >-
+    February 2026, New Delhi: the first summit in the series hosted in the Global South, declaration endorsed by 92 countries and organizations, framed around "welfare for all".
+  dates:
+    start: "2026-02-16"
+    end: "2026-02-21"
+  tags: [policy, global-south]
+  status: published
+  sources: ["[primary] PIB India, Feb 2026"]
