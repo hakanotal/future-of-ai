@@ -1,6 +1,6 @@
-<div class="section-image my-8 flex justify-center"><img src="/future-of-ai/images/sections/web/section-1.jpg" alt="" loading="lazy" decoding="async" width="256" height="256" class="w-64 h-64 rounded-lg object-cover border border-surface-2"></div>
-
 ## Part I: The Drowning Child
+
+<div class="section-image my-8 flex justify-center"><img src="/future-of-ai/images/sections/web/section-1.jpg" alt="" loading="lazy" decoding="async" width="256" height="256" class="w-64 h-64 rounded-lg object-cover border border-surface-2"></div>
 
 Oxford, England, 1971. In the autumn, a twenty-five-year-old Australian philosopher is finishing his graduate work and starting his first teaching post. He is quiet, precise and not yet famous. On the news, millions of people are fleeing war and famine in East Bengal. His name is [Peter Singer](/e/peter-singer), and he sits down to write what looks like an ordinary journal article.
 
@@ -24,9 +24,9 @@ It took roughly forty years for the argument to become a movement. And that move
 
 ---
 
-<div class="section-image my-8 flex justify-center"><img src="/future-of-ai/images/sections/web/section-2.jpg" alt="" loading="lazy" decoding="async" width="256" height="256" class="w-64 h-64 rounded-lg object-cover border border-surface-2"></div>
-
 ## Part II: Oxford, and the Question Singer Never Asked
+
+<div class="section-image my-8 flex justify-center"><img src="/future-of-ai/images/sections/web/section-2.jpg" alt="" loading="lazy" decoding="async" width="256" height="256" class="w-64 h-64 rounded-lg object-cover border border-surface-2"></div>
 
 Oxford again, 2006. A young philosopher named [**Toby Ord**](/e/toby-ord) is reading Singer. He is from an Australian family, modest and quiet, and intellectually enormously ambitious.
 
@@ -48,9 +48,9 @@ Keep those three questions in mind. The rest of this story is the history of how
 
 ---
 
-<div class="section-image my-8 flex justify-center"><img src="/future-of-ai/images/sections/web/section-3.jpg" alt="" loading="lazy" decoding="async" width="256" height="256" class="w-64 h-64 rounded-lg object-cover border border-surface-2"></div>
-
 ## Part III: The Measurable Good
+
+<div class="section-image my-8 flex justify-center"><img src="/future-of-ai/images/sections/web/section-3.jpg" alt="" loading="lazy" decoding="async" width="256" height="256" class="w-64 h-64 rounded-lg object-cover border border-surface-2"></div>
 
 2007. Two young analysts at the hedge fund Bridgewater Associates, [**Elie Hassenfeld**](/e/elie-hassenfeld) and [**Holden Karnofsky**](/e/holden-karnofsky), noticed that charity lived in a dark age of transparency. In finance, every investment was dissected. In philanthropy, almost nothing was. They left to found [**GiveWell**](/e/givewell), which judged charities not by overhead ratios or glossy reports but by evidence of outcomes.
 
@@ -76,9 +76,9 @@ The essay collection [***The Good It Promises, the Harm It Does***](/e/good-it-p
 
 ---
 
-<div class="section-image my-8 flex justify-center"><img src="/future-of-ai/images/sections/web/section-4.jpg" alt="" loading="lazy" decoding="async" width="256" height="256" class="w-64 h-64 rounded-lg object-cover border border-surface-2"></div>
-
 ## Part IV: Earning to Give, and Eleven Days in November
+
+<div class="section-image my-8 flex justify-center"><img src="/future-of-ai/images/sections/web/section-4.jpg" alt="" loading="lazy" decoding="async" width="256" height="256" class="w-64 h-64 rounded-lg object-cover border border-surface-2"></div>
 
 Cambridge, Massachusetts, around 2012. At MIT there is a curly-haired physics student named [**Sam Bankman-Fried**](/e/sam-bankman-fried), the son of two Stanford law professors, who already thinks in cost-benefit terms. A visiting speaker, [William MacAskill](/e/william-macaskill), tells students that **your career is the biggest moral decision of your life**. If you are strong at maths, you may do far more good *not* working at a charity. Go into finance. Earn as much as you can. Give most of it away.
 
@@ -110,9 +110,9 @@ The final irony came in 2024. The bankruptcy estate [sold](/e/ftx-anthropic-stak
 
 ---
 
-<div class="section-image my-8 flex justify-center"><img src="/future-of-ai/images/sections/web/section-5.jpg" alt="" loading="lazy" decoding="async" width="256" height="256" class="w-64 h-64 rounded-lg object-cover border border-surface-2"></div>
-
 ## Part V: Longtermism: From Today's Poor to Tomorrow's Trillions
+
+<div class="section-image my-8 flex justify-center"><img src="/future-of-ai/images/sections/web/section-5.jpg" alt="" loading="lazy" decoding="async" width="256" height="256" class="w-64 h-64 rounded-lg object-cover border border-surface-2"></div>
 
 While bed nets were doing measurable good, something bigger was growing in Oxford. The question *whom do we save today?* was giving way to a much larger, more abstract and more dangerous one: **what do we owe the trillions of people who might be born in the future?**
 
@@ -165,9 +165,9 @@ MacAskill is, notably, among the *moderate* longtermists. That is the point at w
 
 ---
 
-<div class="section-image my-8 flex justify-center"><img src="/future-of-ai/images/sections/web/section-6.jpg" alt="" loading="lazy" decoding="async" width="256" height="256" class="w-64 h-64 rounded-lg object-cover border border-surface-2"></div>
-
 ## Part VI: The Bundle: TESCREAL
+
+<div class="section-image my-8 flex justify-center"><img src="/future-of-ai/images/sections/web/section-6.jpg" alt="" loading="lazy" decoding="async" width="256" height="256" class="w-64 h-64 rounded-lg object-cover border border-surface-2"></div>
 
 2023. [**Timnit Gebru**](/e/timnit-gebru) was born in Addis Ababa to Eritrean parents, fled war as a teenager, and earned a Stanford PhD in computer vision. In 2020, as co-lead of Google's Ethical AI team, she co-wrote a paper on the risks of large language models, ["On the Dangers of Stochastic Parrots"](/e/stochastic-parrots), and Google forced her out that December ([her exit](/e/gebru-google-exit)). A year later she founded the [**Distributed AI Research Institute**](/e/dair). Now she had a larger target: a network of ideas shared by the most powerful people in the technology industry that the public had no name for.
 
@@ -262,9 +262,9 @@ A reasonable position: TESCREAL is best used as a **map of intellectual genealog
 
 ---
 
-<div class="section-image my-8 flex justify-center"><img src="/future-of-ai/images/sections/web/section-7.jpg" alt="" loading="lazy" decoding="async" width="256" height="256" class="w-64 h-64 rounded-lg object-cover border border-surface-2"></div>
-
 ## Part VII: Rival Faiths: e/acc, d/acc and the Case for Growth
+
+<div class="section-image my-8 flex justify-center"><img src="/future-of-ai/images/sections/web/section-7.jpg" alt="" loading="lazy" decoding="async" width="256" height="256" class="w-64 h-64 rounded-lg object-cover border border-surface-2"></div>
 
 The bundle has a schism, and it clarifies what is really being argued.
 
@@ -286,9 +286,9 @@ There is also a mainstream position that deserves a hearing. Kurzgesagt's popula
 
 ---
 
-<div class="section-image my-8 flex justify-center"><img src="/future-of-ai/images/sections/web/section-8.jpg" alt="" loading="lazy" decoding="async" width="256" height="256" class="w-64 h-64 rounded-lg object-cover border border-surface-2"></div>
-
 ## Part VIII: From Philosophy to Laboratory
+
+<div class="section-image my-8 flex justify-center"><img src="/future-of-ai/images/sections/web/section-8.jpg" alt="" loading="lazy" decoding="async" width="256" height="256" class="w-64 h-64 rounded-lg object-cover border border-surface-2"></div>
 
 By the late 2010s the ideas had become institutions, and the institutions had become laboratories.
 
@@ -316,9 +316,9 @@ Which brings us to the last of the three questions from Oxford. The first two, *
 
 ---
 
-<div class="section-image my-8 flex justify-center"><img src="/future-of-ai/images/sections/web/section-9.jpg" alt="" loading="lazy" decoding="async" width="256" height="256" class="w-64 h-64 rounded-lg object-cover border border-surface-2"></div>
-
 ## Part IX: Who Decides?
+
+<div class="section-image my-8 flex justify-center"><img src="/future-of-ai/images/sections/web/section-9.jpg" alt="" loading="lazy" decoding="async" width="256" height="256" class="w-64 h-64 rounded-lg object-cover border border-surface-2"></div>
 
 ### Five days in November
 
@@ -378,9 +378,9 @@ This is what the TESCREAL critique, at its best, is really about. Not whether an
 
 ---
 
-<div class="section-image my-8 flex justify-center"><img src="/future-of-ai/images/sections/web/section-10.jpg" alt="" loading="lazy" decoding="async" width="256" height="256" class="w-64 h-64 rounded-lg object-cover border border-surface-2"></div>
-
 ## Part X: Oxford, 2026
+
+<div class="section-image my-8 flex justify-center"><img src="/future-of-ai/images/sections/web/section-10.jpg" alt="" loading="lazy" decoding="async" width="256" height="256" class="w-64 h-64 rounded-lg object-cover border border-surface-2"></div>
 
 Walk Oxford's stone courtyards today and the name once whispered in its corridors is spoken more carefully.
 

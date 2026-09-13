@@ -42,6 +42,27 @@ const { focus = 'tescreal', class: className } = Astro.props;
     };
   }
 
+  // Spread-out force layout. The cose defaults (32px edges, weak repulsion,
+  // labels ignored) pack a few hundred nodes into one tight ball.
+  function layoutOptions(animate) {
+    return {
+      name: 'cose',
+      animate: animate,
+      animationDuration: 800,
+      fit: true,
+      padding: 40,
+      randomize: true,
+      nodeDimensionsIncludeLabels: true,
+      idealEdgeLength: function() { return 120; },
+      nodeRepulsion: function() { return 60000; },
+      nodeOverlap: 24,
+      edgeElasticity: function() { return 80; },
+      gravity: 0.2,
+      componentSpacing: 140,
+      numIter: 2500,
+    };
+  }
+
   async function init() {
     const statusEl = document.getElementById('graph-status');
     const setStatus = (t) => { if (statusEl) statusEl.textContent = t; };
@@ -98,8 +119,8 @@ const { focus = 'tescreal', class: className } = Astro.props;
             },
           },
         ],
-        layout: { name: 'cose', animate: true, animationDuration: 600, fit: true, padding: 40 },
-        minZoom: 0.3,
+        layout: layoutOptions(true),
+        minZoom: 0.1,
         maxZoom: 3,
         wheelSensitivity: 0.25,
       });
@@ -148,7 +169,7 @@ const { focus = 'tescreal', class: className } = Astro.props;
       });
 
       if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        cy.layout({ name: 'cose', animate: false }).run();
+        cy.layout(layoutOptions(false)).run();
       }
     } catch (err) {
       console.error(err);

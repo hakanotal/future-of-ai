@@ -182,6 +182,21 @@ body {
   --tw-prose-td-borders: #e9e8e6;
 }
 
+/* Prose links: a steady, subtle underline that strengthens on the hovered link.
+   (Avoid `hover:prose-a:underline`: its :hover applies to the whole prose
+   container, so every link's underline toggled as the page scrolled under
+   the pointer.) */
+.prose a {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+  transition: text-decoration-color var(--transition-fast);
+}
+.prose a:hover {
+  text-decoration-color: currentColor;
+}
+
 /* Light theme - scrollbars hidden globally */
 
 /* ============ Table of Contents ============
