@@ -1,0 +1,3 @@
+[Singer](/e/peter-singer)'s 1972 scene: a shallow pond, a drowning child, nobody else around, your expensive shoes. You wade in, obviously. Then the second question, the child thousands of kilometres away in East Bengal, a hundred dollars from you, and the dynamite: does distance dissolve moral responsibility?
+
+The tight version: *if it is in your power to prevent something very bad without sacrificing anything of comparable moral importance, you ought to do it.* Followed through, nearly everyone comfortable owes a large share of income, continuously, for life. It took forty years to become a movement, and the movement's whole later quarrel is already latent here: *whose* child, *when*, decided by *whom*.

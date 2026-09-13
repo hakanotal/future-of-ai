@@ -1,0 +1,107 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { loadEntities } from '../utils/entity-loader';
+
+const entities = loadEntities().filter((e) => e.status === 'published');
+const types = [...new Set(entities.map((e) => e.type))].sort();
+const strands = ['T', 'E', 'S', 'C', 'R', 'EA', 'L'];
+
+const strandDots: Record<string, string> = {
+  T: 'bg-strand-t', E: 'bg-strand-e', S: 'bg-strand-s', C: 'bg-strand-c',
+  R: 'bg-strand-r', EA: 'bg-strand-ea', L: 'bg-strand-l',
+};
+---
+
+<BaseLayout title="Browse" description="Every entity in the wiki, faceted by type and strand — the tabular equivalent of the graph.">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-10" transition:animate="fade">
+    <h1 class="text-3xl font-bold text-white tracking-tight">Browse</h1>
+    <p class="mt-2 text-zinc-400 text-[15px]">
+      {entities.length} entities. The accessible equivalent of the canvas — every relation that appears
+      as an edge also appears as text on an entity page.
+    </p>
+
+    <!-- Filters -->
+    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+      <input
+        id="browse-search"
+        type="text"
+        placeholder="Filter by name…"
+        class="flex-1 px-4 py-2.5 rounded-lg bg-surface-1 border border-surface-2 text-white placeholder-zinc-500 outline-none focus:border-zinc-500 transition-colors text-sm"
+      />
+      <select id="browse-type" class="px-4 py-2.5 rounded-lg bg-surface-1 border border-surface-2 text-zinc-300 text-sm outline-none focus:border-zinc-500">
+        <option value="">All types</option>
+        {types.map((t) => <option value={t}>{t}</option>)}
+      </select>
+      <select id="browse-strand" class="px-4 py-2.5 rounded-lg bg-surface-1 border border-surface-2 text-zinc-300 text-sm outline-none focus:border-zinc-500">
+        <option value="">All strands</option>
+        {strands.map((s) => <option value={s}>{s}</option>)}
+      </select>
+    </div>
+
+    <p id="browse-count" class="mt-4 text-xs text-zinc-500 font-mono"></p>
+
+    <!-- Grid -->
+    <div id="browse-grid" class="mt-3 grid sm:grid-cols-2 gap-3">
+      {entities.map((e) => (
+        <div data-name={e.label.toLowerCase()} data-type={e.type} data-strands={(e.strands ?? []).join(',')}>
+          <a
+            href={`/e/${e.id}`}
+            class="block p-4 bg-surface-1 hover:bg-surface-2 border border-surface-2 hover:border-surface-3 rounded-lg transition-all duration-200 group h-full"
+          >
+            <div class="flex items-center gap-2 mb-1">
+              <h3 class="text-white font-medium truncate group-hover:text-blue-400 transition-colors">{e.label}</h3>
+              <span class="text-zinc-500 text-xs">{e.type}</span>
+            </div>
+            <p class="text-zinc-400 text-sm line-clamp-2 mb-2">{e.short}</p>
+            <div class="flex items-center gap-1.5">
+              {(e.strands ?? []).map((s) => (
+                <span class:list={['w-2 h-2 rounded-full', strandDots[s] ?? 'bg-zinc-500']} title={s} />
+              ))}
+              {e.dates?.start && (
+                <span class="text-zinc-500 text-xs ml-auto">{e.dates.start}{e.dates.end ? `: ${e.dates.end}` : ''}</span>
+              )}
+            </div>
+          </a>
+        </div>
+      ))}
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  function initBrowse() {
+    const search = document.getElementById('browse-search');
+    const typeSel = document.getElementById('browse-type');
+    const strandSel = document.getElementById('browse-strand');
+    const grid = document.getElementById('browse-grid');
+    const count = document.getElementById('browse-count');
+    if (!search || !grid) return;
+
+    // Preselect strand from ?strand=
+    const preset = new URLSearchParams(window.location.search).get('strand');
+    if (preset && strandSel) strandSel.value = preset;
+
+    function apply() {
+      const q = search.value.trim().toLowerCase();
+      const t = typeSel?.value ?? '';
+      const s = strandSel?.value ?? '';
+      let visible = 0;
+      for (const cell of grid.children) {
+        const name = cell.getAttribute('data-name') ?? '';
+        const type = cell.getAttribute('data-type') ?? '';
+        const strands = (cell.getAttribute('data-strands') ?? '').split(',');
+        const ok = (!q || name.includes(q)) && (!t || type === t) && (!s || strands.includes(s));
+        cell.classList.toggle('hidden', !ok);
+        if (ok) visible++;
+      }
+      if (count) count.textContent = `${visible} shown`;
+    }
+
+    search.addEventListener('input', apply);
+    typeSel?.addEventListener('change', apply);
+    strandSel?.addEventListener('change', apply);
+    apply();
+  }
+  document.addEventListener('astro:page-load', initBrowse);
+  initBrowse();
+</script>

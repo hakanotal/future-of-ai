@@ -1,0 +1,3 @@
+Friday 17 November 2023: [OpenAI's](/e/openai) nonprofit board removes CEO [Altman](/e/sam-altman) for inconsistent candor. The axis is speed versus safety, the board ([Sutskever](/e/ilya-sutskever), [D'Angelo](/e/adam-dangelo), [Toner](/e/helen-toner), [McCauley](/e/tasha-mccauley)) believed commercialization was outrunning safety.
+
+[Microsoft](/e/microsoft), furious about its $13B partner, plus 745 of 770 employees threatening defection, reversed it in five days: Altman returned 22 November, the board reconstituted under [Taylor](/e/bret-taylor), the EA-linked members effectively removed. EA's fingerprints on a second crisis in a year, again on the losing side, and again revealing the gap between forum influence and boardroom power.

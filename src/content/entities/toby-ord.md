@@ -1,0 +1,3 @@
+Australian philosopher who read [Singer](/e/peter-singer) at Oxford and asked the question Singer hadn't: *which* charity? On an academic's salary he calculated a lifetime of giving could save on the order of ten thousand lives, founding [Giving What We Can](/e/give-what-we-can) in 2009 on a 10%-of-income pledge directed by evidence.
+
+With [MacAskill](/e/william-macaskill) he formulated [longtermism](/e/longtermism) around 2017; his 2020 [Precipice](/e/the-precipice) priced existential catastrophe this century at roughly one in six. The through-line of his career: turn the drowning child from provocation into mechanism, then from mechanism into arithmetic about the far future.

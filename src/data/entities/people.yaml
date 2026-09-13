@@ -1,0 +1,696 @@
+# People — derived from docs/tescreal-article.md + TESCREAL Narrative Content Research.docx
+# Stance lives on edges (relations.yaml), never here.
+
+- id: jeremy-bentham
+  label: Jeremy Bentham
+  type: person
+  strands: [EA]
+  short: >-
+    English philosopher whose utilitarianism — the greatest happiness for the greatest number — is the philosophical lineage effective altruism claims.
+  dates:
+    start: "1748"
+    end: "1832"
+  tags: [philosopher, utilitarianism]
+  status: published
+
+- id: john-stuart-mill
+  label: John Stuart Mill
+  type: person
+  strands: [EA]
+  short: >-
+    English philosopher who systematized utilitarianism; with Bentham, the classical root of EA's maximizing ethic.
+  dates:
+    start: "1806"
+    end: "1873"
+  tags: [philosopher, utilitarianism]
+  status: published
+
+- id: benjamin-todd
+  label: Benjamin Todd
+  type: person
+  strands: [EA]
+  short: >-
+    Co-founder of 80,000 Hours (2011) with William MacAskill, building career advice around high-impact professions.
+  tags: [effective-altruism, career]
+  status: published
+
+- id: bernadette-young
+  label: Bernadette Young
+  type: person
+  strands: [EA]
+  short: >-
+    Physician and co-founder of Giving What We Can (2009) alongside Toby Ord and William MacAskill.
+  tags: [effective-altruism, giving]
+  status: published
+
+- id: elie-hassenfeld
+  label: Elie Hassenfeld
+  type: person
+  strands: [EA]
+  short: >-
+    Co-founder of GiveWell (2007) with Holden Karnofsky, bringing hedge-fund scrutiny to charity evaluation.
+  tags: [effective-altruism, charity]
+  status: published
+
+- id: holden-karnofsky
+  label: Holden Karnofsky
+  type: person
+  strands: [EA, L]
+  short: >-
+    Co-founder of GiveWell and Open Philanthropy; left Open Philanthropy and joined Anthropic in January 2025.
+  dates:
+    start: "1981"
+  tags: [effective-altruism, grantmaking, ai]
+  status: published
+
+- id: dustin-moskovitz
+  label: Dustin Moskovitz
+  type: person
+  strands: [EA, L]
+  short: >-
+    Facebook co-founder whose Good Ventures foundation funds Open Philanthropy; EA's largest living donor with Cari Tuna.
+  dates:
+    start: "1984"
+  tags: [philanthropy, effective-altruism]
+  status: published
+
+- id: cari-tuna
+  label: Cari Tuna
+  type: person
+  strands: [EA]
+  short: >-
+    Philanthropist who co-founded Good Ventures with Dustin Moskovitz, EA's largest living donors.
+  tags: [philanthropy, effective-altruism]
+  status: published
+
+- id: caroline-ellison
+  label: Caroline Ellison
+  type: person
+  strands: [EA]
+  short: >-
+    CEO of Alameda Research under Bankman-Fried; cooperating witness whose testimony showed customer funds were commingled at his direction.
+  dates:
+    start: "1994"
+  tags: [crypto, fraud, trial]
+  status: published
+  sources: ["US v. Bankman-Fried trial record — verify transcript (backlog B16)"]
+
+- id: changpeng-zhao
+  label: Changpeng Zhao
+  type: person
+  aliases: [CZ]
+  strands: []
+  short: >-
+    Founder of Binance whose announced sale of roughly $529 million in FTT on 6 November 2022 triggered the FTX bank run.
+  dates:
+    start: "1977"
+  tags: [crypto, binance]
+  status: published
+
+- id: dario-amodei
+  label: Dario Amodei
+  type: person
+  strands: [L]
+  short: >-
+    Former OpenAI VP of research who led the 2021 walkout to found Anthropic over speed-versus-safety concerns.
+  tags: [ai, anthropic]
+  status: published
+
+- id: daniela-amodei
+  label: Daniela Amodei
+  type: person
+  strands: [L]
+  short: >-
+    Co-founder and president of Anthropic; previously at OpenAI and Stripe.
+  tags: [ai, anthropic]
+  status: published
+
+- id: paul-christiano
+  label: Paul Christiano
+  type: person
+  strands: [R, L]
+  short: >-
+    Founder of the Alignment Research Center; served on Anthropic's Long-Term Benefit Trust before departing for the US AI Safety Institute in April 2024.
+  tags: [ai-safety, alignment]
+  status: published
+
+- id: zach-robinson
+  label: Zach Robinson
+  type: person
+  strands: [EA]
+  short: >-
+    CEO of the Centre for Effective Altruism who acknowledged in March 2025 that the movement had lost momentum and sat in a defensive posture; departed Anthropic's LTBT in January 2026.
+  tags: [effective-altruism, governance]
+  status: published
+
+- id: helen-toner
+  label: Helen Toner
+  type: person
+  strands: [L]
+  short: >-
+    Think-tank researcher on OpenAI's nonprofit board who voted to remove Sam Altman in November 2023; seen as close to EA and AI-safety circles.
+  tags: [ai-safety, governance]
+  status: published
+
+- id: tasha-mccauley
+  label: Tasha McCauley
+  type: person
+  strands: [L]
+  short: >-
+    OpenAI nonprofit board member who voted to remove Sam Altman in November 2023.
+  tags: [governance]
+  status: published
+
+- id: adam-dangelo
+  label: Adam D'Angelo
+  type: person
+  strands: [L]
+  short: >-
+    Quora CEO and OpenAI board member, generally described as closer to the safety camp in the November 2023 dispute.
+  dates:
+    start: "1984"
+  tags: [governance]
+  status: published
+
+- id: ilya-sutskever
+  label: Ilya Sutskever
+  type: person
+  strands: [L]
+  short: >-
+    OpenAI co-founder and chief scientist whose AI-risk views aligned with the EA line; voted to remove Altman, then publicly apologized and defected.
+  dates:
+    start: "1986"
+  tags: [ai, governance]
+  status: published
+
+- id: sam-altman
+  label: Sam Altman
+  type: person
+  strands: [L]
+  short: >-
+    CEO of OpenAI, removed by the nonprofit board on 17 November 2023 and reinstated on 22 November after employee and Microsoft pressure.
+  dates:
+    start: "1985"
+  tags: [ai, openai]
+  status: published
+
+- id: hilary-greaves
+  label: Hilary Greaves
+  type: person
+  strands: [L]
+  short: >-
+    Oxford philosopher who with MacAskill derived the longtermist arithmetic: a millionth of a percentage point of extinction risk equals 10^16 lives.
+  tags: [philosopher, longtermism]
+  status: published
+  sources: ["Greaves & MacAskill, The Case for Strong Longtermism (GPI, 2021) — verify (backlog A10)"]
+
+- id: nick-beckstead
+  label: Nick Beckstead
+  type: person
+  strands: [L]
+  short: >-
+    Longtermist philosopher (2013 dissertation supervised by Larry Temkin), former Open Philanthropy program officer, and CEO of the FTX Future Fund.
+  tags: [philosopher, longtermism, ftx]
+  status: published
+
+- id: larry-temkin
+  label: Larry Temkin
+  type: person
+  strands: []
+  short: >-
+    Rutgers philosopher who supervised Nick Beckstead's 2013 dissertation on shaping the far future.
+  tags: [philosopher]
+  status: published
+
+- id: max-more
+  label: Max More
+  type: person
+  strands: [E, T]
+  short: >-
+    Philosopher who founded extropianism in the 1980s, the first organized transhumanist movement built around fighting entropy and death.
+  dates:
+    start: "1964"
+  tags: [transhumanism, extropianism]
+  status: published
+
+- id: ray-kurzweil
+  label: Ray Kurzweil
+  type: person
+  strands: [S, T]
+  short: >-
+    Inventor and futurist who popularized the technological singularity and the intelligence-explosion framing of AI progress.
+  dates:
+    start: "1948"
+  tags: [singularity, futurism]
+  status: published
+
+- id: ben-goertzel
+  label: Ben Goertzel
+  type: person
+  strands: [C]
+  short: >-
+    AI researcher whose 2010 Cosmist Manifesto promises secular resurrection and future magic through science.
+  dates:
+    start: "1966"
+  tags: [cosmism, ai]
+  status: published
+
+- id: elon-musk
+  label: Elon Musk
+  type: person
+  strands: [C, L]
+  short: >-
+    Entrepreneur whose Mars vision is cosmism's most visible expression; called What We Owe the Future a close match for his philosophy.
+  dates:
+    start: "1971"
+  tags: [spacex, cosmism, ai]
+  status: published
+
+- id: peter-thiel
+  label: Peter Thiel
+  type: person
+  strands: [R, L]
+  short: >-
+    Investor who funded the Singularity Institute, the Singularity Summit, and seeded DeepMind with $2.25 million.
+  dates:
+    start: "1967"
+  tags: [finance, ai]
+  status: published
+
+- id: jaan-tallinn
+  label: Jaan Tallinn
+  type: person
+  strands: [L]
+  short: >-
+    Skype co-founder and longtermism-aligned funder named among the figures involved in more than one TESCREAL ideology.
+  dates:
+    start: "1972"
+  tags: [philanthropy, longtermism]
+  status: published
+
+- id: vitalik-buterin
+  label: Vitalik Buterin
+  type: person
+  strands: [L]
+  short: >-
+    Ethereum co-founder named among the figures involved in more than one TESCREAL ideology.
+  dates:
+    start: "1994"
+  tags: [crypto, longtermism]
+  status: published
+
+- id: marc-andreessen
+  label: Marc Andreessen
+  type: person
+  strands: []
+  short: >-
+    Investor who authored The Techno-Optimist Manifesto (2023) and for a period described himself as a TESCREALIST.
+  dates:
+    start: "1971"
+  tags: [accelerationism, manifesto]
+  status: published
+
+- id: guillaume-verdon
+  label: Guillaume Verdon
+  type: person
+  aliases: [Beff Jezos]
+  strands: []
+  short: >-
+    Physicist writing as Beff Jezos who formulated effective accelerationism in explicit opposition to effective altruism.
+  tags: [accelerationism]
+  status: published
+
+- id: scott-alexander
+  label: Scott Alexander
+  type: person
+  strands: [R]
+  short: >-
+    Psychiatrist and blogger whose Slate Star Codex (2013) became a second on-ramp to rationalism alongside LessWrong.
+  tags: [rationalism, blog]
+  status: published
+
+- id: robin-hanson
+  label: Robin Hanson
+  type: person
+  strands: [E, R]
+  short: >-
+    Economist in the early extropian milieu whose posts on sex redistribution and related topics remain fiercely contested.
+  tags: [extropianism, economics]
+  status: published
+  sources: ["Hanson's original posts — read directly before quoting (backlog D7)"]
+
+- id: demis-hassabis
+  label: Demis Hassabis
+  type: person
+  strands: [L]
+  short: >-
+    DeepMind co-founder who described his ten-year plan as a Manhattan Project for AI.
+  dates:
+    start: "1976"
+  tags: [ai, deepmind]
+  status: published
+
+- id: nate-soares
+  label: Nate Soares
+  type: person
+  strands: [R, L]
+  short: >-
+    MIRI-affiliated researcher who co-authored If Anyone Builds It, Everyone Dies (2025) with Eliezer Yudkowsky.
+  tags: [ai-safety, doomerism]
+  status: published
+
+- id: curtis-yarvin
+  label: Curtis Yarvin
+  type: person
+  strands: []
+  short: >-
+    Neoreactionary writer whose ideas found early audiences in rationalist spaces.
+  tags: [neoreaction]
+  status: published
+
+- id: sonia-joseph
+  label: Sonia Joseph
+  type: person
+  strands: []
+  short: >-
+    AI researcher who described rationalist culture as misogyny encoded into math, in TIME's reporting on misconduct in EA and rationalist circles.
+  tags: [critic]
+  status: published
+  sources: ["TIME (Charlotte Alter, Feb 2023) — verify (backlog A18)"]
+
+- id: rochelle-shen
+  label: Rochelle Shen
+  type: person
+  strands: []
+  short: >-
+    Event organizer quoted in reporting on misconduct in EA and rationalist spaces.
+  tags: [critic]
+  status: published
+  sources: ["TIME / Bloomberg reporting — verify (backlog A18)"]
+
+- id: ziz-lasota
+  label: Ziz LaSota
+  type: person
+  aliases: [Ziz]
+  strands: [R]
+  short: >-
+    Blogger known as Ziz who led the Zizians, a violent offshoot that emerged from rationalist circles and has been linked to six deaths.
+  tags: [rationalism, zizians]
+  status: published
+  sources: ["Guardian (Mar 2025), PBS, Wikipedia — verify case status (backlog A17)"]
+
+- id: ruha-benjamin
+  label: Ruha Benjamin
+  type: person
+  strands: []
+  short: >-
+    Sociologist of race, justice and technology who proposes ustopia against the utopia/apocalypse binary and diagnoses a crisis of imagination.
+  tags: [sociologist, critic, ustopia]
+  status: published
+
+- id: anthony-kalulu
+  label: Anthony Kalulu
+  type: person
+  strands: []
+  short: >-
+    Ugandan farmer and community organizer whose writing on EA's top-down philanthropy is the deepest critique from the receiving end.
+  tags: [critic, global-south]
+  status: published
+  sources: ["dear-humanity.org; EA Forum — verify (backlog A19)"]
+
+- id: amia-srinivasan
+  label: Amia Srinivasan
+  type: person
+  strands: []
+  short: >-
+    Oxford philosopher whose foreword to The Good It Promises, the Harm It Does calls EA a project that accepts the world more or less as it is.
+  dates:
+    start: "1984"
+  tags: [philosopher, critic]
+  status: published
+
+- id: mathew-snow
+  label: Mathew Snow
+  type: person
+  strands: []
+  short: >-
+    Writer who argued in Jacobin that EA says nothing about the capitalist systems producing the necessities it distributes.
+  tags: [critic]
+  status: published
+  sources: ["Jacobin — verify"]
+
+- id: oliver-habryka
+  label: Oliver Habryka
+  type: person
+  strands: [R]
+  short: >-
+    LessWrong administrator who has said he never encountered some of the groups described in TESCREAL critiques as described.
+  tags: [rationalism, critic-of-tescreal]
+  status: published
+  sources: ["LessWrong comments — verify (backlog B22)"]
+
+- id: ethan-zuckerman
+  label: Ethan Zuckerman
+  type: person
+  strands: []
+  short: >-
+    Media scholar who argued the TESCREAL framing risks reproducing what it criticizes by fixating on billionaires over immediate harms.
+  dates:
+    start: "1973"
+  tags: [critic-of-tescreal]
+  status: published
+  sources: ["Zuckerman — verify (backlog B22)"]
+
+- id: seth-lazar
+  label: Seth Lazar
+  type: person
+  strands: []
+  short: >-
+    Philosopher who argues TESCREAL ignores many strands in AI history that do not fit the narrative.
+  tags: [critic-of-tescreal]
+  status: published
+  sources: ["Lazar — verify (backlog B22)"]
+
+- id: rob-hopkins
+  label: Rob Hopkins
+  type: person
+  strands: []
+  short: >-
+    Activist who names the crisis of imagination: why a safer, saner path forward stays beyond reach while imagination serves manufactured demand.
+  dates:
+    start: "1968"
+  tags: [activism, imagination]
+  status: published
+
+- id: nyalleng-moorosi
+  label: Nyalleng Moorosi
+  type: person
+  strands: []
+  short: >-
+    Researcher in DAIR's Possible Futures series asking what technology grown from community needs becomes possible.
+  tags: [dair, community-tech]
+  status: published
+
+- id: anthony-levandowski
+  label: Anthony Levandowski
+  type: person
+  strands: [T]
+  short: >-
+    Engineer behind the Way of the Future church; emblem of the technologist's clean-slate view that all that matters is tomorrow.
+  dates:
+    start: "1980"
+  tags: [transhumanism]
+  status: published
+  sources: ["IRS filing / reporting on Way of the Future — verify (backlog D10)"]
+
+- id: leopold-aschenbrenner
+  label: Leopold Aschenbrenner
+  type: person
+  strands: [L]
+  short: >-
+    Researcher on the FTX Future Fund team at its 2022 launch.
+  tags: [ftx, longtermism]
+  status: published
+
+- id: avital-balwit
+  label: Avital Balwit
+  type: person
+  strands: [L]
+  short: >-
+    Team member of the FTX Future Fund at its 2022 launch.
+  tags: [ftx, longtermism]
+  status: published
+
+- id: ketan-ramakrishnan
+  label: Ketan Ramakrishnan
+  type: person
+  strands: [L]
+  short: >-
+    Team member of the FTX Future Fund at its 2022 launch.
+  tags: [ftx, longtermism]
+  status: published
+
+- id: jared-kaplan
+  label: Jared Kaplan
+  type: person
+  strands: [L]
+  short: >-
+    AI researcher and Anthropic co-founder (2021), formerly of OpenAI.
+  tags: [ai, anthropic]
+  status: published
+
+- id: jack-clark
+  label: Jack Clark
+  type: person
+  strands: [L]
+  short: >-
+    AI policy researcher and Anthropic co-founder (2021), formerly of OpenAI.
+  tags: [ai, anthropic]
+  status: published
+
+- id: chris-olah
+  label: Chris Olah
+  type: person
+  strands: [L]
+  short: >-
+    Interpretability researcher and Anthropic co-founder (2021), formerly of OpenAI and Google.
+  tags: [ai, anthropic]
+  status: published
+
+- id: ben-mann
+  label: Ben Mann
+  type: person
+  strands: [L]
+  short: >-
+    Engineer and Anthropic co-founder (2021), formerly of OpenAI.
+  tags: [ai, anthropic]
+  status: published
+
+- id: sam-mccandlish
+  label: Sam McCandlish
+  type: person
+  strands: [L]
+  short: >-
+    Researcher and Anthropic co-founder (2021), formerly of OpenAI.
+  tags: [ai, anthropic]
+  status: published
+
+- id: tom-brown
+  label: Tom Brown
+  type: person
+  strands: [L]
+  short: >-
+    Engineer and Anthropic co-founder (2021), formerly of OpenAI; co-led GPT-3 development.
+  tags: [ai, anthropic]
+  status: published
+
+- id: bret-taylor
+  label: Bret Taylor
+  type: person
+  strands: []
+  short: >-
+    Executive who chaired OpenAI's reconstituted board after Sam Altman's November 2023 return.
+  dates:
+    start: "1980"
+  tags: [governance]
+  status: published
+
+- id: neil-buddy-shah
+  label: Neil Buddy Shah
+  type: person
+  strands: []
+  short: >-
+    Global-health executive chairing Anthropic's Long-Term Benefit Trust since September 2023.
+  tags: [governance, ltbt]
+  status: published
+
+- id: jason-matheny
+  label: Jason Matheny
+  type: person
+  strands: []
+  short: >-
+    RAND Corporation CEO who served on Anthropic's Long-Term Benefit Trust before departing in December 2023.
+  tags: [governance, ltbt]
+  status: published
+
+- id: kanika-bahl
+  label: Kanika Bahl
+  type: person
+  strands: []
+  short: >-
+    Evidence Action CEO who served on Anthropic's Long-Term Benefit Trust before departing in January 2026.
+  tags: [governance, ltbt]
+  status: published
+
+- id: richard-fontaine
+  label: Richard Fontaine
+  type: person
+  strands: []
+  short: >-
+    Center for a New American Security CEO who joined Anthropic's Long-Term Benefit Trust in January 2026.
+  tags: [governance, ltbt]
+  status: published
+
+- id: kelsey-piper
+  label: Kelsey Piper
+  type: person
+  strands: []
+  short: >-
+    Vox reporter to whom Bankman-Fried confessed his ethics were mostly a front of right shibboleths, days after the FTX collapse.
+  tags: [journalism, ftx]
+  status: published
+  sources: ["Vox, 16 Nov 2022 — verify (backlog B18)"]
+
+- id: gideon-lewis-kraus
+  label: Gideon Lewis-Kraus
+  type: person
+  strands: []
+  short: >-
+    Writer who argued rationalism gave safe harbour to egregious ideas including scientific racism and neoreactionary politics.
+  tags: [critic]
+  status: published
+  sources: ["New Yorker — verify (backlog B23)"]
+
+- id: marvin-minsky
+  label: Marvin Minsky
+  type: person
+  strands: [E]
+  short: >-
+    AI pioneer present in the early extropian milieu that seeded Silicon Valley's radical futurism.
+  dates:
+    start: "1927"
+    end: "2016"
+  tags: [ai, extropianism]
+  status: published
+
+- id: jeffrey-epstein
+  label: Jeffrey Epstein
+  type: person
+  strands: []
+  short: >-
+    Financier reported to have planned seeding the human race with his DNA and using cryonics; cited as attracted to the extropian milieu.
+  dates:
+    start: "1953"
+    end: "2019"
+  tags: [extropianism]
+  status: published
+  sources: ["NYT reporting (2019) — verify before publication; lurid detail, drop if unsourced (backlog D6)"]
+
+- id: elizabeth-hupfer
+  label: Elizabeth Hupfer
+  type: person
+  strands: [L]
+  short: >-
+    Philosopher who formalised the far-future priority objection: longtermist budgets crowd out today's emergencies.
+  tags: [philosopher, longtermism]
+  status: published
+
+- id: bv-hyde
+  label: B.V.E. Hyde
+  type: person
+  strands: []
+  short: >-
+    Critic who argues longtermism assumes an implausibly butterfly-effect view of history, overrating individual agency.
+  tags: [critic]
+  status: published
+  sources: ["Hyde — verify primary"]

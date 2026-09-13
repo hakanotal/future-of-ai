@@ -1,0 +1,30 @@
+---
+import EntityDetail from '../../../components/EntityDetail.astro';
+import { loadEntities } from '../../../utils/entity-loader';
+import { getRelationsFromEntity, getRelationsToEntity } from '../../../utils/relation-loader';
+import { getEntityBody } from '../../../utils/body';
+
+export async function getStaticPaths() {
+  const entities = loadEntities();
+  return entities.map((entity) => ({
+    params: { id: entity.id },
+    props: { entity },
+  }));
+}
+
+const { entity } = Astro.props;
+const outgoing = getRelationsFromEntity(entity.id);
+const incoming = getRelationsToEntity(entity.id);
+const bodyHtml = getEntityBody(entity.id);
+const labels: Record<string, string> = {};
+for (const e of loadEntities()) labels[e.id] = e.label;
+---
+
+<EntityDetail
+  entity={entity}
+  outgoing={outgoing}
+  incoming={incoming}
+  entityLabels={labels}
+  bodyHtml={bodyHtml}
+  variant="panel"
+/>

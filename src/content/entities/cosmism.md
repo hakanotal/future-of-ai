@@ -1,0 +1,3 @@
+The belief that humanity's destiny is to take to the stars and radically transform the universe, space-time engineering, computational substrates, secular resurrection. [Goertzel's](/e/ben-goertzel) 2010 [Cosmist Manifesto](/e/cosmist-manifesto) makes the religious parallel explicit: future magic will achieve by science most of what religions promised, including copying the dead into the future.
+
+[Musk's](/e/elon-musk) Mars vision is cosmism's most visible contemporary expression. Read as transhumanism's expansionist endpoint, its appeal to libertarian technologists is clear: limitless growth in a finite world, by redefining the container.

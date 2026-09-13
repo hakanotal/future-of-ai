@@ -1,0 +1,3 @@
+The decision rule underneath this entire story: multiply welfare by probability and maximize the product. Singer's pond, GiveWell's cost-per-life, [Greaves and MacAskill's](/e/hilary-greaves) 10¹⁶-lives rounding error, [Yudkowsky's](/e/torture-vs-dust-specks) dust specks, all expected-utility calculations.
+
+Its power is commensuration: anything becomes comparable to anything. Its cost is the one the critics keep naming, nothing is simply *wrong*, human intuition is demoted to bias, and sufficiently vast hypothetical stakes license concrete present harms. [Torres's](/e/emile-torres) reading of [Bankman-Fried](/e/sam-bankman-fried) is the limit case: on strict utilitarianism, fraud that funds the far future is not merely permitted but obligatory.

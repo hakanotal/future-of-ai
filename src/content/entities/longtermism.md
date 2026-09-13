@@ -1,0 +1,5 @@
+The view that positively influencing the long-term future is the key moral priority of our time. Formulated around 2017 by [MacAskill](/e/william-macaskill) and [Ord](/e/toby-ord) from [Parfit](/e/derek-parfit)'s obligations to future people, it rests on three premises: future people matter equally, there may be astronomical numbers of them, and our actions today can determine whether they exist at all.
+
+The arithmetic is the whole argument. [Greaves and MacAskill](/e/hilary-greaves) work with ~10²⁴ future people, so a millionth of a percentage point of extinction risk equals 10¹⁶ lives; [Bostrom](/e/nick-bostrom)'s digital-minds version runs to [10⁵⁸](/e/astronomical-waste). Against such numbers, present-day charity is mathematically negligible, priority shifts inexorably to [existential risk](/e/existential-risk).
+
+Four objections recur: the future is unpredictable, today's emergencies get crowded out (the [far-future priority objection](/e/far-future-priority-objection)), consequentialism licenses present evils, and the genealogy runs through [eugenics](/e/eugenics)-adjacent reasoning about whose intelligence counts.

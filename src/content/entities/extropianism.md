@@ -1,0 +1,3 @@
+The first organized transhumanist movement, founded in the 1980s by [Max More](/e/max-more): pro-science super-optimism organized around fighting entropy, the universe's tendency to fall apart, plus deathism and biological fundamentalism. Conquering death was possible and obligatory, partly through cryonic preservation.
+
+The milieu gathered [Kurzweil](/e/ray-kurzweil), [Hanson](/e/robin-hanson), [Minsky](/e/marvin-minsky), [Bostrom](/e/nick-bostrom) and others. Formally defunct, it provided the room where the radical ideas grew, ideas continuing today under figures like [Thiel](/e/peter-thiel) and [Altman](/e/sam-altman).

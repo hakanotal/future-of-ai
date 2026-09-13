@@ -1,0 +1,3 @@
+Computer scientist who co-authored [Stochastic Parrots](/e/stochastic-parrots) (2021) on large-language-model risks and was forced out of [Google's](/e/google) ethical-AI team that December. A year later she founded [DAIR](/e/dair) for community-centered AI research.
+
+With [Torres](/e/emile-torres) she coined [TESCREAL](/e/tescreal) (2023) and developed it in [The TESCREAL Bundle](/e/tescreal-bundle-paper) (2024). Her sharpest argument: the bundle's existential-threat language legitimizes building dangerous, unscoped systems while today's harms, discrimination, environmental damage, labor exploitation, stay invisible.

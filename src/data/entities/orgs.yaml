@@ -1,0 +1,233 @@
+# Organizations — derived from docs/tescreal-article.md + research docx
+
+- id: good-ventures
+  label: Good Ventures
+  type: organization
+  strands: [EA]
+  short: >-
+    The Moskovitz–Tuna foundation behind Open Philanthropy and EA's largest living-donor funding base.
+  dates:
+    start: "2011"
+  tags: [philanthropy, effective-altruism]
+  status: published
+
+- id: centre-for-effective-altruism
+  label: Centre for Effective Altruism
+  type: organization
+  aliases: [CEA]
+  strands: [EA, L]
+  short: >-
+    Oxford-incorporated umbrella body of the EA movement (2012); received $14M from the FTX Future Fund.
+  dates:
+    start: "2012"
+  located_in: oxford
+  tags: [effective-altruism, umbrella]
+  status: published
+
+- id: alignment-research-center
+  label: Alignment Research Center
+  type: organization
+  aliases: [ARC]
+  strands: [R, L]
+  short: >-
+    AI alignment lab founded by Paul Christiano; received $1.25M from the FTX Future Fund.
+  tags: [ai-safety, alignment]
+  status: published
+
+- id: alameda-research
+  label: Alameda Research
+  type: organization
+  strands: [EA]
+  short: >-
+    Bankman-Fried's quantitative crypto trading firm (November 2017) whose balance sheet, propped up by FTX's FTT token, detonated the empire.
+  dates:
+    start: "2017"
+    end: "2022"
+  tags: [crypto, fraud]
+  status: published
+
+- id: jane-street
+  label: Jane Street Capital
+  type: organization
+  strands: []
+  short: >-
+    Quantitative trading firm where Bankman-Fried worked in 2013–14 as EA's model earning-to-give citizen.
+  dates:
+    start: "2000"
+  tags: [finance]
+  status: published
+
+- id: binance
+  label: Binance
+  type: organization
+  strands: []
+  short: >-
+    Crypto exchange whose founder's announced $529M FTT sale on 6 November 2022 started the FTX bank run.
+  dates:
+    start: "2017"
+  tags: [crypto]
+  status: published
+
+- id: deepmind
+  label: DeepMind
+  type: organization
+  strands: [L]
+  short: >-
+    AI lab seeded by Peter Thiel ($2.25M) out of the Singularity Summit network; Hassabis called the plan a Manhattan Project for AI.
+  dates:
+    start: "2010"
+  tags: [ai, lab]
+  status: published
+
+- id: effective-ventures
+  label: Effective Ventures
+  type: organization
+  strands: [EA]
+  short: >-
+    EA's organizational home (US/UK); Zach Robinson is CEO of Effective Ventures US.
+  tags: [effective-altruism, governance]
+  status: published
+
+- id: future-of-life-institute
+  label: Future of Life Institute
+  type: organization
+  aliases: [FLI]
+  strands: [L]
+  short: >-
+    Tech-risk nonprofit Torres once wrote for before turning against longtermism and being pushed out, by their account.
+  dates:
+    start: "2014"
+  tags: [existential-risk]
+  status: published
+
+- id: cfar
+  label: Center for Applied Rationality
+  type: organization
+  aliases: [CFAR]
+  strands: [R]
+  short: >-
+    Rationalist training nonprofit; the Zizians emerged from its orbit after a falling-out with MIRI and CFAR.
+  dates:
+    start: "2012"
+  tags: [rationalism]
+  status: published
+
+- id: overcoming-bias
+  label: Overcoming Bias
+  type: organization
+  strands: [R]
+  short: >-
+    Group blog (2006) by Hanson and Yudkowsky that preceded LessWrong as rationalism's gathering place.
+  dates:
+    start: "2006"
+  tags: [rationalism, blog]
+  status: published
+
+- id: slate-star-codex
+  label: Slate Star Codex
+  type: organization
+  strands: [R]
+  short: >-
+    Scott Alexander's blog (2013), the second on-ramp to rationalism alongside LessWrong.
+  dates:
+    start: "2013"
+  tags: [rationalism, blog]
+  status: published
+
+- id: kurzgesagt
+  label: Kurzgesagt
+  type: organization
+  strands: []
+  short: >-
+    Animation studio behind A Selfish Argument for Making the World a Better Place, made with Our World in Data and Gates Foundation support.
+  tags: [media, growth]
+  status: published
+
+- id: gates-foundation
+  label: Gates Foundation
+  type: organization
+  strands: []
+  short: >-
+    Philanthropy that supported the Kurzgesagt egoistic-altruism explainer — worth noting when asking who funds which stories.
+  dates:
+    start: "2000"
+  tags: [philanthropy, media-funding]
+  status: published
+  sources: ["Video credits — verify"]
+
+- id: neuralink
+  label: Neuralink
+  type: organization
+  strands: [T]
+  short: >-
+    Musk's brain–computer interface company; the standing question is who could afford a cognition-enhancing implant.
+  dates:
+    start: "2016"
+  tags: [transhumanism, bci]
+  status: published
+
+- id: decidim
+  label: Decidim
+  type: organization
+  strands: []
+  short: >-
+    Free open-source participatory-democracy platform used by Barcelona, Helsinki and New York — a concrete ustopia.
+  dates:
+    start: "2016"
+  tags: [democracy, ustopia]
+  status: published
+
+- id: long-term-benefit-trust
+  label: Long-Term Benefit Trust
+  type: organization
+  aliases: [LTBT]
+  strands: [L]
+  short: >-
+    Anthropic's trust holding Class T stock to elect the board and guard the mission; five financially disinterested trustees from September 2023.
+  dates:
+    start: "2023"
+  tags: [governance, anthropic]
+  status: published
+
+- id: zizians
+  label: Zizians
+  type: organization
+  strands: [R]
+  short: >-
+    Violent cult-like offshoot from rationalist circles, led by Ziz LaSota and linked to six deaths in 2022–2025.
+  tags: [rationalism, violence]
+  status: published
+  sources: ["Guardian (Mar 2025), PBS — verify case status (backlog A17)"]
+
+- id: evidence-action
+  label: Evidence Action
+  type: organization
+  strands: []
+  short: >-
+    Global-health nonprofit running GiveWell-top-charity programs; CEO Kanika Bahl sat on Anthropic's LTBT.
+  dates:
+    start: "2013"
+  tags: [global-health, charity]
+  status: published
+
+- id: microsoft
+  label: Microsoft
+  type: organization
+  strands: []
+  short: >-
+    OpenAI's partner with about $13 billion in cumulative commitment; its fury powered Altman's November 2023 reinstatement.
+  dates:
+    start: "1975"
+  tags: [ai, openai]
+  status: published
+
+- id: google
+  label: Google
+  type: organization
+  strands: []
+  short: >-
+    Employer that forced Timnit Gebru out in December 2020 over the Stochastic Parrots paper; roughly $3.3B into Anthropic.
+  dates:
+    start: "1998"
+  tags: [ai, ethics]
+  status: published

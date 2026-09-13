@@ -1,0 +1,3 @@
+Philosopher raised fundamentalist-evangelical, fascinated early by eschatology, who spent roughly a decade inside the bundle, transhumanist, longtermist, effective altruist writing for the [Future of Life Institute](/e/future-of-life-institute), then turned against it and was, by their account, pushed out.
+
+With [Gebru](/e/timnit-gebru) they mapped [TESCREAL](/e/tescreal) as shared genealogy with eugenic kinship: not a monolith accusation but an account of overlapping roots, personnel and money. Their hardest edges: transhumanism as eugenics on steroids, and the [Bankman-Fried](/e/sam-bankman-fried) case as longtermism working exactly as designed rather than as hypocrisy.

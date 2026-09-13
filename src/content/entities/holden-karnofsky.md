@@ -1,0 +1,3 @@
+Co-founder of [GiveWell](/e/givewell) (2007) and [Open Philanthropy](/e/open-philanthropy) (2014), the evidence-first grantmaker that deployed over $4 billion. Recipient of the early [Alameda warnings](/e/sam-bankman-fried) that leadership minimized as startup friction.
+
+He left Open Philanthropy, spent 2024 at Carnegie, and joined [Anthropic](/e/anthropic) in January 2025, where his wife [Daniela Amodei](/e/daniela-amodei) is president. Nothing improper follows; but the density of a graph where funder, warner, hire and spouse are the same small set is itself one of the critics' central claims.

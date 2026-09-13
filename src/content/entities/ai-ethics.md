@@ -1,0 +1,3 @@
+The study of AI's present, concrete harms: algorithmic discrimination, data-privacy violations, labor exploitation in labeling supply chains (Kenya, the Philippines, Venezuela), datacentre water and power consumption, copyright violation, concentration of power.
+
+Researchers here, [Gebru's](/e/timnit-gebru) [DAIR](/e/dair), AI Now, Data & Society, struggled for funding while EA-influenced funds directed hundreds of millions to long-term [existential-risk](/e/existential-risk) research. [Gebru's](/e/timnit-gebru) sharpest charge: TESCREAL uses the language of existential threat to legitimize building the very systems that inflict these harms, keeping them invisible in a speculative future's shadow.

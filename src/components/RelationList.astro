@@ -1,0 +1,46 @@
+---
+interface Relation {
+  from: string;
+  to: string;
+  type: string;
+  note?: string;
+  amount?: string;
+  start?: string;
+  sources?: string[];
+}
+
+interface Props {
+  relations: Relation[];
+  entityLabels: Record<string, string>;
+  direction: 'outgoing' | 'incoming';
+  title: string;
+}
+
+const { relations, entityLabels, direction, title } = Astro.props;
+
+if (relations.length === 0) return null;
+---
+
+<section class="mt-6">
+  <h3 class="text-xs font-semibold uppercase tracking-wider text-zinc-500 mb-2">{title}</h3>
+  <ul class="space-y-1.5">
+    {relations.map((rel) => {
+      const otherId = direction === 'outgoing' ? rel.to : rel.from;
+      const otherLabel = entityLabels[otherId] ?? otherId;
+      return (
+        <li>
+          <a
+            href={`/e/${otherId}`}
+            class="group flex items-baseline gap-2 text-sm rounded px-2 py-1.5 -mx-2 hover:bg-surface-2 transition-colors"
+          >
+            <span class="text-zinc-500 text-xs font-mono shrink-0">{rel.type.replace(/_/g, ' ')}</span>
+            <span class="text-zinc-200 group-hover:text-blue-400 transition-colors">{otherLabel}</span>
+            {rel.amount && <span class="text-emerald-400/90 text-xs font-mono shrink-0">{rel.amount}</span>}
+            {rel.start && <span class="text-zinc-600 text-xs ml-auto shrink-0">{rel.start}</span>}
+          </a>
+          {rel.note && <p class="text-zinc-500 text-xs px-2 mt-0.5">{rel.note}</p>}
+        </li>
+      );
+    })}
+  </ul>
+</section>

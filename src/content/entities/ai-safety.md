@@ -1,0 +1,3 @@
+In EA usage, AI safety means one specific thing: preventing hypothetical future existential catastrophe from unscoped systems. Who doesn't want safe AI? But the term's narrowness is the point, it covers the apocalypse scenario and excludes algorithmic discrimination, privacy violations, labor-market effects and environmental damage.
+
+Those present harms belong to [AI ethics](/e/ai-ethics), chronically underfunded next to safety research. [Yudkowsky](/e/eliezer-yudkowsky) has called ethics work a distraction; [80,000 Hours](/e/eighty-thousand-hours) ranks AI problems at the top while climate change misses the list. The vocabulary is the budget.

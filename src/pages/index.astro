@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleReader from '../components/ArticleReader.astro';
+import { getArticleBody } from '../utils/body';
+import { getArticleMeta } from '../utils/articles';
+
+const meta = getArticleMeta('tescreal');
+const bodyHtml = getArticleBody('tescreal') ?? '';
+---
+
+<BaseLayout title={meta.title} description={meta.description}>
+  <ArticleReader title={meta.title} description={meta.description} bodyHtml={bodyHtml} />
+</BaseLayout>

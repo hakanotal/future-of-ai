@@ -1,0 +1,3 @@
+Physicist writing as Beff Jezos who formulated [effective accelerationism](/e/effective-accelerationism) in explicit opposition to EA: hedonic loss functions have spurious minima (shrimp pain, wireheading, infinite scroll), so measure civilization thermodynamically, energy capture, complexity expansion.
+
+His account of EA's corruption is worth quoting because it comes from a rival: community, then organizations, then routed capital and real power over governments and labs, the perfect cover for acquiring power, corrupting over time. He concedes the symmetry applies to his own movement too. Fridman's counter-question, the tyranny of an equation, is the essay's circling theme: every branch presents a contested value as physical necessity.

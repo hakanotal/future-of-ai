@@ -1,0 +1,31 @@
+{
+  "name": "tescreal-wiki",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "validate": "node scripts/validate-graph.mjs",
+    "prebuild": "node scripts/validate-graph.mjs",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.20",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/marked": "^5.0.2",
+    "astro": "^7.3.2",
+    "cytoscape": "^3.34.3",
+    "cytoscape-fcose": "^2.2.0",
+    "marked": "^18.0.12",
+    "tailwindcss": "^4.3.3",
+    "yaml": "^2.9.1",
+    "zod": "^4.6.2"
+  },
+  "allowScripts": {
+    "esbuild": true
+  }
+}

@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GraphExplorer from '../components/GraphExplorer.astro';
+import { buildGraph } from '../utils/graph';
+
+const { counts } = buildGraph();
+const focus = Astro.url.searchParams.get('focus') ?? 'tescreal';
+---
+
+<BaseLayout title="Graph" description="The knowledge-graph explorer.">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10" transition:animate="fade">
+    <div class="flex flex-wrap items-baseline justify-between gap-3">
+      <div>
+        <h1 class="text-3xl font-bold text-white tracking-tight">Graph</h1>
+        <p class="mt-2 text-zinc-400 text-[15px]">
+          {counts.entities} nodes · {counts.relations} edges. Click a node to open its panel.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-6">
+      <GraphExplorer focus={focus} />
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,3 @@
+Australian philosopher whose 1972 [Famine, Affluence, and Morality](/e/famine-affluence-and-morality) posed the [drowning child](/e/drowning-child): would you ruin your shoes to save the child in front of you, and if so, why is the distant child's hundred dollars still in your pocket?
+
+Some call him the most important moral philosopher of the modern age; others a dangerous provocateur. Both agree the logic is hard to escape. Forty years later [Ord](/e/toby-ord) and [MacAskill](/e/william-macaskill) operationalized it into [effective altruism](/e/effective-altruism), and inherited its unanswered questions about *whom*, *when*, and *who decides*.

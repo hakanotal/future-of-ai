@@ -1,0 +1,3 @@
+2 November 2022: CoinDesk publishes the leaked [Alameda](/e/alameda-research) balance sheet, mostly unlocked FTT, paper financing paper. 6 November: [CZ](/e/changpeng-zhao) announces a ~$529M FTT sale and the bank run starts. 8 November: the Binance rescue collapses on sight of the books. 11 November: Chapter 11, ~$8 billion gone, 1M+ creditors.
+
+[Bankman-Fried](/e/sam-bankman-fried) convicted November 2023, sentenced to 25 years March 2024. [Ellison](/e/caroline-ellison) cooperated. The [Vox confession](/e/kelsey-piper), ethics as front, right shibboleths, landed days after the filing. For the movement: money lost, credibility destroyed, momentum stopped.

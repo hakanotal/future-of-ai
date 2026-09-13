@@ -1,0 +1,5 @@
+A philosophical and social movement that uses evidence and reason to do the most good possible. It grew from [Peter Singer](/e/peter-singer)'s [drowning-child argument](/e/drowning-child) through [Toby Ord](/e/toby-ord)'s giving pledge and [William MacAskill](/e/william-macaskill)'s career-choice framework into institutions like [GiveWell](/e/givewell), [Giving What We Can](/e/give-what-we-can) and [Open Philanthropy](/e/open-philanthropy).
+
+The method is [expected utility](/e/expected-utility): multiply welfare by probability, maximize the product. Its later branch, [Longtermism](/e/longtermism), pushed the same machinery toward future generations, the move this wiki documents most closely, alongside the [FTX collapse](/e/ftx-collapse) and its aftermath.
+
+The strongest critiques come from inside the tent and from the receiving end: [Torres](/e/emile-torres) on genealogy, [Kalulu](/e/anthony-kalulu) on top-down philanthropy, [Srinivasan](/e/amia-srinivasan) on conservative politics, [Snow](/e/mathew-snow) on capitalist silence. The defenders' answer, bed nets work, vitamin A works, cash works, deserves stating in full on the narrative page.

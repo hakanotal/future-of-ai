@@ -1,0 +1,127 @@
+---
+// TableOfContents.astro
+// Always in the DOM. JS detects .prose h2 headings:
+//   found  → adds 'toc-visible' to #reader-grid (column expands to 200px)
+//   absent → removes 'toc-visible' (column collapses to 0px, nav invisible)
+---
+
+<nav id="toc-sidebar" aria-label="Table of contents">
+  <div id="toc-progress-bar"></div>
+  <div id="toc-inner">
+    <p class="toc-label">Contents</p>
+    <ol id="toc-list"></ol>
+  </div>
+</nav>
+
+<!-- Styles for #toc-sidebar, #toc-inner, #toc-list are in global.css
+     (needed there because list items are built by JS, not the template) -->
+
+<script>
+  function initToc() {
+    const grid     = document.getElementById('reader-grid');
+    const inner    = document.getElementById('toc-inner');
+    const list     = document.getElementById('toc-list');
+    const progress = document.getElementById('toc-progress-bar');
+    if (!grid || !inner || !list || !progress) return;
+
+    // ── Find headings ──────────────────────────────────────────────
+    const prose    = document.querySelector('.prose');
+    const headings = prose ? Array.from(prose.querySelectorAll('h2')) : [];
+
+    if (headings.length === 0) {
+      grid.classList.remove('toc-visible');
+      list.innerHTML = '';
+      return;
+    }
+
+    // Expand TOC column
+    grid.classList.add('toc-visible');
+
+    // ── Ensure IDs ────────────────────────────────────────────────
+    headings.forEach((h, i) => {
+      if (!h.id) {
+        h.id = (h.textContent ?? '')
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, '-')
+          .replace(/^-|-$/g, '') || `section-${i}`;
+      }
+    });
+
+    // ── Build list ────────────────────────────────────────────────
+    list.innerHTML = '';
+    let counter = 0;
+
+    headings.forEach(h => {
+      counter++;
+      const text      = h.textContent ?? '';
+      const partMatch = text.match(/^Part\s+([IVXivx\d]+)/i);
+      const numLabel  = partMatch ? partMatch[1].toUpperCase() : String(counter);
+      const cleanText = text.replace(/^Part\s+[IVXivx\d]+[\s:–—]*/i, '').trim() || text;
+
+      const li = document.createElement('li');
+      const a  = document.createElement('a');
+      a.href   = `#${h.id}`;
+
+      const num       = document.createElement('span');
+      num.className   = 'toc-num';
+      num.textContent = numLabel;
+      num.setAttribute('aria-hidden', 'true');
+
+      a.appendChild(num);
+      a.appendChild(document.createTextNode('\u00a0' + cleanText));
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.getElementById(h.id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      li.appendChild(a);
+      list.appendChild(li);
+    });
+
+    // ── Scroll tracking ───────────────────────────────────────────
+    let activeIdx = -1;
+
+    function onScroll() {
+      const scrollY   = window.scrollY;
+      const docH      = document.documentElement.scrollHeight - window.innerHeight;
+      const pct       = docH > 0 ? Math.min(100, (scrollY / docH) * 100) : 0;
+      progress.style.height = `${pct}%`;
+
+      const threshold = scrollY + window.innerHeight * 0.3;
+      let cur = 0;
+      headings.forEach((h, i) => {
+        if (h.getBoundingClientRect().top + scrollY <= threshold) cur = i;
+      });
+
+      if (cur === activeIdx) return;
+      activeIdx = cur;
+
+      const links = list.querySelectorAll('a');
+      links.forEach((a, i) => {
+        a.classList.toggle('toc-active', i === cur);
+        a.classList.toggle('toc-read',   i < cur);
+      });
+
+      // Keep active link visible inside the scrollable sidebar
+      const al = links[cur];
+      if (al) {
+        const ir = inner.getBoundingClientRect();
+        const lr = al.getBoundingClientRect();
+        if (lr.bottom > ir.bottom || lr.top < ir.top) {
+          al.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+        }
+      }
+    }
+
+    // Deregister stale listener on hot-reload / page transitions
+    // @ts-ignore
+    if (window.__tocScroll) window.removeEventListener('scroll', window.__tocScroll);
+    // @ts-ignore
+    window.__tocScroll = onScroll;
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll(); // run once immediately
+  }
+
+  document.addEventListener('astro:page-load', initToc);
+  initToc();
+</script>

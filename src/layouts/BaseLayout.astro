@@ -1,0 +1,170 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import Header from '../components/Header.astro';
+import EntityPanel from '../components/EntityPanel.astro';
+import TableOfContents from '../components/TableOfContents.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'A knowledge graph wiki exploring the TESCREAL ideologies' } = Astro.props;
+---
+
+<html lang="en" transition:name="root" transition:animate="none">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <script is:inline>
+      // Pre-paint theme: stored choice wins, otherwise the OS preference.
+      try {
+        var t = localStorage.getItem('tescreal-theme');
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        }
+        document.documentElement.dataset.theme = t;
+      } catch (e) {
+        document.documentElement.dataset.theme = 'dark';
+      }
+    </script>
+    <ClientRouter />
+  </head>
+  <body class="bg-surface-0 text-zinc-100 antialiased min-h-screen flex flex-col">
+    <Header />
+    <div id="reader-grid" class={Astro.url.pathname.startsWith('/graph') ? 'is-graph' : 'is-article'}>
+      <TableOfContents />
+      <main class="min-w-0">
+        <slot />
+      </main>
+      <EntityPanel id="shell" />
+    </div>
+
+    <script>
+      function overlayMode() {
+        return window.matchMedia('(max-width: 1199px)').matches;
+      }
+
+      function panelOpen() {
+        const grid = document.getElementById('reader-grid');
+        return !!grid && grid.classList.contains('panel-open');
+      }
+
+      async function openPanel(id) {
+        const grid = document.getElementById('reader-grid');
+        const panel = document.getElementById('entity-panel');
+        const content = document.getElementById('panel-content');
+        const overlay = document.getElementById('panel-overlay');
+        if (!grid || !panel || !content) return;
+        // Remember the opener so Escape can restore focus to it.
+        if (document.activeElement && document.activeElement.tagName === 'A') {
+          window.__tescrealOpener = document.activeElement;
+        }
+        try {
+          const res = await fetch(`/e/${id}/panel`);
+          if (!res.ok) throw new Error('panel fetch failed');
+          content.innerHTML = await res.text();
+          grid.classList.add('panel-open');
+          document.body.classList.add('panel-open');
+          panel.setAttribute('aria-hidden', 'false');
+          if (overlayMode() && overlay) {
+            overlay.classList.remove('hidden');
+            overlay.setAttribute('aria-hidden', 'false');
+          }
+          const url = new URL(window.location.href);
+          url.searchParams.set('p', id);
+          history.pushState({}, '', url.toString());
+        } catch (err) {
+          console.error('Failed to load panel:', err);
+          window.location.href = `/e/${id}`;
+        }
+      }
+
+      function closePanel(restoreFocus) {
+        const grid = document.getElementById('reader-grid');
+        const panel = document.getElementById('entity-panel');
+        const overlay = document.getElementById('panel-overlay');
+        if (!grid || !panel || !panelOpen()) return;
+        grid.classList.remove('panel-open');
+        document.body.classList.remove('panel-open');
+        panel.setAttribute('aria-hidden', 'true');
+        if (overlay) {
+          overlay.classList.add('hidden');
+          overlay.setAttribute('aria-hidden', 'true');
+        }
+        document
+          .querySelectorAll('a[href^="/e/"][aria-expanded="true"]')
+          .forEach((a) => a.setAttribute('aria-expanded', 'false'));
+        const url = new URL(window.location.href);
+        if (url.searchParams.has('p')) {
+          url.searchParams.delete('p');
+          history.pushState({}, '', url.toString());
+        }
+        if (restoreFocus !== false && window.__tescrealOpener && document.contains(window.__tescrealOpener)) {
+          window.__tescrealOpener.focus();
+        }
+        window.__tescrealOpener = null;
+      }
+
+      function bindPanels() {
+        if (window.__tescrealBound) return;
+        window.__tescrealBound = true;
+        window.__tescrealOpenPanel = openPanel;
+        window.__tescrealClosePanel = closePanel;
+
+        document.addEventListener('click', (e) => {
+          if (e.target.closest('#panel-close-floating') || e.target.closest('#panel-overlay')) {
+            closePanel(true);
+            return;
+          }
+
+          const link = e.target.closest('a[href^="/e/"]');
+          if (!link || link.dataset.noPanel) return;
+          if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+          e.preventDefault();
+          const href = link.getAttribute('href');
+          const id = href ? href.split('/e/')[1].split('/')[0].split('?')[0] : null;
+          if (!id) return;
+          document
+            .querySelectorAll('a[href^="/e/"][aria-expanded="true"]')
+            .forEach((a) => a.setAttribute('aria-expanded', 'false'));
+          link.setAttribute('aria-expanded', 'true');
+          openPanel(id);
+        }, true); // capture phase — fires before Astro's ClientRouter
+
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key !== 'Escape') return;
+          const modal = document.getElementById('search-modal');
+          if (modal && !modal.classList.contains('hidden')) {
+            modal.classList.add('hidden');
+            return;
+          }
+          closePanel(true);
+        });
+
+        window.addEventListener('popstate', () => {
+          const pid = new URLSearchParams(window.location.search).get('p');
+          if (pid) openPanel(pid);
+          else closePanel(false);
+        });
+      }
+
+      document.addEventListener('astro:page-load', () => {
+        bindPanels();
+        const pid = new URLSearchParams(window.location.search).get('p');
+        if (pid) openPanel(pid);
+      });
+      bindPanels();
+    </script>
+  </body>
+</html>

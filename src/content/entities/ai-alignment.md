@@ -1,0 +1,3 @@
+[Yudkowsky's](/e/eliezer-yudkowsky) life project after his reversal: smart does not mean good, so superintelligence must be steered toward human values, a challenge he considers nearly impossible, with no fallback plan. The field grew through [MIRI](/e/machine-intelligence-research-institute), [ARC](/e/alignment-research-center), and researchers like [Christiano](/e/paul-christiano) and [Soares](/e/nate-soares) into the labs' safety teams.
+
+[Torres](/e/emile-torres) and [Gebru](/e/timnit-gebru) argue the frame crowds out the present: alignment with *whose* values, decided by whom, while deployment harms accumulate now? The vocabulary split, [AI safety](/e/ai-safety) versus [AI ethics](/e/ai-ethics), encodes the dispute.

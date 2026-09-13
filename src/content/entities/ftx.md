@@ -1,0 +1,3 @@
+Crypto exchange founded 2019 (Hong Kong, then the Bahamas) on low fees, aggressive product design and saturation marketing, Super Bowl ads, Tom Brady, a Miami arena. At the 2021–22 peak [Bankman-Fried's](/e/sam-bankman-fried) fortune read ~$26.5 billion.
+
+Behind it, customer deposits flowed to [Alameda](/e/alameda-research) for investments, donations and real estate. The [eleven-day collapse](/e/ftx-collapse), CoinDesk's balance-sheet leak, [CZ's](/e/changpeng-zhao) FTT sale, Binance walking away, Chapter 11, vaporized ~$8 billion. The estate later sold the [Anthropic](/e/anthropic) stake for $884M, so the defrauded were partly repaid through an AI company's appreciation.

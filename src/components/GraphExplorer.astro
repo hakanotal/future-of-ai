@@ -1,0 +1,161 @@
+---
+interface Props {
+  focus?: string;
+  class?: string;
+}
+
+const { focus = 'tescreal', class: className } = Astro.props;
+---
+
+<div class:list={['relative', className]}>
+  <div id="cy" class="w-full h-[70vh] min-h-[480px] rounded-xl border border-surface-2 bg-surface-1 overflow-hidden"></div>
+  <div id="graph-status" class="absolute top-3 left-3 text-xs px-2.5 py-1.5 rounded-lg bg-surface-0/85 backdrop-blur border border-surface-2 text-zinc-400">
+    Loading graph...
+  </div>
+  <div id="graph-legend" class="absolute bottom-3 left-3 hidden sm:flex items-center gap-3 text-[11px] px-3 py-2 rounded-lg bg-surface-0/85 backdrop-blur border border-surface-2 text-zinc-400">
+    <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full inline-block" style="background:#3b82f6"></span>person</span>
+    <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full inline-block" style="background:#f59e0b"></span>concept</span>
+    <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full inline-block" style="background:#06b6d4"></span>org</span>
+    <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full inline-block" style="background:#8b5cf6"></span>work</span>
+  </div>
+</div>
+
+<script is:inline src="https://unpkg.com/cytoscape@3.30.4/dist/cytoscape.min.js"></script>
+<script is:inline define:vars={{ initialFocus: focus }}>
+  const typeColors = {
+    person: '#3b82f6',
+    concept: '#f59e0b',
+    organization: '#06b6d4',
+    work: '#8b5cf6',
+    place: '#10b981',
+    event: '#ec4899',
+    fund: '#ef4444',
+  };
+
+  function themeInk() {
+    const light = document.documentElement.dataset.theme === 'light';
+    return {
+      label: light ? '#27272a' : '#e4e4e7',
+      halo: light ? 'rgba(255,255,255,0.92)' : 'rgba(9,9,11,0.85)',
+      edge: light ? '#a1a1aa' : '#3f3f46',
+      selected: light ? '#18181b' : '#ffffff',
+    };
+  }
+
+  async function init() {
+    const statusEl = document.getElementById('graph-status');
+    const setStatus = (t) => { if (statusEl) statusEl.textContent = t; };
+
+    if (typeof cytoscape === 'undefined') {
+      setStatus('Could not load cytoscape.');
+      return;
+    }
+
+    try {
+      const res = await fetch('/data/graph.json');
+      if (!res.ok) throw new Error('graph.json not found');
+      const data = await res.json();
+      const ink = themeInk();
+
+      const cy = cytoscape({
+        container: document.getElementById('cy'),
+        elements: data.elements,
+        style: [
+          {
+            selector: 'node',
+            style: {
+              'background-color': function(ele) { return typeColors[ele.data('type')] || '#71717a'; },
+              'label': 'data(label)',
+              'color': ink.label,
+              'font-size': '11px',
+              'font-family': 'Inter, system-ui, sans-serif',
+              'text-valign': 'bottom',
+              'text-margin-y': 8,
+              'text-background-color': ink.halo,
+              'text-background-opacity': 1,
+              'text-background-padding': '3px',
+              'width': 'mapData(degree, 0, 20, 18, 56)',
+              'height': 'mapData(degree, 0, 20, 18, 56)',
+              'border-width': 2,
+              'border-color': ink.halo,
+              'transition-property': 'background-color, border-color',
+              'transition-duration': 150,
+            },
+          },
+          {
+            selector: 'node:selected',
+            style: { 'border-color': ink.selected, 'border-width': 3 },
+          },
+          {
+            selector: 'edge',
+            style: {
+              'width': 1.5,
+              'line-color': ink.edge,
+              'target-arrow-shape': 'triangle',
+              'target-arrow-color': ink.edge,
+              'curve-style': 'bezier',
+              'opacity': 0.7,
+            },
+          },
+        ],
+        layout: { name: 'cose', animate: true, animationDuration: 600, fit: true, padding: 40 },
+        minZoom: 0.3,
+        maxZoom: 3,
+        wheelSensitivity: 0.25,
+      });
+
+      const params = new URLSearchParams(window.location.search);
+      const focusId = params.get('focus') || initialFocus || 'tescreal';
+
+      const focusNode = cy.getElementById(focusId);
+      if (focusNode.length) {
+        const nhood = focusNode.closedNeighborhood();
+        cy.elements().not(nhood).style('opacity', 0.18);
+        cy.fit(nhood, 60);
+        focusNode.select();
+        setStatus(nhood.nodes().length + ' nodes near "' + focusNode.data('label') + '". Click a node for details.');
+      } else {
+        cy.fit(undefined, 40);
+        setStatus(cy.nodes().length + ' nodes, ' + cy.edges().length + ' edges. Click a node for details.');
+      }
+
+      cy.on('tap', 'node', function(evt) {
+        const node = evt.target;
+        const id = node.id();
+        cy.elements().style('opacity', 1);
+        cy.elements().not(node.closedNeighborhood()).style('opacity', 0.18);
+        node.select();
+        if (window.__tescrealOpenPanel) window.__tescrealOpenPanel(id);
+        else window.location.href = '/e/' + id;
+      });
+
+      cy.on('tap', function(evt) {
+        if (evt.target === cy) {
+          cy.elements().style('opacity', 1);
+        }
+      });
+
+      window.addEventListener('tescreal-theme', function() {
+        var t = themeInk();
+        cy.style()
+          .selector('node')
+          .style({ color: t.label, 'text-background-color': t.halo, 'border-color': t.halo })
+          .selector('node:selected')
+          .style({ 'border-color': t.selected })
+          .selector('edge')
+          .style({ 'line-color': t.edge, 'target-arrow-color': t.edge })
+          .update();
+      });
+
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        cy.layout({ name: 'cose', animate: false }).run();
+      }
+    } catch (err) {
+      console.error(err);
+      setStatus('Could not load graph data.');
+    }
+  }
+
+  document.addEventListener('astro:page-load', init, { once: true });
+  init();
+</script>

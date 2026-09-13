@@ -1,0 +1,152 @@
+---
+import RelationList from './RelationList.astro';
+import StrandBadge from './StrandBadge.astro';
+import Prose from './Prose.astro';
+
+interface Entity {
+  id: string;
+  label: string;
+  type: string;
+  strands: string[];
+  short: string;
+  dates?: { start?: string; end?: string };
+  tags?: string[];
+  sources?: string[];
+  status?: string;
+}
+
+interface Relation {
+  from: string;
+  to: string;
+  type: string;
+  note?: string;
+  amount?: string;
+  start?: string;
+  sources?: string[];
+}
+
+interface Props {
+  entity: Entity;
+  outgoing: Relation[];
+  incoming: Relation[];
+  entityLabels: Record<string, string>;
+  bodyHtml?: string;
+  variant?: 'full' | 'panel';
+}
+
+const { entity, outgoing, incoming, entityLabels, bodyHtml, variant = 'full' } = Astro.props;
+
+const strandNames: Record<string, string> = {
+  T: 'Transhumanism',
+  E: 'Extropianism',
+  S: 'Singularitarianism',
+  C: 'Cosmism',
+  R: 'Rationalism',
+  EA: 'Effective Altruism',
+  L: 'Longtermism',
+};
+
+const isStub = !bodyHtml;
+---
+
+<div class={variant === 'panel' ? 'px-5 py-5' : ''}>
+  <!-- Header -->
+  <header>
+    <div class="flex items-center gap-2 flex-wrap">
+      <span class="text-[11px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface-2 text-zinc-300">
+        {entity.type}
+      </span>
+      {entity.status && entity.status !== 'published' && (
+        <span class="text-[11px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-400 border border-amber-500/30">
+          {entity.status}
+        </span>
+      )}
+      {entity.dates?.start && (
+        <span class="text-zinc-500 text-xs font-mono">
+          {entity.dates.start}{entity.dates.end ? `–${entity.dates.end}` : ''}
+        </span>
+      )}
+    </div>
+    <h1 class={variant === 'panel' ? 'text-2xl font-bold text-white mt-2 tracking-tight' : 'text-3xl font-bold text-white mt-2 tracking-tight'}>
+      {entity.label}
+    </h1>
+    <div class="flex items-center gap-3 mt-2 flex-wrap">
+      {entity.strands.map((s) => (
+        <span class="inline-flex items-center gap-1.5 text-xs text-zinc-400" title={strandNames[s] ?? s}>
+          <StrandBadge strand={s} size="sm" />
+          {strandNames[s] ?? s}
+        </span>
+      ))}
+    </div>
+  </header>
+
+  <!-- Short blurb -->
+  <p class="mt-4 text-[15px] leading-relaxed text-zinc-300 border-l-2 border-blue-500/60 pl-3">
+    {entity.short}
+  </p>
+
+  <!-- Body -->
+  <div class="mt-5">
+    {bodyHtml ? (
+      <Prose><Fragment set:html={bodyHtml} /></Prose>
+    ) : (
+      <div class="rounded-lg border border-dashed border-surface-3 bg-surface-1 px-4 py-3 text-sm text-zinc-500">
+        <span class="font-medium text-zinc-400">Stub.</span> No prose body written yet. Relations and sources below are the full record so far.
+      </div>
+    )}
+  </div>
+
+  <!-- Relations -->
+  {(outgoing.length > 0 || incoming.length > 0) && (
+    <div class="mt-2 divide-y divide-surface-2">
+      <RelationList relations={outgoing} entityLabels={entityLabels} direction="outgoing" title="Relations" />
+      <RelationList relations={incoming} entityLabels={entityLabels} direction="incoming" title="Referenced by" />
+    </div>
+  )}
+
+  <!-- Tags -->
+  {entity.tags && entity.tags.length > 0 && (
+    <div class="mt-6 flex flex-wrap gap-1.5">
+      {entity.tags.map((tag) => (
+        <span class="text-xs px-2 py-1 rounded-md bg-surface-2 text-zinc-400 font-mono">#{tag}</span>
+      ))}
+    </div>
+  )}
+
+  <!-- Sources -->
+  {entity.sources && entity.sources.length > 0 && (
+    <section class="mt-6">
+      <h3 class="text-xs font-semibold uppercase tracking-wider text-zinc-500 mb-2">Sources</h3>
+      <ul class="space-y-1.5">
+        {entity.sources.map((src) => (
+          <li class="text-sm text-zinc-400 break-words">
+            {src.startsWith('http') ? (
+              <a href={src} target="_blank" rel="noopener" class="text-blue-400 hover:underline break-all">{src}</a>
+            ) : (
+              <span>{src}</span>
+            )}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <!-- Exits -->
+  <div class="mt-8 flex flex-wrap gap-2">
+    {variant === 'panel' ? (
+      <>
+        <a href={`/e/${entity.id}`} data-no-panel="true" class="text-sm px-3 py-2 rounded-lg bg-surface-2 hover:bg-surface-3 text-white transition-colors">
+          Open full page →
+        </a>
+        <a href={`/graph?focus=${entity.id}&p=${entity.id}`} class="text-sm px-3 py-2 rounded-lg border border-surface-3 hover:border-zinc-500 text-zinc-300 transition-colors">
+          Show in graph
+        </a>
+      </>
+    ) : (
+      <a href={`/graph?focus=${entity.id}&p=${entity.id}`} class="text-sm px-3 py-2 rounded-lg border border-surface-3 hover:border-zinc-500 text-zinc-300 transition-colors">
+        Show in graph →
+      </a>
+    )}
+  </div>
+
+</div>

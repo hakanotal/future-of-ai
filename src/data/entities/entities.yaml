@@ -1,0 +1,426 @@
+# TESCREAL Wiki - Seed Entities
+# Based on the article "The Hidden Faith of Silicon Valley"
+
+- id: tescreal
+  label: TESCREAL
+  type: concept
+  strands: [T, E, S, C, R, EA, L]
+  short: >-
+    An acronym for seven interconnected ideologies: Transhumanism, Extropianism, Singularitarianism, Cosmism, Rationalism, Effective Altruism, and Longtermism.
+  dates:
+    start: "2023"
+  tags: [ideology, bundle, silicon-valley]
+  status: published
+
+- id: peter-singer
+  label: Peter Singer
+  type: person
+  strands: [EA]
+  short: >-
+    Australian philosopher whose 1972 paper "Famine, Affluence, and Morality" proposed the drowning child argument that became foundational to effective altruism.
+  dates:
+    start: "1946"
+  located_in: Princeton
+  tags: [philosopher, ethics, effective-altruism]
+  status: published
+
+- id: toby-ord
+  label: Toby Ord
+  type: person
+  strands: [EA, L]
+  short: >-
+    Australian philosopher who co-founded Giving What We Can in 2009 and authored "The Precipice" (2020), estimating a 1-in-6 chance of existential catastrophe this century.
+  dates:
+    start: "1979"
+  located_in: Oxford
+  tags: [philosopher, effective-altruism, longtermism]
+  status: published
+
+- id: william-macaskill
+  label: William MacAskill
+  type: person
+  strands: [EA, L]
+  short: >-
+    Scottish philosopher who co-founded 80,000 Hours and the Centre for Effective Altruism, and authored "What We Owe the Future" (2022), a key text of longtermism.
+  dates:
+    start: "1987"
+  located_in: Oxford
+  tags: [philosopher, effective-altruism, longtermism]
+  status: published
+
+- id: sam-bankman-fried
+  label: Sam Bankman-Fried
+  type: person
+  strands: [EA, L]
+  short: >-
+    Founder of Alameda Research and FTX, once a poster child of effective altruism's "earning to give" strategy, later convicted of fraud.
+  dates:
+    start: "1992"
+  tags: [finance, crypto, fraud, effective-altruism]
+  status: published
+
+- id: nick-bostrom
+  label: Nick Bostrom
+  type: person
+  strands: [T, L]
+  short: >-
+    Swedish philosopher who founded Oxford's Future of Humanity Institute and authored "Superintelligence" (2014), popularizing concerns about AI existential risk.
+  dates:
+    start: "1973"
+  located_in: Oxford
+  tags: [philosopher, existential-risk, transhumanism]
+  status: published
+
+- id: eliezer-yudkowsky
+  label: Eliezer Yudkowsky
+  type: person
+  strands: [R, L]
+  short: >-
+    AI researcher who founded the Machine Intelligence Research Institute and LessWrong, becoming a central figure in AI alignment and rationalist thought.
+  dates:
+    start: "1979"
+  tags: [ai-safety, rationalism, alignment]
+  status: published
+
+- id: timnit-gebru
+  label: Timnit Gebru
+  type: person
+  strands: [R]
+  short: >-
+    Computer scientist who co-authored "On the Dangers of Stochastic Parrots" and founded the Distributed AI Research Institute (DAIR), coining the term TESCREAL.
+  dates:
+    start: "1983"
+  tags: [ai-ethics, researcher, critic]
+  status: published
+
+- id: emile-torres
+  label: Émile P. Torres
+  type: person
+  strands: [R]
+  short: >-
+    Philosopher and former transhumanist who co-authored the TESCREAL paper with Gebru, offering a critical analysis of Silicon Valley's ideological foundations.
+  tags: [philosopher, critic, transhumanism]
+  status: published
+
+- id: julian-huxley
+  label: Julian Huxley
+  type: person
+  strands: [T]
+  short: >-
+    British biologist who popularized the term "transhumanism" in 1957 and served as president of the British Eugenics Society.
+  dates:
+    start: "1887"
+    end: "1975"
+  tags: [biologist, transhumanism, eugenics]
+  status: published
+
+- id: derek-parfit
+  label: Derek Parfit
+  type: person
+  strands: [L]
+  short: >-
+    Oxford philosopher whose "Reasons and Persons" (1984) argued for moral obligations to future people, seeding longtermist philosophy.
+  dates:
+    start: "1942"
+    end: "2017"
+  located_in: Oxford
+  tags: [philosopher, ethics, longtermism]
+  status: published
+
+- id: givewell
+  label: GiveWell
+  type: organization
+  strands: [EA]
+  short: >-
+    Charity evaluator founded in 2007 that channels hundreds of millions to evidence-backed interventions, becoming the reference point of effective altruism.
+  dates:
+    start: "2007"
+  tags: [charity, evaluation, effective-altruism]
+  status: published
+
+- id: open-philanthropy
+  label: Open Philanthropy
+  type: organization
+  aliases: [Coefficient Giving]
+  strands: [EA]
+  short: >-
+    Major EA-aligned grantmaker that has directed over $4 billion in grants, renamed Coefficient Giving in 2025.
+  dates:
+    start: "2014"
+  tags: [grantmaking, effective-altruism]
+  status: published
+
+- id: ftx
+  label: FTX
+  type: organization
+  strands: [EA]
+  short: >-
+    Cryptocurrency exchange founded in 2019 that collapsed in November 2022, defrauding customers of approximately $8 billion.
+  dates:
+    start: "2019"
+    end: "2022"
+  tags: [crypto, exchange, fraud]
+  status: published
+
+- id: future-of-humanity-institute
+  label: Future of Humanity Institute
+  type: organization
+  strands: [L]
+  short: >-
+    Oxford research institute founded by Nick Bostrom in 2005 that studied existential risk, closed in 2024.
+  dates:
+    start: "2005"
+    end: "2024"
+  located_in: Oxford
+  tags: [research, existential-risk, oxford]
+  status: published
+
+- id: machine-intelligence-research-institute
+  label: Machine Intelligence Research Institute
+  type: organization
+  strands: [R, L]
+  short: >-
+    AI safety research organization founded by Eliezer Yudkowsky, originally as the Singularity Institute.
+  dates:
+    start: "2000"
+  tags: [ai-safety, research]
+  status: published
+
+- id: singularity-institute
+  label: Singularity Institute for Artificial Intelligence
+  type: organization
+  strands: [R, L]
+  short: >-
+    Original name of MIRI, founded to study the singularity and AI risks.
+  dates:
+    start: "2000"
+    end: "2013"
+  tags: [ai-safety, research, historical]
+  status: published
+
+- id: lesswrong
+  label: LessWrong
+  type: organization
+  strands: [R]
+  short: >-
+    Community blog and forum focused on rationality and decision-making, central to the rationalist movement.
+  dates:
+    start: "2009"
+  tags: [forum, rationalism, community]
+  status: published
+
+- id: anthropic
+  label: Anthropic
+  type: organization
+  strands: [EA, L]
+  short: >-
+    AI safety company founded in 2021 by former OpenAI researchers, with significant FTX funding.
+  dates:
+    start: "2021"
+  tags: [ai, safety, company]
+  status: published
+
+- id: openai
+  label: OpenAI
+  type: organization
+  strands: [EA, L]
+  short: >-
+    AI research laboratory co-founded in 2015, originally as a non-profit focused on safe AGI development.
+  dates:
+    start: "2015"
+  tags: [ai, research, company]
+  status: published
+
+- id: give-what-we-can
+  label: Giving What We Can
+  type: organization
+  strands: [EA]
+  short: >-
+    Giving society founded in 2009 where members pledge to donate at least 10% of income to effective charities.
+  dates:
+    start: "2009"
+  tags: [giving, pledge, effective-altruism]
+  status: published
+
+- id: eighty-thousand-hours
+  label: 80,000 Hours
+  type: organization
+  strands: [EA]
+  short: >-
+    Career advice organization founded in 2011 that helps people use their careers for positive impact.
+  dates:
+    start: "2011"
+  tags: [career, advice, effective-altruism]
+  status: published
+
+- id: dair
+  label: Distributed AI Research Institute
+  type: organization
+  strands: [R]
+  short: >-
+    Research institute founded by Timnit Gebru in 2021 focused on AI ethics and community-centered research.
+  dates:
+    start: "2021"
+  tags: [ai-ethics, research]
+  status: published
+
+- id: effective-altruism
+  label: Effective Altruism
+  type: concept
+  strands: [EA]
+  short: >-
+    A philosophical and social movement that uses evidence and reason to determine the most effective ways to do good.
+  dates:
+    start: "2011"
+  tags: [philosophy, movement, ethics]
+  status: published
+
+- id: longtermism
+  label: Longtermism
+  type: concept
+  strands: [L]
+  short: >-
+    The view that positively influencing the long-term future is the key moral priority of our time, emerging from effective altruism.
+  dates:
+    start: "2017"
+  tags: [philosophy, future, ethics]
+  status: published
+
+- id: transhumanism
+  label: Transhumanism
+  type: concept
+  strands: [T]
+  short: >-
+    A philosophical movement advocating for the use of technology to enhance human capabilities and transcend biological limitations.
+  dates:
+    start: "1957"
+  tags: [philosophy, technology, enhancement]
+  status: published
+
+- id: extropianism
+  label: Extropianism
+  type: concept
+  strands: [E]
+  short: >-
+    The first organized transhumanist movement, founded in the 1980s, advocating for fighting entropy through technology.
+  dates:
+    start: "1980s"
+  tags: [philosophy, transhumanism, history]
+  status: published
+
+- id: singularitarianism
+  label: Singularitarianism
+  type: concept
+  strands: [S]
+  short: >-
+    The belief in an approaching technological singularity, popularized by Ray Kurzweil.
+  dates:
+    start: "2000s"
+  tags: [philosophy, singularity, technology]
+  status: published
+
+- id: cosmism
+  label: Cosmism
+  type: concept
+  strands: [C]
+  short: >-
+    A philosophy holding that humanity's destiny is to spread through the universe and radically transform it.
+  tags: [philosophy, space, futurism]
+  status: published
+
+- id: rationalism
+  label: Rationalism (community)
+  type: concept
+  strands: [R]
+  short: >-
+    The community built around LessWrong focused on identifying biases in human thinking, with intense focus on AI risks.
+  dates:
+    start: "2009"
+  tags: [community, rationality, ai-safety]
+  status: published
+
+- id: effective-accelerationism
+  label: Effective Accelerationism
+  type: concept
+  strands: []
+  short: >-
+    An ideology defined in opposition to EA, measuring civilizational progress thermodynamically rather than hedonically.
+  dates:
+    start: "2022"
+  tags: [philosophy, accelerationism, critique]
+  status: published
+
+- id: drowning-child
+  label: Drowning Child Argument
+  type: concept
+  strands: [EA]
+  short: >-
+    Peter Singer's thought experiment asking if you would save a drowning child at the cost of your shoes, extended to global poverty.
+  dates:
+    start: "1972"
+  tags: [thought-experiment, ethics, poverty]
+  status: published
+
+- id: earning-to-give
+  label: Earning to Give
+  type: concept
+  strands: [EA]
+  short: >-
+    The strategy of pursuing high-paying careers to donate more money to effective charities.
+  tags: [strategy, career, effective-altruism]
+  status: published
+
+- id: the-precipice
+  label: The Precipice
+  type: work
+  strands: [L]
+  short: >-
+    Toby Ord's 2020 book calculating humanity's existential risks and arguing for longtermist priorities.
+  dates:
+    start: "2020"
+  tags: [book, existential-risk, longtermism]
+  status: published
+
+- id: what-we-owe-the-future
+  label: What We Owe the Future
+  type: work
+  strands: [L]
+  short: >-
+    William MacAskill's 2022 book arguing for longtermism and protecting future generations.
+  dates:
+    start: "2022"
+  tags: [book, longtermism, ethics]
+  status: published
+
+- id: superintelligence
+  label: Superintelligence
+  type: work
+  strands: [T, L]
+  short: >-
+    Nick Bostrom's 2014 book on the existential risks of artificial general intelligence.
+  dates:
+    start: "2014"
+  tags: [book, ai, existential-risk]
+  status: published
+
+- id: reasons-and-persons
+  label: Reasons and Persons
+  type: work
+  strands: [L]
+  short: >-
+    Derek Parfit's 1984 philosophical work arguing for obligations to future people.
+  dates:
+    start: "1984"
+  tags: [book, philosophy, ethics]
+  status: published
+
+- id: tescreal-bundle-paper
+  label: The TESCREAL Bundle
+  type: work
+  strands: [R]
+  short: >-
+    The 2024 paper by Gebru and Torres mapping the interconnected ideologies of Silicon Valley.
+  dates:
+    start: "2024"
+  tags: [paper, critique, ideology]
+  status: published

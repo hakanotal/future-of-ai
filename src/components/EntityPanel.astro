@@ -1,0 +1,25 @@
+---
+interface Props {
+  id?: string;
+}
+
+const { id = 'shell' } = Astro.props;
+---
+
+<!-- Scrim — only visible in overlay modes (<1200px), hidden by CSS above that -->
+<div id="panel-overlay" class="hidden" aria-hidden="true"></div>
+
+<!-- Panel column — grid child at ≥1200px (article reflows beside it),
+     fixed overlay / bottom sheet below that (see global.css) -->
+<aside
+  id="entity-panel"
+  role="complementary"
+  aria-label="Entity details"
+  aria-hidden="true"
+>
+
+
+  <div id="panel-content" class="pb-16">
+    <!-- Fragment from /e/<id>/panel loads here -->
+  </div>
+</aside>

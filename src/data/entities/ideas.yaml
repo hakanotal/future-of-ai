@@ -1,0 +1,389 @@
+# Concepts, works, events, funds — from docs/tescreal-article.md + research docx
+
+# ---------- concepts ----------
+
+- id: utilitarianism
+  label: Utilitarianism
+  type: concept
+  strands: [EA]
+  short: >-
+    The maximizing ethic of Bentham and Mill — the greatest happiness for the greatest number — that EA operationalized.
+  tags: [philosophy, ethics]
+  status: published
+
+- id: expected-utility
+  label: Expected Utility
+  type: concept
+  strands: [EA]
+  short: >-
+    The decision rule underneath everything here: multiply welfare by probability, maximize the product, treat intuition as bias.
+  tags: [decision-theory, ethics]
+  status: published
+
+- id: existential-risk
+  label: Existential Risk
+  type: concept
+  aliases: [x-risk]
+  strands: [L]
+  short: >-
+    Risks that could permanently destroy humanity's long-term potential — unaligned AI, engineered pandemics, nuclear war — longtermism's top priority.
+  tags: [longtermism, risk]
+  status: published
+
+- id: ai-alignment
+  label: AI Alignment
+  type: concept
+  strands: [R, L]
+  short: >-
+    Yudkowsky's life project after his reversal: ensuring superintelligence shares human values, a challenge he deems nearly impossible.
+  tags: [ai-safety]
+  status: published
+
+- id: ai-safety
+  label: AI Safety
+  type: concept
+  strands: [L]
+  short: >-
+    In EA usage, narrowly the mitigation of hypothetical future existential risk — not today's concrete AI harms.
+  tags: [ai, longtermism]
+  status: published
+
+- id: ai-ethics
+  label: AI Ethics
+  type: concept
+  strands: []
+  short: >-
+    Work on present-day AI harms — bias, privacy, labor, environment — chronically underfunded next to longtermist safety research.
+  tags: [ai, present-harms]
+  status: published
+
+- id: eugenics
+  label: Eugenics
+  type: concept
+  strands: [T]
+  short: >-
+    The twentieth-century program of improving populations by coercion — sterilization, murder, selective breeding — whose logic haunts transhumanism's genealogy.
+  tags: [history, genealogy]
+  status: published
+
+- id: replaceability
+  label: Replaceability
+  type: concept
+  strands: [EA]
+  short: >-
+    The EA argument that your conventional-do-gooding seat will be filled by someone roughly as good, so take the lucrative job and donate.
+  tags: [earning-to-give, ethics]
+  status: published
+
+- id: moral-offsetting
+  label: Moral Offsetting
+  type: concept
+  strands: [EA]
+  short: >-
+    The doctrine that morally controversial careers are justified when donations offset the damage and then some; critics call it moral carbon offsetting.
+  tags: [earning-to-give, ethics]
+  status: published
+
+- id: non-identity-problem
+  label: Non-Identity Problem
+  type: concept
+  strands: [L]
+  short: >-
+    Parfit's puzzle about obligations to people whose very existence depends on our choices — the seed of longtermist duties to the future.
+  tags: [philosophy, longtermism]
+  status: published
+
+- id: hinge-of-history
+  label: Hinge of History
+  type: concept
+  strands: [L]
+  short: >-
+    The longtermist claim that the present moment disproportionately determines the far future — and therefore commands its resources.
+  tags: [longtermism]
+  status: published
+
+- id: intelligence-explosion
+  label: Intelligence Explosion
+  type: concept
+  strands: [S]
+  short: >-
+    Recursive self-improvement: AGI designs AGI+, which designs AGI++, reaching superintelligence in days or hours.
+  tags: [singularity, agi]
+  status: published
+
+- id: astronomical-waste
+  label: Astronomical Waste
+  type: concept
+  strands: [L]
+  short: >-
+    Bostrom's argument that delaying cosmic settlement forfeits astronomical value — up to 10^58 potential lives with digital minds.
+  tags: [longtermism]
+  status: published
+  sources: ["Bostrom, Astronomical Waste (2003) — verify (backlog A10)"]
+
+- id: far-future-priority-objection
+  label: Far-Future Priority Objection
+  type: concept
+  strands: [L]
+  short: >-
+    Hupfer's formalization of the crowding-out critique: longtermist budgets shrink today's emergencies in relative terms.
+  tags: [critique, longtermism]
+  status: published
+
+- id: charter-cities
+  label: Charter Cities
+  type: concept
+  strands: [L]
+  short: >-
+    MacAskill's proposal for autonomous law-laboratories of policy; in practice, critics note, a libertarian project with a crushed-experiment history.
+  tags: [politics, longtermism]
+  status: published
+
+- id: nonprofit-industrial-complex
+  label: Nonprofit Industrial Complex
+  type: concept
+  strands: []
+  short: >-
+    Critics' term for tax-deductible giving that papers over the inequities producing the wealth while its actors lobby against public services.
+  tags: [critique, philanthropy]
+  status: published
+
+- id: ustopia
+  label: Ustopia
+  type: concept
+  strands: []
+  short: >-
+    Benjamin's proposal, borrowing from Atwood: what we create together when wide awake — neither dream-utopia nor nightmare-dystopia.
+  tags: [alternatives, democracy]
+  status: published
+
+- id: crisis-of-imagination
+  label: Crisis of Imagination
+  type: concept
+  strands: []
+  short: >-
+    Hopkins's diagnosis: leaps of imagination built everything, yet a safer path forward stays unreachable while imagination is captured by manufactured demand.
+  tags: [alternatives, imagination]
+  status: published
+
+- id: positive-sum-economics
+  label: Positive-Sum Economics
+  type: concept
+  strands: []
+  short: >-
+    The Kurzgesagt–Roser case that growth turned the fixed pie growing, so everyone's prosperity is your self-interest — sharing TESCREAL's infinite-growth assumption.
+  tags: [economics, growth]
+  status: published
+
+# ---------- works ----------
+
+- id: famine-affluence-and-morality
+  label: Famine, Affluence, and Morality
+  type: work
+  strands: [EA]
+  short: >-
+    Singer's 1972 paper whose drowning-child argument dynamited moral philosophy and seeded effective altruism forty years later.
+  dates:
+    start: "1972"
+  tags: [paper, ethics]
+  status: published
+
+- id: astronomical-waste-2003
+  label: Astronomical Waste
+  type: work
+  strands: [L]
+  short: >-
+    Bostrom's 2003 paper pricing delayed settlement at up to 10^58 lives — the maximalist pole of longtermist arithmetic.
+  dates:
+    start: "2003"
+  tags: [paper, longtermism]
+  status: published
+  sources: ["Bostrom (2003) — verify (backlog A10)"]
+
+- id: strong-longtermism-2021
+  label: The Case for Strong Longtermism
+  type: work
+  strands: [L]
+  short: >-
+    Greaves and MacAskill's 2021 working paper deriving 10^24 future people and the 10^16-lives rounding-error equivalence.
+  dates:
+    start: "2021"
+  tags: [paper, longtermism]
+  status: published
+  sources: ["GPI working paper (2021) — verify (backlog A10)"]
+
+- id: beckstead-dissertation-2013
+  label: On the Overwhelming Importance of Shaping the Far Future
+  type: work
+  strands: [L]
+  short: >-
+    Beckstead's 2013 Rutgers dissertation, supervised by Temkin, arguing rich-country lives should be prioritized for their ripple effects.
+  dates:
+    start: "2013"
+  tags: [dissertation, longtermism]
+  status: published
+  sources: ["Beckstead (2013) — read surrounding context before quoting (backlog A11)"]
+
+- id: stochastic-parrots
+  label: On the Dangers of Stochastic Parrots
+  type: work
+  strands: []
+  short: >-
+    The 2021 paper on large-language-model risks whose authorship got Gebru forced out of Google that December.
+  dates:
+    start: "2021"
+  tags: [paper, ai-ethics]
+  status: published
+
+- id: good-it-promises-harm-it-does
+  label: The Good It Promises, the Harm It Does
+  type: work
+  strands: []
+  short: >-
+    The 2023 essay collection with Srinivasan's foreword — the strongest book-length critique of EA, and its epistemology of expected utility.
+  dates:
+    start: "2023"
+  tags: [book, critique]
+  status: published
+
+- id: if-anyone-builds-it-everyone-dies
+  label: If Anyone Builds It, Everyone Dies
+  type: work
+  strands: [R, L]
+  short: >-
+    Yudkowsky and Soares's September 2025 expansion of the doomer case: building superintelligence defaults to everyone dying.
+  dates:
+    start: "2025"
+  tags: [book, doomerism]
+  status: published
+
+- id: techno-optimist-manifesto
+  label: The Techno-Optimist Manifesto
+  type: work
+  strands: []
+  short: >-
+    Andreessen's October 2023 manifesto: no material problem resists more technology, energy up 1,000x, deceleration as murder.
+  dates:
+    start: "2023"
+  tags: [manifesto, accelerationism]
+  status: published
+  sources: ["a16z manifesto text; bio snapshots — verify (backlog A13)"]
+
+- id: cosmist-manifesto
+  label: Cosmist Manifesto
+  type: work
+  strands: [C]
+  short: >-
+    Goertzel's 2010 manifesto promising resurrection-by-copy and future magic achieved by scientific means.
+  dates:
+    start: "2010"
+  tags: [manifesto, cosmism]
+  status: published
+  sources: ["Goertzel (2010) — verify quote (backlog B12)"]
+
+- id: ai-2027
+  label: AI 2027
+  type: work
+  strands: [S]
+  short: >-
+    Kokotajlo et al.'s viral scenario: 330,000 superhuman researcher copies by 2027, a trillion superintelligences by 2035.
+  dates:
+    start: "2025"
+  tags: [scenario, singularity]
+  status: published
+  sources: ["Kokotajlo et al. — verify (backlog B24)"]
+
+- id: sequences
+  label: Sequences
+  type: work
+  strands: [R]
+  short: >-
+    Yudkowsky's 2006–09 LessWrong essays on bias and decision-making, the rationalist on-ramp alongside the fanfiction.
+  dates:
+    start: "2006"
+    end: "2009"
+  tags: [essays, rationalism]
+  status: published
+
+- id: hpmor
+  label: Harry Potter and the Methods of Rationality
+  type: work
+  strands: [R]
+  short: >-
+    Yudkowsky's 2010–15 fanfiction that onboarded a quarter of LessWrong's users, per a 2013 survey.
+  dates:
+    start: "2010"
+    end: "2015"
+  tags: [fiction, rationalism]
+  status: published
+
+- id: torture-vs-dust-specks
+  label: Torture vs. Dust Specks
+  type: work
+  strands: [R]
+  short: >-
+    Yudkowsky's 2007 post preferring fifty years of torture for one over momentary dust specks for multitudes — expected utility in miniature.
+  dates:
+    start: "2007"
+  tags: [essay, utilitarianism]
+  status: published
+  sources: ["LessWrong (2007) — verify (backlog A14)"]
+
+- id: selfish-argument-kurzgesagt
+  label: A Selfish Argument for Making the World a Better Place
+  type: work
+  strands: []
+  short: >-
+    Kurzgesagt's positive-sum explainer with Our World in Data, Gates-supported: lift billions, multiply inventors, cure what kills you.
+  tags: [video, growth]
+  status: published
+
+# ---------- events ----------
+
+- id: ftx-collapse
+  label: FTX Collapse
+  type: event
+  strands: [EA]
+  short: >-
+    Eleven days in November 2022 — CoinDesk leak, CZ's FTT sale, Binance walking away, bankruptcy — vaporizing about $8 billion in customer funds.
+  dates:
+    start: "2022-11-02"
+    end: "2022-11-11"
+  tags: [crypto, fraud]
+  status: published
+
+- id: openai-board-crisis
+  label: OpenAI Board Crisis
+  type: event
+  strands: [L]
+  short: >-
+    Five days in November 2023: the nonprofit board fired Altman, 745 of 770 employees revolted, and the EA-linked board lost.
+  dates:
+    start: "2023-11-17"
+    end: "2023-11-22"
+  tags: [governance, ai]
+  status: published
+
+- id: singularity-summit
+  label: Singularity Summit
+  type: event
+  strands: [R]
+  short: >-
+    The Thiel-funded Stanford summit that networked Yudkowsky's circle into existence — and, most consequentially, seeded DeepMind.
+  tags: [summit, ai]
+  status: published
+
+# ---------- funds ----------
+
+- id: ftx-future-fund
+  label: FTX Future Fund
+  type: fund
+  strands: [EA, L]
+  short: >-
+    The FTX Foundation's early-2022 grant vehicle (Beckstead CEO, MacAskill advising) that committed about $160M before the collapse.
+  dates:
+    start: "2022"
+    end: "2022"
+  tags: [grants, ftx]
+  status: published
+  sources: ["Archived ftxfuturefund.org; EA Forum launch post — verify dates and totals (backlog A1)"]

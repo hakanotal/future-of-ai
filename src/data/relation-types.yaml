@@ -1,0 +1,61 @@
+# Relation types with inverse labels
+# Each type belongs to a category and has an inverse for rendering reverse edges
+
+institutional:
+  - id: founded
+    inverse: founded_by
+    label: Founded
+  - id: affiliated_with
+    inverse: affiliated_with
+    label: Affiliated with
+  - id: funds
+    inverse: funded_by
+    label: Funds
+  - id: part_of
+    inverse: contains
+    label: Part of
+  - id: employed_by
+    inverse: employs
+    label: Employed by
+  - id: board_member_of
+    inverse: board_includes
+    label: Board member of
+
+intellectual:
+  - id: coined
+    inverse: coined_by
+    label: Coined
+  - id: authored
+    inverse: authored_by
+    label: Authored
+  - id: influenced
+    inverse: influenced_by
+    label: Influenced
+  - id: precursor_to
+    inverse: descended_from
+    label: Precursor to
+
+conceptual:
+  - id: subconcept_of
+    inverse: has_subconcept
+    label: Subconcept of
+  - id: critiques
+    inverse: critiqued_by
+    label: Critiques
+  - id: related_to
+    inverse: related_to
+    label: Related to
+
+social:
+  - id: collaborated_with
+    inverse: collaborated_with
+    label: Collaborated with
+  - id: debated
+    inverse: debated
+    label: Debated
+  - id: located_in
+    inverse: location_of
+    label: Located in
+  - id: warned
+    inverse: warned_by
+    label: Warned
