@@ -55,7 +55,7 @@
       counter++;
       const text      = h.textContent ?? '';
       const partMatch = text.match(/^Part\s+([IVXivx\d]+)/i);
-      const numLabel  = partMatch ? partMatch[1].toUpperCase() : String(counter);
+      const numLabel  = partMatch ? partMatch[1].toUpperCase() : String('');
       const cleanText = text.replace(/^Part\s+[IVXivx\d]+[\s:–—]*/i, '').trim() || text;
 
       const li = document.createElement('li');
